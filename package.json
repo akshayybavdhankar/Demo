@@ -1,0 +1,17 @@
+{
+  "name": "playwrightcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+"test:allure": "playwright test && allure generate allure-results -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "allure-playwright": "^3.13.0"
+  }
+}

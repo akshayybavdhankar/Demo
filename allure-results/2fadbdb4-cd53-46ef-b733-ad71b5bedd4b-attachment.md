@@ -1,0 +1,4495 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: amazonsunfloweroil.spec.ts >> test
+- Location: tests\amazonsunfloweroil.spec.ts:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f4e2]:
+  - navigation "Shortcuts menu" [ref=f4e3]:
+    - heading "Skip to" [level=2] [ref=f4e4]
+    - list "Skip to" [ref=f4e5]:
+      - listitem [ref=f4e6]:
+        - link "main content" [ref=f4e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+      - listitem [ref=f4e8]:
+        - link "Results" [ref=f4e9] [cursor=pointer]:
+          - /url: .s-asin a:has(h2)
+    - separator [aria-hidden] [ref=f4e10]
+    - heading "Keyboard shortcuts" [level=2] [ref=f4e11]
+    - list "Keyboard shortcuts" [ref=f4e12]:
+      - listitem [ref=f4e13]:
+        - link "Search, alt, forward slash" [ref=f4e14] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=f4e15]:
+            - generic [ref=f4e16]: Search
+            - generic [ref=f4e17]:
+              - generic [ref=f4e18]: alt
+              - generic [ref=f4e19]: +
+              - generic [ref=f4e20]: /
+      - listitem [ref=f4e21]:
+        - link "Cart, shift, alt, c" [ref=f4e22] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=f4e23]:
+            - generic [ref=f4e24]: Cart
+            - generic [ref=f4e25]:
+              - generic [ref=f4e26]: shift
+              - generic [ref=f4e27]: +
+              - generic [ref=f4e28]: alt
+              - generic [ref=f4e29]: +
+              - generic [ref=f4e30]: C
+      - listitem [ref=f4e31]:
+        - link "Home, shift, alt, h" [ref=f4e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=f4e33]:
+            - generic [ref=f4e34]: Home
+            - generic [ref=f4e35]:
+              - generic [ref=f4e36]: shift
+              - generic [ref=f4e37]: +
+              - generic [ref=f4e38]: alt
+              - generic [ref=f4e39]: +
+              - generic [ref=f4e40]: H
+      - listitem [ref=f4e41]:
+        - link "Your orders, shift, alt, o" [ref=f4e42] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [aria-hidden] [ref=f4e43]:
+            - generic [ref=f4e44]: Orders
+            - generic [ref=f4e45]:
+              - generic [ref=f4e46]: shift
+              - generic [ref=f4e47]: +
+              - generic [ref=f4e48]: alt
+              - generic [ref=f4e49]: +
+              - generic [ref=f4e50]: O
+      - listitem [ref=f4e51]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=f4e52] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f4e53]:
+            - generic [ref=f4e54]: Show/Hide shortcuts
+            - generic [ref=f4e55]:
+              - generic [ref=f4e56]: shift
+              - generic [ref=f4e57]: +
+              - generic [ref=f4e58]: alt
+              - generic [ref=f4e59]: +
+              - generic [ref=f4e60]: Z
+    - generic [ref=f4e61]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=f4e67]:
+    - navigation "Primary" [ref=f4e68]:
+      - generic [ref=f4e69]:
+        - generic [ref=f4e70]:
+          - link "Amazon.in" [ref=f4e72] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Pune 411001 Update location" [ref=f4e75] [cursor=pointer]:
+            - generic [ref=f4e77]:
+              - generic [ref=f4e78]: Delivering to Pune 411001
+              - generic [ref=f4e79]: Update location
+        - search [ref=f4e82]:
+          - generic [ref=f4e85]:
+            - generic [ref=f4e86]: All
+            - combobox "Select the department you want to search in" [ref=f4e89] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=f4e92]: fortune sunflower oil 15
+          - generic "Go" [ref=f4e95] [cursor=pointer]:
+            - button "Go" [ref=f4e96]
+        - generic [ref=f4e98]:
+          - generic [ref=f4e99]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=f4e100] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=f4e103]:
+                - img "India" [ref=f4e104]
+                - generic [ref=f4e105]: EN
+            - button "Expand to Change Language or Country" [ref=f4e106] [cursor=pointer]
+          - generic [ref=f4e107]:
+            - link "Hello, sign in Account & Lists" [ref=f4e108] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dfortune%2Bsunflower%2Boil%2B15%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=f4e109]: Hello, sign in
+              - generic [ref=f4e111]: Account & Lists
+            - button "Expand Account and Lists" [ref=f4e112] [cursor=pointer]
+          - link "Returns & Orders" [ref=f4e113] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=f4e114]: Returns
+            - generic [ref=f4e115]: "& Orders"
+          - link "0 items in cart" [ref=f4e116] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [aria-hidden] [ref=f4e118]: "0"
+            - generic [aria-hidden] [ref=f4e121]: Cart
+      - generic [ref=f4e122]:
+        - button "Open All Categories Menu" [ref=f4e124] [cursor=pointer]:
+          - generic [ref=f4e126]: All
+        - list [ref=f4e130]:
+          - listitem [ref=f4e131]:
+            - generic [ref=f4e132]:
+              - link "Fresh" [ref=f4e133] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=f4e134] [cursor=pointer]
+          - listitem [ref=f4e135]:
+            - link "Prime Video" [ref=f4e137] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=f4e138]:
+            - link "Sell" [ref=f4e140] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=f4e141]:
+            - link "Bestsellers" [ref=f4e143] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=f4e144]:
+            - link "Today's Deals" [ref=f4e146] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=f4e147]:
+            - link "Mobiles" [ref=f4e149] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=f4e150]:
+            - link "New Releases" [ref=f4e152] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=f4e153]:
+            - link "Electronics" [ref=f4e155] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=f4e156]:
+            - link "Customer Service" [ref=f4e158] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=f4e159]:
+            - generic [ref=f4e160]:
+              - link "Prime" [ref=f4e161] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=f4e162] [cursor=pointer]
+          - listitem [ref=f4e163]:
+            - link "Amazon Pay" [ref=f4e165] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=f4e166]:
+            - link "Home & Kitchen" [ref=f4e168] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=f4e169]:
+            - link "Fashion" [ref=f4e171] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=f4e172]:
+            - link "Computers" [ref=f4e174] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=f4e175]:
+            - link "Car & Motorbike" [ref=f4e177] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=f4e178]:
+            - link "Grocery & Gourmet Foods" [ref=f4e180] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=f4e181]:
+            - link "Pet Supplies" [ref=f4e183] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=f4e184]:
+            - link "Beauty & Personal Care" [ref=f4e186] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=f4e187]:
+            - link "Gift Cards" [ref=f4e189] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=f4e190]:
+            - link "Video Games" [ref=f4e192] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=f4e193]:
+            - link "Toys & Games" [ref=f4e195] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=f4e196]:
+            - link "Baby" [ref=f4e198] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=f4e199]:
+            - link "Sports, Fitness & Outdoors" [ref=f4e201] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=f4e202]:
+            - link "Home Improvement" [ref=f4e204] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=f4e205]:
+            - link "Custom Products" [ref=f4e207] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=f4e208]:
+            - link "Health, Household & Personal Care" [ref=f4e210] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=f4e211]:
+            - link "Audible" [ref=f4e213] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=f4e214]:
+            - link "AmazonBasics" [ref=f4e216] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=f4e217]:
+            - link "Subscribe & Save" [ref=f4e219] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=f4e220]:
+            - link "Kindle eBooks" [ref=f4e222] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=f4e223]:
+            - link "Amazon Pharmacy" [ref=f4e225] [cursor=pointer]:
+              - /url: /medical/browse/home?ref_=nav_navx-desco-pharma
+          - listitem [ref=f4e226]:
+            - link "Flights" [ref=f4e228] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "Jan26_Event" [ref=f4e232] [cursor=pointer]:
+          - /url: /events/greatindianfestival/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=913c2c21-782e-4de5-909f-10ab3b6494e9&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=BCG7MPB3VH91KPRFGWQ9
+          - img "Jan26_Event" [ref=f4e233]
+      - dialog [ref=f4e234]
+  - generic [ref=f4e236]:
+    - heading [level=1] [ref=f4e239]:
+      - generic [ref=f4e240]:
+        - heading "1-48 of 129 results for \"fortune sunflower oil 15\"" [level=2] [ref=f4e245]
+        - generic [ref=f4e250]:
+          - generic [aria-hidden] [ref=f4e251]: "Sort by:"
+          - combobox "Sort by:" [ref=f4e252]:
+            - option "Featured" [selected]
+            - 'option "Price: Low to High"'
+            - 'option "Price: High to Low"'
+            - option "Avg. Customer Review"
+            - option "Newest Arrivals"
+            - option "Best Sellers"
+          - generic [aria-hidden] [ref=f4e255] [cursor=pointer]: Sort by:Featured
+    - generic [ref=f4e257]:
+      - generic [ref=f4e259]:
+        - generic [ref=f4e261]:
+          - generic [ref=f4e265]:
+            - link "Sponsored ad from PRIMIO. \"Pure Groundnut Oil.\" Shop PRIMIO." [ref=f4e266] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/stores/page/D39BEB5B-C37F-4CEA-955E-361FC43728C7/?_encoding=UTF8&store_ref=SB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&lp_asins=B00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ&lp_query=fortune%20sunflower%20oil%2015&lp_slot=auto-sparkle-hsa-tetris&sdp_ad_group=300198076078134&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+            - generic [ref=f4e267]:
+              - generic [ref=f4e269]:
+                - link "PRIMIO" [ref=f4e271] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/stores/page/D39BEB5B-C37F-4CEA-955E-361FC43728C7/?_encoding=UTF8&store_ref=SB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&lp_asins=B00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ&lp_query=fortune%20sunflower%20oil%2015&lp_slot=auto-sparkle-hsa-tetris&sdp_ad_group=300198076078134&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_logo&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                  - img "PRIMIO" [ref=f4e273]
+                - generic [ref=f4e275]:
+                  - link "Pure Groundnut Oil" [ref=f4e276] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/stores/page/D39BEB5B-C37F-4CEA-955E-361FC43728C7/?_encoding=UTF8&store_ref=SB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&lp_asins=B00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ&lp_query=fortune%20sunflower%20oil%2015&lp_slot=auto-sparkle-hsa-tetris&sdp_ad_group=300198076078134&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_hl&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                    - generic [ref=f4e277]:
+                      - generic [ref=f4e278]: Pure Groundnut Oil
+                      - generic [aria-hidden] [ref=f4e279]: Pure Groundnut Oil
+                  - generic [ref=f4e280]:
+                    - button "Leave feedback on Sponsored ad" [ref=f4e284] [cursor=pointer]: Sponsored
+                    - generic [ref=f4e286]: "|"
+                    - generic [ref=f4e287]: Highly bought brand in oils
+                    - generic [ref=f4e288]: "|"
+                    - link "Shop PRIMIO" [ref=f4e290] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/stores/page/D39BEB5B-C37F-4CEA-955E-361FC43728C7/?_encoding=UTF8&store_ref=SB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&lp_asins=B00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ&lp_query=fortune%20sunflower%20oil%2015&lp_slot=auto-sparkle-hsa-tetris&sdp_ad_group=300198076078134&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_cta&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                      - generic [ref=f4e293]:
+                        - text: Shop
+                        - generic [ref=f4e294]: PRIMIO
+              - group [ref=f4e297]:
+                - group [ref=f4e301]:
+                  - list [ref=f4e302]:
+                    - listitem [ref=f4e303]:
+                      - generic [ref=f4e305]:
+                        - link [aria-hidden] [ref=f4e306] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                        - link [ref=f4e308] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - img "RRO Primio Refined Groundnut Oil, 5 ltr" [ref=f4e311]
+                        - generic [ref=f4e313]:
+                          - link [aria-hidden] [ref=f4e314] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - link "RRO Primio Refined Groundnut Oil, 5 ltr" [ref=f4e316] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e317]:
+                              - generic [ref=f4e318]: RRO Primio Refined Groundnut Oil, 5 ltr
+                              - generic [aria-hidden] [ref=f4e319]: RRO Primio Refined Groundnut Oil, 5 ltr
+                          - link "Rated 4.3 out of 5 stars by 675 reviews. Go to review section." [ref=f4e320] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_rating&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e#customerReviews
+                            - generic [ref=f4e321]:
+                              - generic [ref=f4e322]: "4.3"
+                              - generic [ref=f4e323]: 4.3 out of 5 stars.
+                              - generic [ref=f4e325]: (675)
+                          - link "₹1,355.00 ( ₹271.00 / l)" [ref=f4e327] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCD3TU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_0_price&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e329]:
+                              - generic [ref=f4e330]: ₹1,355.00
+                              - generic [aria-hidden] [ref=f4e331]:
+                                - text: ₹
+                                - generic [ref=f4e332]:
+                                  - text: 1,355
+                                  - generic [ref=f4e333]: .
+                                - text: "00"
+                            - generic [ref=f4e335]:
+                              - text: (
+                              - generic [ref=f4e336]:
+                                - generic [ref=f4e337]: ₹271.00
+                                - text: ₹271.00
+                              - text: / l)
+                          - generic [ref=f4e338]: "M.R.P: ₹1,575.00"
+                    - listitem [ref=f4e341]:
+                      - generic [ref=f4e343]:
+                        - link [aria-hidden] [ref=f4e344] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                        - link [ref=f4e346] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_img&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - img "RRO Primio Refined Groundnut Oil, 1 lt" [ref=f4e349]
+                        - generic [ref=f4e351]:
+                          - link [aria-hidden] [ref=f4e352] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - link "RRO Primio Refined Groundnut Oil, 1 lt" [ref=f4e354] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_title&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e355]:
+                              - generic [ref=f4e356]: RRO Primio Refined Groundnut Oil, 1 lt
+                              - generic [aria-hidden] [ref=f4e357]: RRO Primio Refined Groundnut Oil, 1 lt
+                          - link "Rated 4.5 out of 5 stars by 335 reviews. Go to review section." [ref=f4e358] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_rating&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e#customerReviews
+                            - generic [ref=f4e359]:
+                              - generic [ref=f4e360]: "4.5"
+                              - generic [ref=f4e361]: 4.5 out of 5 stars.
+                              - generic [ref=f4e363]: (335)
+                          - link "₹275.00 ( ₹275.00 / l)" [ref=f4e365] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B00MGCCZSU/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_1_price&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e367]:
+                              - generic [ref=f4e368]: ₹275.00
+                              - generic [aria-hidden] [ref=f4e369]:
+                                - text: ₹
+                                - generic [ref=f4e370]:
+                                  - text: "275"
+                                  - generic [ref=f4e371]: .
+                                - text: "00"
+                            - generic [ref=f4e373]:
+                              - text: (
+                              - generic [ref=f4e374]:
+                                - generic [ref=f4e375]: ₹275.00
+                                - text: ₹275.00
+                              - text: / l)
+                          - generic [ref=f4e376]: "M.R.P: ₹285.00"
+                    - listitem [ref=f4e379]:
+                      - generic [ref=f4e381]:
+                        - link [aria-hidden] [ref=f4e382] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                        - link [ref=f4e384] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_img&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - img "RRO COLD PRESSED GROUNDNUT OIL" [ref=f4e387]
+                        - generic [ref=f4e389]:
+                          - link [aria-hidden] [ref=f4e390] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - link "RRO COLD PRESSED GROUNDNUT OIL" [ref=f4e392] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_title&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e393]:
+                              - generic [ref=f4e394]: RRO COLD PRESSED GROUNDNUT OIL
+                              - generic [aria-hidden] [ref=f4e395]: RRO COLD PRESSED GROUNDNUT OIL
+                          - link "Rated 4.5 out of 5 stars by 2 reviews. Go to review section." [ref=f4e396] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_rating&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e#customerReviews
+                            - generic [ref=f4e397]:
+                              - generic [ref=f4e398]: "4.5"
+                              - generic [ref=f4e399]: 4.5 out of 5 stars.
+                              - generic [ref=f4e401]: (2)
+                          - link "Great Indian Festival" [ref=f4e403] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_badge&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                          - link "-20% ₹320.00 ( ₹320.00 / l)" [ref=f4e408] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLm3Kw7bwFXJBJrQlHxfPoIAAAGhMzmN9QoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICDCdVIS/clv1c_ek-wBPHXLcTWXmxht5_OusHh5BIy_tCUAUm8c83Cvh9KmalyV3JnAJMGF-NeFh5J_BodqAcuKzaB_j3lbqQQ5r-SQtY5ZJtSd6bgK3KjrEAHSRnuNnw4_In889_URjG2RsgLDwALgx8j5TtFRwFHQ4B6hM8EFlbnivQw7nYvyI03DUvdGMerr4cQIIQZeZJvDyh_zlQhUiELUeD2jST26qoZcJUNVU-zjRdO7yOXiTogl7bXv5Uc10EKHGyVQku1Ws4_tjtdcM44OUGbppbO_BdqgyakaFENGGKprVThhx03wFyuOTuDQ7AlIH1xJHBI-ncuzpzQR8Vs7tq1rTznRs2ZruVqUZ8ciRiXg4oPzOB5kuoUP6kerNrhUo2tX2YxArW1Oi7xjHvgReQGCc4LntWhkgohZRIEq_ByGnABObU7Tpo-glLm0hF2AnFBciLyFpfLkOb-oW-_mBiqbV2QyQYpAfVlvEAA8NjcMnYwyb3amRLPIeNRunCJfkNNcmUiVwPqDy2ZD7IAyELODZDLDz8vGgmjVu0ek73EeWUn0jyCqXL8qt1BAZsTt2OoroBQ7zr1QSoDGFrqJMLozTBjVsNlxYCpinXe2d7EDpOy0ew27ucCM7wJRXNjjuSmACFE1wJpaMpqy089irP7Cp7_6WUc9UHuZgp5odJYTEP8J1GS0-aBDLxTaBioTfT7karhzlMJJ69y5dS260SnP1zhmQtmek-dBqsfQhenwFLLlj8wXdFvYuricnRjndsNYKEQwqgWH2bMky6tW-gkhPAc_w_CvbmAGcUcciWRYtjSfwPYoJJi6sJTCEB9KHTK5f2hCHVynpF-VeSD2f1vDqPHI9wcrug9TL5lSWhxK5ek8MP9YAKvf7uXLS2TBf8QEY4D5fuk91sBTmC0mxaQhurEdhubai47Pogx08S1skaMzVWn-V-f66IUHhLW6GYFC5pv7Cfv2RfZa33BCMSJnM_dxAJVjb1BsqQS5-4gbwhmJxUD5vCUFdbtZM8rBWvfBUSpY4xKIHFJ01RXGr_dnsEkbSnZI7nRrZW-x-OniJ21Q9OQtwmZr-0SVGlYUerj7-oeGmI8mtCc-mb45HXwbeZcBZo2d1YkD9Hv4GvslrmI238KPuW4Qh8sch8lq1IN5Jn24jypFkXrtBZbC7Bpa0_KguwI0zHoCvJEar9bWqdTMKYPYdxPM1UqPBrEwvxp73wmgsxOYbm6IelgYppZk92xuTc48OchYSUEiqhqG7aDPzj6B83TWR1BtOgMNo3OEAmIGmbN7yGafCK9aUD1KIgiTdTHowSs2roJGUMnOEYyjLels1ORZhmKxxMtimZGtEukLzTqKmWiyH7Kj9_1HxMbTVn05CG1d9B7m2z-G6RbxW8b5ZufgL9Ej6IFtJK62zBuzT8vU6dq-HEYYkmoBoyzSTYsOIS_KuJba00lT-zd-pGET7xysMDuY8qbVqBqDjYBjBFqkANTL4xcVJgiHA17Av8NFAT4rqI5zky61EmOqpvVM0D2xNziCopOmFNCb3r6qAVRyReElnzuxVKrgsquOODdz_B_GwAvC33T-4KHkhIhqjxbhluYvIXbigEAClotBIApF4jnN8OL9dviEUZymU2Cb0ZLDLm-_w5bUfOLVfuvME8CoPiEEHE_vIm6Zp0kh1fnGhe_HCnVWFyWqyLusXS7-ggd6poTKzr_JUwQcmfDHoEr796juIU4f_l7T-tQnsKav4c/https://www.amazon.in/gp/aw/d/B0D73NYFPZ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ca8501d7df0c562f76311f50f3b168da&hsa_cr_id=0&qid=1791860772&sr=1-3-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=7MEn2iV0NT&ref_=sbx_s_sparkle_sbtcd_asin_2_price&pd_rd_w=X8xd0&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=dTNHM&pd_rd_r=f1d96a4c-37e5-4ce4-8ba7-6be021114a1e
+                            - generic [ref=f4e409]:
+                              - generic [ref=f4e410]: "-20%"
+                              - generic [ref=f4e411]:
+                                - generic [ref=f4e412]: ₹320.00
+                                - generic [aria-hidden] [ref=f4e413]:
+                                  - text: ₹
+                                  - generic [ref=f4e414]:
+                                    - text: "320"
+                                    - generic [ref=f4e415]: .
+                                  - text: "00"
+                            - generic [ref=f4e417]:
+                              - text: (
+                              - generic [ref=f4e418]:
+                                - generic [ref=f4e419]: ₹320.00
+                                - text: ₹320.00
+                              - text: / l)
+                          - generic [ref=f4e420]: "M.R.P: ₹400.00"
+          - generic [ref=f4e424]:
+            - generic [ref=f4e427]:
+              - heading "Results" [level=2] [ref=f4e428]
+              - generic [ref=f4e429]: Check each product page for other buying options.
+            - generic:
+              - list:
+                - listitem [ref=f4e430]:
+                  - generic [ref=f4e437]:
+                    - link [aria-hidden] [ref=f4e440] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-1-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                    - generic [ref=f4e443]:
+                      - generic [ref=f4e444]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e447] [cursor=pointer]:
+                          - generic [ref=f4e448]: Sponsored
+                        - link [ref=f4e450] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-1-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Pure & Sure Organic Cold Pressed Sunflower Oil 5L | For Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [level=2] [ref=f4e451]: Pure & Sure Organic Cold Pressed Sunflower Oil 5L | For Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free
+                      - generic [ref=f4e457]:
+                        - generic [ref=f4e458]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e460] [cursor=pointer]:
+                            - generic [ref=f4e462]: 4.3 out of 5 stars
+                          - link "1,262 ratings" [ref=f4e464] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-1-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ#customerReviews
+                            - text: (1.2K)
+                        - generic [ref=f4e465]: 300+ bought in past month
+                      - generic [ref=f4e466]:
+                        - link "Limited time deal" [ref=f4e468] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e474]:
+                          - generic [ref=f4e475]: Price, product page
+                          - 'link "₹1,599 ( ₹319.80 /l) M.R.P: ₹2,150 M.R.P: ₹2,150" [ref=f4e476] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-1-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                            - generic [ref=f4e477]:
+                              - generic [ref=f4e478]: ₹1,599
+                              - generic [aria-hidden] [ref=f4e479]: ₹1,599
+                            - generic [ref=f4e480]:
+                              - text: (
+                              - generic [ref=f4e481]:
+                                - generic [ref=f4e482]: ₹319.80
+                                - text: ₹319.80
+                              - text: /l)
+                            - generic [ref=f4e483]: "M.R.P: ₹2,150"
+                            - generic [ref=f4e484]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e485]:
+                                - generic [ref=f4e486]: ₹2,150
+                                - text: ₹2,150
+                          - text: (26% off)
+                        - generic [ref=f4e489]:
+                          - generic [ref=f4e490]: Extra 10% off
+                          - text: new subscription
+                      - generic [ref=f4e493]:
+                        - generic [ref=f4e494]: FREE delivery Mon, 19 Oct
+                        - generic [ref=f4e496]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e511] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e512]
+                        - generic [aria-hidden] [ref=f4e513]: Add to cart
+                - listitem [ref=f4e514]:
+                  - generic [ref=f4e521]:
+                    - link [aria-hidden] [ref=f4e524] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTE4Njk3ODc5NzkzMjo6MDo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-2-spons%26aref%3D5f7YO6XoLG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=5f7YO6XoLG&sp_cr=ZAZ
+                    - generic [ref=f4e527]:
+                      - generic [ref=f4e528]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e531] [cursor=pointer]:
+                          - generic [ref=f4e532]: Sponsored
+                        - heading "Sunrich" [level=2] [ref=f4e535]
+                        - link [ref=f4e536] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTE4Njk3ODc5NzkzMjo6MDo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-2-spons%26aref%3D5f7YO6XoLG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=5f7YO6XoLG&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Refined Sunflower Oil 750/800g Pouch | Edible Cooking Oil | Sunflower Oil for Everyday Cooking, Frying, Sautéing, Baking & Meal Preparation | Pouch" [level=2] [ref=f4e537]: Refined Sunflower Oil 750/800g Pouch | Edible Cooking Oil | Sunflower Oil for Everyday Cooking, Frying, Sautéing, Baking & Meal Preparation | Pouch
+                      - generic [ref=f4e543]:
+                        - generic [ref=f4e544]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=f4e546] [cursor=pointer]:
+                            - generic [ref=f4e548]: 4.0 out of 5 stars
+                          - link "6,440 ratings" [ref=f4e550] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTE4Njk3ODc5NzkzMjo6MDo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-2-spons%26aref%3D5f7YO6XoLG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=5f7YO6XoLG&sp_cr=ZAZ#customerReviews
+                            - text: (6.4K)
+                        - generic [ref=f4e551]: 10K+ bought in past month
+                      - generic [ref=f4e552]:
+                        - generic [ref=f4e554]:
+                          - generic [ref=f4e555]: Price, product page
+                          - 'link "₹160 ( ₹213.33 /l) M.R.P: ₹186 M.R.P: ₹186" [ref=f4e556] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTE4Njk3ODc5NzkzMjo6MDo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-2-spons%26aref%3D5f7YO6XoLG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=5f7YO6XoLG&sp_cr=ZAZ
+                            - generic [ref=f4e557]:
+                              - generic [ref=f4e558]: ₹160
+                              - generic [aria-hidden] [ref=f4e559]: ₹160
+                            - generic [ref=f4e560]:
+                              - text: (
+                              - generic [ref=f4e561]:
+                                - generic [ref=f4e562]: ₹213.33
+                                - text: ₹213.33
+                              - text: /l)
+                            - generic [ref=f4e563]: "M.R.P: ₹186"
+                            - generic [ref=f4e564]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e565]:
+                                - generic [ref=f4e566]: ₹186
+                                - text: ₹186
+                          - text: (14% off)
+                        - generic [ref=f4e570]:
+                          - generic [ref=f4e571]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e572]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e575]:
+                        - generic [ref=f4e578]: ₹80 delivery Thu, 15 Oct
+                        - generic [ref=f4e580]: Or fastest delivery Tomorrow, 14 Oct
+                      - generic [ref=f4e595] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e596]
+                        - generic [aria-hidden] [ref=f4e597]: Add to cart
+                - listitem [ref=f4e598]:
+                  - generic [ref=f4e605]:
+                    - link [aria-hidden] [ref=f4e608] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTI2NDgyODgyNzUzMjo6MDo6&url=%2FAnveshan-Wood-Pressed-Sunflower-Chemical-Free%2Fdp%2FB0BB31WF1B%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-3-spons%26aref%3DzGqogEr9l9%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zGqogEr9l9&sp_cr=ZAZ
+                    - generic [ref=f4e611]:
+                      - generic [ref=f4e612]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e615] [cursor=pointer]:
+                          - generic [ref=f4e616]: Sponsored
+                        - heading "Anveshan" [level=2] [ref=f4e619]
+                        - link [ref=f4e620] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTI2NDgyODgyNzUzMjo6MDo6&url=%2FAnveshan-Wood-Pressed-Sunflower-Chemical-Free%2Fdp%2FB0BB31WF1B%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-3-spons%26aref%3DzGqogEr9l9%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zGqogEr9l9&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Wood Cold Pressed Sunflower Oil 2L | HDPE Can | Kolhu/Chekku | Natural Antioxidants & Rich in Omega-6 | Hexane Free| Cholesterol Free" [level=2] [ref=f4e621]: Wood Cold Pressed Sunflower Oil 2L | HDPE Can | Kolhu/Chekku | Natural Antioxidants & Rich in Omega-6 | Hexane Free| Cholesterol Free
+                      - generic [ref=f4e627]:
+                        - generic [ref=f4e628]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e630] [cursor=pointer]:
+                            - generic [ref=f4e632]: 4.2 out of 5 stars
+                          - link "440 ratings" [ref=f4e634] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTI2NDgyODgyNzUzMjo6MDo6&url=%2FAnveshan-Wood-Pressed-Sunflower-Chemical-Free%2Fdp%2FB0BB31WF1B%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-3-spons%26aref%3DzGqogEr9l9%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zGqogEr9l9&sp_cr=ZAZ#customerReviews
+                            - text: (440)
+                        - generic [ref=f4e635]: 400+ bought in past month
+                      - generic [ref=f4e636]:
+                        - generic [ref=f4e638]:
+                          - generic [ref=f4e639]: Price, product page
+                          - 'link "₹699 ( ₹139.80 /l) M.R.P: ₹925 M.R.P: ₹925" [ref=f4e640] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTI2NDgyODgyNzUzMjo6MDo6&url=%2FAnveshan-Wood-Pressed-Sunflower-Chemical-Free%2Fdp%2FB0BB31WF1B%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-3-spons%26aref%3DzGqogEr9l9%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zGqogEr9l9&sp_cr=ZAZ
+                            - generic [ref=f4e641]:
+                              - generic [ref=f4e642]: ₹699
+                              - generic [aria-hidden] [ref=f4e643]: ₹699
+                            - generic [ref=f4e644]:
+                              - text: (
+                              - generic [ref=f4e645]:
+                                - generic [ref=f4e646]: ₹139.80
+                                - text: ₹139.80
+                              - text: /l)
+                            - generic [ref=f4e647]: "M.R.P: ₹925"
+                            - generic [ref=f4e648]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e649]:
+                                - generic [ref=f4e650]: ₹925
+                                - text: ₹925
+                          - text: (24% off)
+                        - generic [ref=f4e654]:
+                          - generic [ref=f4e655]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e656]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e657]: FREE delivery Mon, 19 Oct
+                      - generic [ref=f4e675] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e676]
+                        - generic [aria-hidden] [ref=f4e677]: Add to cart
+                - listitem [ref=f4e678]:
+                  - generic [ref=f4e685]:
+                    - link [aria-hidden] [ref=f4e688] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMjA2MzA5NzMzMjo6MDo6&url=%2FPressed-Sunflower-Unrefined-Traditional-Extracted%2Fdp%2FB0H9M4GBZH%2Fref%3Dsr_1_4_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-4-spons%26aref%3DiQNruJzl8o%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=iQNruJzl8o&sp_cr=ZAZ
+                    - generic [ref=f4e691]:
+                      - generic [ref=f4e692]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e695] [cursor=pointer]:
+                          - generic [ref=f4e696]: Sponsored
+                        - heading "PHUDG" [level=2] [ref=f4e699]
+                        - link [ref=f4e700] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMjA2MzA5NzMzMjo6MDo6&url=%2FPressed-Sunflower-Unrefined-Traditional-Extracted%2Fdp%2FB0H9M4GBZH%2Fref%3Dsr_1_4_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-4-spons%26aref%3DiQNruJzl8o%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=iQNruJzl8o&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Cold Pressed Sunflower Oil1 Litre | Pure, Unrefined Oil | Traditional Wood Pressed Extracted | Premiun Edible Oil" [level=2] [ref=f4e701]: Cold Pressed Sunflower Oil1 Litre | Pure, Unrefined Oil | Traditional Wood Pressed Extracted | Premiun Edible Oil
+                      - generic [ref=f4e707]:
+                        - generic [ref=f4e709]:
+                          - generic [ref=f4e710]: Price, product page
+                          - 'link "₹416 ( ₹416 /l) M.R.P: ₹499 M.R.P: ₹499" [ref=f4e711] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjMwMTMzMjA2MzA5NzMzMjo6MDo6&url=%2FPressed-Sunflower-Unrefined-Traditional-Extracted%2Fdp%2FB0H9M4GBZH%2Fref%3Dsr_1_4_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-4-spons%26aref%3DiQNruJzl8o%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=iQNruJzl8o&sp_cr=ZAZ
+                            - generic [ref=f4e712]:
+                              - generic [ref=f4e713]: ₹416
+                              - generic [aria-hidden] [ref=f4e714]: ₹416
+                            - generic [ref=f4e715]:
+                              - text: (
+                              - generic [ref=f4e716]:
+                                - generic [ref=f4e717]: ₹416
+                                - text: ₹416
+                              - text: /l)
+                            - generic [ref=f4e718]: "M.R.P: ₹499"
+                            - generic [ref=f4e719]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e720]:
+                                - generic [ref=f4e721]: ₹499
+                                - text: ₹499
+                          - text: (17% off)
+                        - generic [ref=f4e725]:
+                          - generic [ref=f4e726]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e727]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e728]: FREE delivery Sun, 18 Oct
+                      - generic [ref=f4e746] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e747]
+                        - generic [aria-hidden] [ref=f4e748]: Add to cart
+                - listitem [ref=f4e749]:
+                  - generic [ref=f4e756]:
+                    - link [aria-hidden] [ref=f4e759] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjIwMDQ2ODE2MTY2MjA2OjowOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsr_1_5_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-5-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                    - generic [ref=f4e762]:
+                      - generic [ref=f4e763]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e766] [cursor=pointer]:
+                          - generic [ref=f4e767]: Sponsored
+                        - heading "MR. GOLD" [level=2] [ref=f4e770]
+                        - link [ref=f4e771] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjIwMDQ2ODE2MTY2MjA2OjowOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsr_1_5_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-5-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Refined Sunflower Oil Can,5L | light oil | Agmark |Vitamin Enriched - Total 5L" [level=2] [ref=f4e772]: Refined Sunflower Oil Can,5L | light oil | Agmark |Vitamin Enriched - Total 5L
+                      - generic [ref=f4e778]:
+                        - generic [ref=f4e779]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e781] [cursor=pointer]:
+                            - generic [ref=f4e783]: 4.2 out of 5 stars
+                          - link "853 ratings" [ref=f4e785] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjIwMDQ2ODE2MTY2MjA2OjowOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsr_1_5_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-5-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ#customerReviews
+                            - text: (853)
+                        - generic [ref=f4e786]: 50+ bought in past month
+                      - generic [ref=f4e787]:
+                        - link "Mega Festival Deal" [ref=f4e789] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e795]:
+                          - generic [ref=f4e796]: Price, product page
+                          - 'link "₹1,234 ( ₹246.80 /l) M.R.P: ₹1,800 M.R.P: ₹1,800" [ref=f4e797] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfYXRmOjIwMDQ2ODE2MTY2MjA2OjowOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsr_1_5_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-5-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                            - generic [ref=f4e798]:
+                              - generic [ref=f4e799]: ₹1,234
+                              - generic [aria-hidden] [ref=f4e800]: ₹1,234
+                            - generic [ref=f4e801]:
+                              - text: (
+                              - generic [ref=f4e802]:
+                                - generic [ref=f4e803]: ₹246.80
+                                - text: ₹246.80
+                              - text: /l)
+                            - generic [ref=f4e804]: "M.R.P: ₹1,800"
+                            - generic [ref=f4e805]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e806]:
+                                - generic [ref=f4e807]: ₹1,800
+                                - text: ₹1,800
+                          - text: (31% off)
+                        - generic [ref=f4e811]:
+                          - generic [ref=f4e812]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e813]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e814]: FREE delivery Tue, 20 Oct
+                      - generic [ref=f4e832] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e833]
+                        - generic [aria-hidden] [ref=f4e834]: Add to cart
+                - listitem [ref=f4e835]:
+                  - generic [ref=f4e840]:
+                    - link [aria-hidden] [ref=f4e843] [cursor=pointer]:
+                      - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B075757RF2/ref=sr_1_6_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-6
+                    - generic [ref=f4e846]:
+                      - generic [ref=f4e847]:
+                        - heading "FORTUNE" [level=2] [ref=f4e849]
+                        - link [ref=f4e850] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B075757RF2/ref=sr_1_6_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-6
+                          - heading "Sunlite Refined Sunflower Oil, 5L Can" [level=2] [ref=f4e851]
+                      - generic [ref=f4e857]:
+                        - generic [ref=f4e858]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e860] [cursor=pointer]:
+                            - generic [ref=f4e862]: 4.4 out of 5 stars
+                          - link "19,015 ratings" [ref=f4e864] [cursor=pointer]:
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B075757RF2/ref=sr_1_6_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-6#customerReviews
+                            - text: (19K)
+                        - generic [ref=f4e865]: 10K+ bought in past month
+                      - generic [ref=f4e866]:
+                        - generic [ref=f4e868]:
+                          - generic [ref=f4e869]: Price, product page
+                          - 'link "₹993 ( ₹248.25 /kg) M.R.P: ₹1,250 M.R.P: ₹1,250" [ref=f4e870] [cursor=pointer]':
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B075757RF2/ref=sr_1_6_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-6
+                            - generic [ref=f4e871]:
+                              - generic [ref=f4e872]: ₹993
+                              - generic [aria-hidden] [ref=f4e873]: ₹993
+                            - generic [ref=f4e874]:
+                              - text: (
+                              - generic [ref=f4e875]:
+                                - generic [ref=f4e876]: ₹248.25
+                                - text: ₹248.25
+                              - text: /kg)
+                            - generic [ref=f4e877]: "M.R.P: ₹1,250"
+                            - generic [ref=f4e878]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e879]:
+                                - generic [ref=f4e880]: ₹1,250
+                                - text: ₹1,250
+                          - text: (21% off)
+                        - generic [ref=f4e884]:
+                          - generic [ref=f4e885]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e886]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e888]:
+                        - link [ref=f4e890] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B075757RF2/ref=sr_1_6_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-6
+                          - img "Amazon Fresh" [ref=f4e892]
+                        - generic [ref=f4e893]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e910] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e911]
+                        - generic [aria-hidden] [ref=f4e912]: Add to cart
+                - listitem [ref=f4e913]:
+                  - generic [ref=f4e918]:
+                    - link [aria-hidden] [ref=f4e921] [cursor=pointer]:
+                      - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7
+                    - generic [ref=f4e924]:
+                      - generic [ref=f4e925]:
+                        - heading "FORTUNE" [level=2] [ref=f4e927]
+                        - link [ref=f4e928] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7
+                          - heading "Sunlite Refined Sunflower Oil, 870gm/800gm Pouch (Weight May Vary)" [level=2] [ref=f4e929]
+                      - generic [ref=f4e935]:
+                        - generic [ref=f4e936]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e938] [cursor=pointer]:
+                            - generic [ref=f4e940]: 4.4 out of 5 stars
+                          - link "45,201 ratings" [ref=f4e942] [cursor=pointer]:
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7#customerReviews
+                            - text: (45.2K)
+                        - generic [ref=f4e943]: 20K+ bought in past month
+                      - generic [ref=f4e944]:
+                        - link "Free and Fast delivery" [ref=f4e946] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7
+                        - generic [ref=f4e948]:
+                          - generic [ref=f4e949]: Price, product page
+                          - 'link "₹179 ( ₹223.75 /kg) M.R.P: ₹225 M.R.P: ₹225" [ref=f4e950] [cursor=pointer]':
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7
+                            - generic [ref=f4e951]:
+                              - generic [ref=f4e952]: ₹179
+                              - generic [aria-hidden] [ref=f4e953]: ₹179
+                            - generic [ref=f4e954]:
+                              - text: (
+                              - generic [ref=f4e955]:
+                                - generic [ref=f4e956]: ₹223.75
+                                - text: ₹223.75
+                              - text: /kg)
+                            - generic [ref=f4e957]: "M.R.P: ₹225"
+                            - generic [ref=f4e958]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e959]:
+                                - generic [ref=f4e960]: ₹225
+                                - text: ₹225
+                          - text: (20% off)
+                        - generic [ref=f4e964]:
+                          - generic [ref=f4e965]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e966]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e968]:
+                        - link [ref=f4e970] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-7
+                          - img "Amazon Fresh" [ref=f4e972]
+                        - generic [ref=f4e973]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e990] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e991]
+                        - generic [aria-hidden] [ref=f4e992]: Add to cart
+                      - generic [ref=f4e994]:
+                        - separator [aria-hidden] [ref=f4e995]
+                        - link "One-time purchase" [ref=f4e996] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7
+                        - link:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7
+                        - generic [ref=f4e997]:
+                          - link:
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7
+                          - generic [ref=f4e998]:
+                            - link "Price, product page":
+                              - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7
+                            - 'link "₹186 ( ₹232.50 /kg) M.R.P: ₹220 M.R.P: ₹220" [ref=f4e1000] [cursor=pointer]':
+                              - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/ref=sr_1_7_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7
+                              - generic [ref=f4e1001]:
+                                - generic [ref=f4e1002]: ₹186
+                                - generic [aria-hidden] [ref=f4e1003]: ₹186
+                              - generic [ref=f4e1004]:
+                                - text: (
+                                - generic [ref=f4e1005]:
+                                  - generic [ref=f4e1006]: ₹232.50
+                                  - text: ₹232.50
+                                - text: /kg)
+                              - generic [ref=f4e1007]: "M.R.P: ₹220"
+                              - generic [ref=f4e1008]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1009]:
+                                  - generic [ref=f4e1010]: ₹220
+                                  - text: ₹220
+                            - text: (15% off)
+                        - generic [ref=f4e1014]:
+                          - generic [ref=f4e1015]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1016]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e1017]: ₹80 delivery 21 - 23 Oct
+                - listitem [ref=f4e1023]:
+                  - generic [ref=f4e1028]:
+                    - link [aria-hidden] [ref=f4e1031] [cursor=pointer]:
+                      - /url: /Delight-Fortune-Refined-Sunflower-Trans/dp/B0G4GVZVGD/ref=sr_1_8?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-8
+                    - generic [ref=f4e1034]:
+                      - link [active] [ref=f4e1036] [cursor=pointer]:
+                        - /url: /Delight-Fortune-Refined-Sunflower-Trans/dp/B0G4GVZVGD/ref=sr_1_8?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-8
+                        - heading "Delight Fortune Sun Lite Refined Sunflower Oil, Trans Fat Free, 15L" [level=2] [ref=f4e1037]
+                      - generic [ref=f4e1044]:
+                        - text: "5.0"
+                        - button "5.0 out of 5 stars, rating details" [ref=f4e1046] [cursor=pointer]:
+                          - generic [ref=f4e1048]: 5.0 out of 5 stars
+                        - link "1 ratings" [ref=f4e1050] [cursor=pointer]:
+                          - /url: /Delight-Fortune-Refined-Sunflower-Trans/dp/B0G4GVZVGD/ref=sr_1_8?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-8#customerReviews
+                          - text: (1)
+                      - generic [ref=f4e1051]:
+                        - generic [ref=f4e1053]:
+                          - generic [ref=f4e1054]: Price, product page
+                          - 'link "₹5,700 ( ₹380 /l) M.R.P: ₹5,900 M.R.P: ₹5,900" [ref=f4e1055] [cursor=pointer]':
+                            - /url: /Delight-Fortune-Refined-Sunflower-Trans/dp/B0G4GVZVGD/ref=sr_1_8?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-8
+                            - generic [ref=f4e1056]:
+                              - generic [ref=f4e1057]: ₹5,700
+                              - generic [aria-hidden] [ref=f4e1058]: ₹5,700
+                            - generic [ref=f4e1059]:
+                              - text: (
+                              - generic [ref=f4e1060]:
+                                - generic [ref=f4e1061]: ₹380
+                                - text: ₹380
+                              - text: /l)
+                            - generic [ref=f4e1062]: "M.R.P: ₹5,900"
+                            - generic [ref=f4e1063]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1064]:
+                                - generic [ref=f4e1065]: ₹5,900
+                                - text: ₹5,900
+                          - text: (3% off)
+                        - generic [ref=f4e1069]:
+                          - generic [ref=f4e1070]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1071]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1072]: FREE delivery Wed, 28 Oct
+                      - generic [ref=f4e1092] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1093]
+                        - generic [aria-hidden] [ref=f4e1094]: Add to cart
+                - listitem [ref=f4e1095]:
+                  - generic [ref=f4e1100]:
+                    - link [aria-hidden] [ref=f4e1103] [cursor=pointer]:
+                      - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9
+                    - generic [ref=f4e1106]:
+                      - generic [ref=f4e1107]:
+                        - heading "FORTUNE" [level=2] [ref=f4e1109]
+                        - link [ref=f4e1110] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9
+                          - heading "Rice Bran Health Oil | Reduces Bad Cholesterol | Rich in Gamma Oryzanol | 5L/4.35 Kg Jar (Weight May Vary)" [level=2] [ref=f4e1111]
+                      - generic [ref=f4e1117]:
+                        - generic [ref=f4e1118]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e1120] [cursor=pointer]:
+                            - generic [ref=f4e1122]: 4.4 out of 5 stars
+                          - link "32,806 ratings" [ref=f4e1124] [cursor=pointer]:
+                            - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9#customerReviews
+                            - text: (32.8K)
+                        - generic [ref=f4e1125]: 10K+ bought in past month
+                      - generic [ref=f4e1126]:
+                        - link "Free and Fast delivery" [ref=f4e1128] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9
+                        - generic [ref=f4e1130]:
+                          - generic [ref=f4e1131]: Price, product page
+                          - 'link "₹938 ( ₹187.60 /l) M.R.P: ₹1,125 M.R.P: ₹1,125" [ref=f4e1132] [cursor=pointer]':
+                            - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9
+                            - generic [ref=f4e1133]:
+                              - generic [ref=f4e1134]: ₹938
+                              - generic [aria-hidden] [ref=f4e1135]: ₹938
+                            - generic [ref=f4e1136]:
+                              - text: (
+                              - generic [ref=f4e1137]:
+                                - generic [ref=f4e1138]: ₹187.60
+                                - text: ₹187.60
+                              - text: /l)
+                            - generic [ref=f4e1139]: "M.R.P: ₹1,125"
+                            - generic [ref=f4e1140]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1141]:
+                                - generic [ref=f4e1142]: ₹1,125
+                                - text: ₹1,125
+                          - text: (17% off)
+                        - generic [ref=f4e1146]:
+                          - generic [ref=f4e1147]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1148]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1150]:
+                        - link [ref=f4e1152] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-9
+                          - img "Amazon Fresh" [ref=f4e1154]
+                        - generic [ref=f4e1155]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e1172] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1173]
+                        - generic [aria-hidden] [ref=f4e1174]: Add to cart
+                      - generic [ref=f4e1176]:
+                        - separator [aria-hidden] [ref=f4e1177]
+                        - link "One-time purchase" [ref=f4e1178] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-9
+                        - link:
+                          - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-9
+                        - generic [ref=f4e1179]:
+                          - link:
+                            - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-9
+                          - generic [ref=f4e1180]:
+                            - link "Price, product page":
+                              - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-9
+                            - 'link "₹1,250 ( ₹250 /l) M.R.P: ₹1,299 M.R.P: ₹1,299" [ref=f4e1182] [cursor=pointer]':
+                              - /url: /Fortune-Rice-Bran-Health-Oil/dp/B00N2WI082/ref=sr_1_9_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-9
+                              - generic [ref=f4e1183]:
+                                - generic [ref=f4e1184]: ₹1,250
+                                - generic [aria-hidden] [ref=f4e1185]: ₹1,250
+                              - generic [ref=f4e1186]:
+                                - text: (
+                                - generic [ref=f4e1187]:
+                                  - generic [ref=f4e1188]: ₹250
+                                  - text: ₹250
+                                - text: /l)
+                              - generic [ref=f4e1189]: "M.R.P: ₹1,299"
+                              - generic [ref=f4e1190]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1191]:
+                                  - generic [ref=f4e1192]: ₹1,299
+                                  - text: ₹1,299
+                            - text: (4% off)
+                        - generic [ref=f4e1196]:
+                          - generic [ref=f4e1197]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1198]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e1199]: ₹70 delivery Thu, 22 Oct
+                - listitem [ref=f4e1205]:
+                  - generic [ref=f4e1210]:
+                    - link [aria-hidden] [ref=f4e1213] [cursor=pointer]:
+                      - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10
+                    - generic [ref=f4e1216]:
+                      - generic [ref=f4e1217]:
+                        - heading "FORTUNE" [level=2] [ref=f4e1219]
+                        - link [ref=f4e1220] [cursor=pointer]:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10
+                          - heading "Premium Kachi Ghani Pure Mustard Oil, 4.5 Kg Jar" [level=2] [ref=f4e1221]
+                      - generic [ref=f4e1227]:
+                        - generic [ref=f4e1228]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e1230] [cursor=pointer]:
+                            - generic [ref=f4e1232]: 4.4 out of 5 stars
+                          - link "29,429 ratings" [ref=f4e1234] [cursor=pointer]:
+                            - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10#customerReviews
+                            - text: (29.4K)
+                        - generic [ref=f4e1235]: 8K+ bought in past month
+                      - generic [ref=f4e1236]:
+                        - link "Free and Fast delivery" [ref=f4e1238] [cursor=pointer]:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10
+                        - generic [ref=f4e1240]:
+                          - generic [ref=f4e1241]: Price, product page
+                          - 'link "₹1,081 ( ₹240.22 /l) M.R.P: ₹1,325 M.R.P: ₹1,325" [ref=f4e1242] [cursor=pointer]':
+                            - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10
+                            - generic [ref=f4e1243]:
+                              - generic [ref=f4e1244]: ₹1,081
+                              - generic [aria-hidden] [ref=f4e1245]: ₹1,081
+                            - generic [ref=f4e1246]:
+                              - text: (
+                              - generic [ref=f4e1247]:
+                                - generic [ref=f4e1248]: ₹240.22
+                                - text: ₹240.22
+                              - text: /l)
+                            - generic [ref=f4e1249]: "M.R.P: ₹1,325"
+                            - generic [ref=f4e1250]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1251]:
+                                - generic [ref=f4e1252]: ₹1,325
+                                - text: ₹1,325
+                          - text: (18% off)
+                        - generic [ref=f4e1256]:
+                          - generic [ref=f4e1257]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1258]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1260]:
+                        - link [ref=f4e1262] [cursor=pointer]:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-10
+                          - img "Amazon Fresh" [ref=f4e1264]
+                        - generic [ref=f4e1265]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e1282] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1283]
+                        - generic [aria-hidden] [ref=f4e1284]: Add to cart
+                      - generic [ref=f4e1286]:
+                        - separator [aria-hidden] [ref=f4e1287]
+                        - link "One-time purchase" [ref=f4e1288] [cursor=pointer]:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-10
+                        - link:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-10
+                        - generic [ref=f4e1289]:
+                          - link:
+                            - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-10
+                          - generic [ref=f4e1290]:
+                            - link "Price, product page":
+                              - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-10
+                            - 'link "₹1,399 ( ₹310.89 /l) M.R.P: ₹1,500 M.R.P: ₹1,500" [ref=f4e1292] [cursor=pointer]':
+                              - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B0795V64VS/ref=sr_1_10_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-10
+                              - generic [ref=f4e1293]:
+                                - generic [ref=f4e1294]: ₹1,399
+                                - generic [aria-hidden] [ref=f4e1295]: ₹1,399
+                              - generic [ref=f4e1296]:
+                                - text: (
+                                - generic [ref=f4e1297]:
+                                  - generic [ref=f4e1298]: ₹310.89
+                                  - text: ₹310.89
+                                - text: /l)
+                              - generic [ref=f4e1299]: "M.R.P: ₹1,500"
+                              - generic [ref=f4e1300]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1301]:
+                                  - generic [ref=f4e1302]: ₹1,500
+                                  - text: ₹1,500
+                            - text: (7% off)
+                        - generic [ref=f4e1306]:
+                          - generic [ref=f4e1307]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1308]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e1309]: ₹70 delivery Thu, 22 Oct
+                - listitem [ref=f4e1315]:
+                  - generic [ref=f4e1322]:
+                    - link [aria-hidden] [ref=f4e1325] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDA2MDY4OTQxMDUzMjo6MDo6&url=%2FLB-RAY-Cooking-Spray-Sunflower%2Fdp%2FB085HGYJF6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-11-spons%26aref%3Dvejq2Hrlc0%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vejq2Hrlc0&sp_cr=ZAZ
+                    - generic [ref=f4e1328]:
+                      - generic [ref=f4e1329]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e1332] [cursor=pointer]:
+                          - generic [ref=f4e1333]: Sponsored
+                        - heading "LB RAY" [level=2] [ref=f4e1336]
+                        - link [ref=f4e1337] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDA2MDY4OTQxMDUzMjo6MDo6&url=%2FLB-RAY-Cooking-Spray-Sunflower%2Fdp%2FB085HGYJF6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-11-spons%26aref%3Dvejq2Hrlc0%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vejq2Hrlc0&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Cooking Spray Sunflower Oil - Low-Calorie, 100% Oil Spray, No Gases, Emulsifiers, and Water (200 ml, Pack of 1)" [level=2] [ref=f4e1338]: Cooking Spray Sunflower Oil - Low-Calorie, 100% Oil Spray, No Gases, Emulsifiers, and Water (200 ml, Pack of 1)
+                      - generic [ref=f4e1344]:
+                        - generic [ref=f4e1345]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e1347] [cursor=pointer]:
+                            - generic [ref=f4e1349]: 4.2 out of 5 stars
+                          - link "412 ratings" [ref=f4e1351] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDA2MDY4OTQxMDUzMjo6MDo6&url=%2FLB-RAY-Cooking-Spray-Sunflower%2Fdp%2FB085HGYJF6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-11-spons%26aref%3Dvejq2Hrlc0%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vejq2Hrlc0&sp_cr=ZAZ#customerReviews
+                            - text: (412)
+                        - generic [ref=f4e1352]: 100+ bought in past month
+                      - generic [ref=f4e1353]:
+                        - link "Great Indian Festival" [ref=f4e1355] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e1361]:
+                          - generic [ref=f4e1362]: Price, product page
+                          - 'link "₹399 ( ₹1,995 /l) M.R.P: ₹499 M.R.P: ₹499" [ref=f4e1363] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDA2MDY4OTQxMDUzMjo6MDo6&url=%2FLB-RAY-Cooking-Spray-Sunflower%2Fdp%2FB085HGYJF6%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-11-spons%26aref%3Dvejq2Hrlc0%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vejq2Hrlc0&sp_cr=ZAZ
+                            - generic [ref=f4e1364]:
+                              - generic [ref=f4e1365]: ₹399
+                              - generic [aria-hidden] [ref=f4e1366]: ₹399
+                            - generic [ref=f4e1367]:
+                              - text: (
+                              - generic [ref=f4e1368]:
+                                - generic [ref=f4e1369]: ₹1,995
+                                - text: ₹1,995
+                              - text: /l)
+                            - generic [ref=f4e1370]: "M.R.P: ₹499"
+                            - generic [ref=f4e1371]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1372]:
+                                - generic [ref=f4e1373]: ₹499
+                                - text: ₹499
+                          - text: (20% off)
+                        - generic [ref=f4e1377]:
+                          - generic [ref=f4e1378]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1379]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1382]:
+                        - generic [ref=f4e1383]: FREE delivery Sun, 18 Oct
+                        - generic [ref=f4e1385]: Or fastest delivery Tomorrow, 14 Oct
+                      - generic [ref=f4e1400] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1401]
+                        - generic [aria-hidden] [ref=f4e1402]: Add to cart
+                - listitem [ref=f4e1403]:
+                  - generic [ref=f4e1410]:
+                    - link [aria-hidden] [ref=f4e1413] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjIwMDQxODY1NzIzNzk4OjowOjo&url=%2FConscious-Food-Sunflower-Antioxidants-Delicious%2Fdp%2FB09G74FX83%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-12-spons%26aref%3DwLFPTPAVnB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=wLFPTPAVnB&sp_cr=ZAZ
+                    - generic [ref=f4e1416]:
+                      - generic [ref=f4e1417]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e1420] [cursor=pointer]:
+                          - generic [ref=f4e1421]: Sponsored
+                        - heading "Conscious Food" [level=2] [ref=f4e1424]
+                        - link [ref=f4e1425] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjIwMDQxODY1NzIzNzk4OjowOjo&url=%2FConscious-Food-Sunflower-Antioxidants-Delicious%2Fdp%2FB09G74FX83%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-12-spons%26aref%3DwLFPTPAVnB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=wLFPTPAVnB&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Cold Pressed Sunflower Oil | 1 litre | PET Bottle | Cooking Oil | High in Antioxidants, Delicious & Healthy" [level=2] [ref=f4e1426]: Cold Pressed Sunflower Oil | 1 litre | PET Bottle | Cooking Oil | High in Antioxidants, Delicious & Healthy
+                      - generic [ref=f4e1432]:
+                        - generic [ref=f4e1433]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e1435] [cursor=pointer]:
+                            - generic [ref=f4e1437]: 4.1 out of 5 stars
+                          - link "455 ratings" [ref=f4e1439] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjIwMDQxODY1NzIzNzk4OjowOjo&url=%2FConscious-Food-Sunflower-Antioxidants-Delicious%2Fdp%2FB09G74FX83%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-12-spons%26aref%3DwLFPTPAVnB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=wLFPTPAVnB&sp_cr=ZAZ#customerReviews
+                            - text: (455)
+                        - generic [ref=f4e1440]: 600+ bought in past month
+                      - generic [ref=f4e1441]:
+                        - generic [ref=f4e1443]:
+                          - generic [ref=f4e1444]: Price, product page
+                          - 'link "₹374 ( ₹374 /l) M.R.P: ₹425 M.R.P: ₹425" [ref=f4e1445] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjIwMDQxODY1NzIzNzk4OjowOjo&url=%2FConscious-Food-Sunflower-Antioxidants-Delicious%2Fdp%2FB09G74FX83%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26rdc%3D1%26sr%3D8-12-spons%26aref%3DwLFPTPAVnB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=wLFPTPAVnB&sp_cr=ZAZ
+                            - generic [ref=f4e1446]:
+                              - generic [ref=f4e1447]: ₹374
+                              - generic [aria-hidden] [ref=f4e1448]: ₹374
+                            - generic [ref=f4e1449]:
+                              - text: (
+                              - generic [ref=f4e1450]:
+                                - generic [ref=f4e1451]: ₹374
+                                - text: ₹374
+                              - text: /l)
+                            - generic [ref=f4e1452]: "M.R.P: ₹425"
+                            - generic [ref=f4e1453]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1454]:
+                                - generic [ref=f4e1455]: ₹425
+                                - text: ₹425
+                          - text: (12% off)
+                        - generic [ref=f4e1458]:
+                          - generic [ref=f4e1459]: Extra 10% off
+                          - text: new subscription
+                      - generic [ref=f4e1462]:
+                        - generic [ref=f4e1463]: FREE delivery Thu, 15 Oct
+                        - generic [ref=f4e1465]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e1480] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1481]
+                        - generic [aria-hidden] [ref=f4e1482]: Add to cart
+                - listitem [ref=f4e1483]:
+                  - generic [ref=f4e1490]:
+                    - link [aria-hidden] [ref=f4e1493] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDUyNDQ2NzEyODkzMjo6MDo6&url=%2FEywa-Seeds-Exports-Pvt-Ltd%2Fdp%2FB0BTHNHFPB%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-13-spons%26aref%3Drhrtu6mM9w%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1%26smid%3DA2DC6F6XFHQUR6&aref=rhrtu6mM9w&sp_cr=ZAZ
+                    - generic [ref=f4e1496]:
+                      - generic [ref=f4e1497]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e1500] [cursor=pointer]:
+                          - generic [ref=f4e1501]: Sponsored
+                        - heading "Eywa Seeds & Exports Pvt Ltd" [level=2] [ref=f4e1504]
+                        - link [ref=f4e1505] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDUyNDQ2NzEyODkzMjo6MDo6&url=%2FEywa-Seeds-Exports-Pvt-Ltd%2Fdp%2FB0BTHNHFPB%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-13-spons%26aref%3Drhrtu6mM9w%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1%26smid%3DA2DC6F6XFHQUR6&aref=rhrtu6mM9w&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Organic Sunflower Oil(10 Liter) Cold Pressed|Surajmukhi/Sumflower Kachi Ghani Oil Wooden Press Oil by (Suhani) Eywa" [level=2] [ref=f4e1506]: Organic Sunflower Oil(10 Liter) Cold Pressed|Surajmukhi/Sumflower Kachi Ghani Oil Wooden Press Oil by (Suhani) Eywa
+                      - generic [ref=f4e1513]:
+                        - text: "3.8"
+                        - button "3.8 out of 5 stars, rating details" [ref=f4e1515] [cursor=pointer]:
+                          - generic [ref=f4e1517]: 3.8 out of 5 stars
+                        - link "80 ratings" [ref=f4e1519] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDUyNDQ2NzEyODkzMjo6MDo6&url=%2FEywa-Seeds-Exports-Pvt-Ltd%2Fdp%2FB0BTHNHFPB%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-13-spons%26aref%3Drhrtu6mM9w%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1%26smid%3DA2DC6F6XFHQUR6&aref=rhrtu6mM9w&sp_cr=ZAZ#customerReviews
+                          - text: (80)
+                      - generic [ref=f4e1520]:
+                        - generic [ref=f4e1522]:
+                          - generic [ref=f4e1523]: Price, product page
+                          - 'link "₹2,999 ( ₹299.90 /l) M.R.P: ₹3,540 M.R.P: ₹3,540" [ref=f4e1524] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDUyNDQ2NzEyODkzMjo6MDo6&url=%2FEywa-Seeds-Exports-Pvt-Ltd%2Fdp%2FB0BTHNHFPB%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-13-spons%26aref%3Drhrtu6mM9w%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1%26smid%3DA2DC6F6XFHQUR6&aref=rhrtu6mM9w&sp_cr=ZAZ
+                            - generic [ref=f4e1525]:
+                              - generic [ref=f4e1526]: ₹2,999
+                              - generic [aria-hidden] [ref=f4e1527]: ₹2,999
+                            - generic [ref=f4e1528]:
+                              - text: (
+                              - generic [ref=f4e1529]:
+                                - generic [ref=f4e1530]: ₹299.90
+                                - text: ₹299.90
+                              - text: /l)
+                            - generic [ref=f4e1531]: "M.R.P: ₹3,540"
+                            - generic [ref=f4e1532]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1533]:
+                                - generic [ref=f4e1534]: ₹3,540
+                                - text: ₹3,540
+                          - text: (15% off)
+                        - generic [ref=f4e1538]:
+                          - generic [ref=f4e1539]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1540]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1541]: FREE delivery Mon, 19 Oct
+                      - generic [ref=f4e1561] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1562]
+                        - generic [aria-hidden] [ref=f4e1563]: Add to cart
+                - listitem [ref=f4e1564]:
+                  - generic [ref=f4e1571]:
+                    - link [aria-hidden] [ref=f4e1574] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDU5NTIwNDE2NTgzMjo6MDo6&url=%2FSundrop-Superlite-Advanced-Sunflower-Super%2Fdp%2FB075MK6TBV%2Fref%3Dsr_1_14_in_f3_0o_fs_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-14-spons%26aref%3DAWICLN32nD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=AWICLN32nD&sp_cr=ZAZ
+                    - generic [ref=f4e1577]:
+                      - generic [ref=f4e1578]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e1581] [cursor=pointer]:
+                          - generic [ref=f4e1582]: Sponsored
+                        - heading "Sundrop" [level=2] [ref=f4e1585]
+                        - link [ref=f4e1586] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDU5NTIwNDE2NTgzMjo6MDo6&url=%2FSundrop-Superlite-Advanced-Sunflower-Super%2Fdp%2FB075MK6TBV%2Fref%3Dsr_1_14_in_f3_0o_fs_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-14-spons%26aref%3DAWICLN32nD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=AWICLN32nD&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Superlite Advanced Sunflower Oil 2L, (910g -Pack of 2, Super Saver Pack)" [level=2] [ref=f4e1587]: Superlite Advanced Sunflower Oil 2L, (910g -Pack of 2, Super Saver Pack)
+                      - generic [ref=f4e1593]:
+                        - generic [ref=f4e1594]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e1596] [cursor=pointer]:
+                            - generic [ref=f4e1598]: 4.4 out of 5 stars
+                          - link "2,484 ratings" [ref=f4e1600] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDU5NTIwNDE2NTgzMjo6MDo6&url=%2FSundrop-Superlite-Advanced-Sunflower-Super%2Fdp%2FB075MK6TBV%2Fref%3Dsr_1_14_in_f3_0o_fs_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-14-spons%26aref%3DAWICLN32nD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=AWICLN32nD&sp_cr=ZAZ#customerReviews
+                            - text: (2.4K)
+                        - generic [ref=f4e1601]: 5K+ bought in past month
+                      - generic [ref=f4e1602]:
+                        - generic [ref=f4e1604]:
+                          - generic [ref=f4e1605]: Price, product page
+                          - 'link "₹456 ( ₹250.55 /kg) M.R.P: ₹470 M.R.P: ₹470" [ref=f4e1606] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDU5NTIwNDE2NTgzMjo6MDo6&url=%2FSundrop-Superlite-Advanced-Sunflower-Super%2Fdp%2FB075MK6TBV%2Fref%3Dsr_1_14_in_f3_0o_fs_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-14-spons%26aref%3DAWICLN32nD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=AWICLN32nD&sp_cr=ZAZ
+                            - generic [ref=f4e1607]:
+                              - generic [ref=f4e1608]: ₹456
+                              - generic [aria-hidden] [ref=f4e1609]: ₹456
+                            - generic [ref=f4e1610]:
+                              - text: (
+                              - generic [ref=f4e1611]:
+                                - generic [ref=f4e1612]: ₹250.55
+                                - text: ₹250.55
+                              - text: /kg)
+                            - generic [ref=f4e1613]: "M.R.P: ₹470"
+                            - generic [ref=f4e1614]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1615]:
+                                - generic [ref=f4e1616]: ₹470
+                                - text: ₹470
+                          - text: (3% off)
+                        - generic [ref=f4e1620]:
+                          - generic [ref=f4e1621]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1622]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1624]:
+                        - link [ref=f4e1626] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDU5NTIwNDE2NTgzMjo6MDo6&url=%2FSundrop-Superlite-Advanced-Sunflower-Super%2Fdp%2FB075MK6TBV%2Fref%3Dsr_1_14_in_f3_0o_fs_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-14-spons%26aref%3DAWICLN32nD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=AWICLN32nD&sp_cr=ZAZ
+                          - img "Amazon Fresh" [ref=f4e1628]
+                        - generic [ref=f4e1629]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e1646] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1647]
+                        - generic [aria-hidden] [ref=f4e1648]: Add to cart
+                - listitem [ref=f4e1649]:
+                  - generic [ref=f4e1656]:
+                    - link [aria-hidden] [ref=f4e1659] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDkzMzgxMTA0MDkzMjo6MDo6&url=%2FEarthen-Story-Cold-Pressed-Sunflower%2Fdp%2FB0F3X6QF9S%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-15-spons%26aref%3DeNz0CNofpt%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=eNz0CNofpt&sp_cr=ZAZ
+                    - generic [ref=f4e1662]:
+                      - generic [ref=f4e1663]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e1666] [cursor=pointer]:
+                          - generic [ref=f4e1667]: Sponsored
+                        - heading "Earthen Story" [level=2] [ref=f4e1670]
+                        - link [ref=f4e1671] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDkzMzgxMTA0MDkzMjo6MDo6&url=%2FEarthen-Story-Cold-Pressed-Sunflower%2Fdp%2FB0F3X6QF9S%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-15-spons%26aref%3DeNz0CNofpt%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=eNz0CNofpt&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Certified Organic Cold Pressed Sunflower Oil 1L | Lab Tested for 250+ Pesticides | Unrefined Chemical-Free Cooking Oil | NPOP Approved | High in Antioxidants and Nutrient-Rich" [level=2] [ref=f4e1672]: Certified Organic Cold Pressed Sunflower Oil 1L | Lab Tested for 250+ Pesticides | Unrefined Chemical-Free Cooking Oil | NPOP Approved | High in Antioxidants and Nutrient-Rich
+                      - generic [ref=f4e1678]:
+                        - generic [ref=f4e1679]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=f4e1681] [cursor=pointer]:
+                            - generic [ref=f4e1683]: 4.0 out of 5 stars
+                          - link "73 ratings" [ref=f4e1685] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDkzMzgxMTA0MDkzMjo6MDo6&url=%2FEarthen-Story-Cold-Pressed-Sunflower%2Fdp%2FB0F3X6QF9S%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-15-spons%26aref%3DeNz0CNofpt%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=eNz0CNofpt&sp_cr=ZAZ#customerReviews
+                            - text: (73)
+                        - generic [ref=f4e1686]: 50+ bought in past month
+                      - generic [ref=f4e1687]:
+                        - generic [ref=f4e1689]:
+                          - generic [ref=f4e1690]: Price, product page
+                          - 'link "₹347 ( ₹347 /l) M.R.P: ₹475 M.R.P: ₹475" [ref=f4e1691] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMDkzMzgxMTA0MDkzMjo6MDo6&url=%2FEarthen-Story-Cold-Pressed-Sunflower%2Fdp%2FB0F3X6QF9S%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-15-spons%26aref%3DeNz0CNofpt%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=eNz0CNofpt&sp_cr=ZAZ
+                            - generic [ref=f4e1692]:
+                              - generic [ref=f4e1693]: ₹347
+                              - generic [aria-hidden] [ref=f4e1694]: ₹347
+                            - generic [ref=f4e1695]:
+                              - text: (
+                              - generic [ref=f4e1696]:
+                                - generic [ref=f4e1697]: ₹347
+                                - text: ₹347
+                              - text: /l)
+                            - generic [ref=f4e1698]: "M.R.P: ₹475"
+                            - generic [ref=f4e1699]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1700]:
+                                - generic [ref=f4e1701]: ₹475
+                                - text: ₹475
+                          - text: (27% off)
+                        - generic [ref=f4e1705]:
+                          - generic [ref=f4e1706]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1707]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1710]:
+                        - generic [ref=f4e1711]: FREE delivery Mon, 19 Oct
+                        - generic [ref=f4e1713]: Or fastest delivery Thu, 15 Oct
+                      - generic [ref=f4e1728] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1729]
+                        - generic [aria-hidden] [ref=f4e1730]: Add to cart
+                - listitem [ref=f4e1731]:
+                  - generic [ref=f4e1736]:
+                    - link [aria-hidden] [ref=f4e1739] [cursor=pointer]:
+                      - /url: /Fortune-Sunflower-Oil-LTR-Bottle/dp/B07R8HZCFJ/ref=sr_1_16_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-16
+                    - generic [ref=f4e1742]:
+                      - generic [ref=f4e1743]:
+                        - heading "FORTUNE" [level=2] [ref=f4e1745]
+                        - link [ref=f4e1746] [cursor=pointer]:
+                          - /url: /Fortune-Sunflower-Oil-LTR-Bottle/dp/B07R8HZCFJ/ref=sr_1_16_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-16
+                          - heading "Sunflower Oil 2L/1.74 Kg Jar (Weight may vary)" [level=2] [ref=f4e1747]
+                      - generic [ref=f4e1753]:
+                        - generic [ref=f4e1754]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=f4e1756] [cursor=pointer]:
+                            - generic [ref=f4e1758]: 4.0 out of 5 stars
+                          - link "375 ratings" [ref=f4e1760] [cursor=pointer]:
+                            - /url: /Fortune-Sunflower-Oil-LTR-Bottle/dp/B07R8HZCFJ/ref=sr_1_16_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-16#customerReviews
+                            - text: (375)
+                        - generic [ref=f4e1761]: 6K+ bought in past month
+                      - generic [ref=f4e1762]:
+                        - generic [ref=f4e1764]:
+                          - generic [ref=f4e1765]: Price, product page
+                          - 'link "₹415 ( ₹207.50 /l) M.R.P: ₹425 M.R.P: ₹425" [ref=f4e1766] [cursor=pointer]':
+                            - /url: /Fortune-Sunflower-Oil-LTR-Bottle/dp/B07R8HZCFJ/ref=sr_1_16_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-16
+                            - generic [ref=f4e1767]:
+                              - generic [ref=f4e1768]: ₹415
+                              - generic [aria-hidden] [ref=f4e1769]: ₹415
+                            - generic [ref=f4e1770]:
+                              - text: (
+                              - generic [ref=f4e1771]:
+                                - generic [ref=f4e1772]: ₹207.50
+                                - text: ₹207.50
+                              - text: /l)
+                            - generic [ref=f4e1773]: "M.R.P: ₹425"
+                            - generic [ref=f4e1774]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1775]:
+                                - generic [ref=f4e1776]: ₹425
+                                - text: ₹425
+                          - text: (2% off)
+                        - generic [ref=f4e1780]:
+                          - generic [ref=f4e1781]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1782]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1784]:
+                        - link [ref=f4e1786] [cursor=pointer]:
+                          - /url: /Fortune-Sunflower-Oil-LTR-Bottle/dp/B07R8HZCFJ/ref=sr_1_16_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-16
+                          - img "Amazon Fresh" [ref=f4e1788]
+                        - generic [ref=f4e1789]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e1806] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1807]
+                        - generic [aria-hidden] [ref=f4e1808]: Add to cart
+                - listitem [ref=f4e1809]:
+                  - generic [ref=f4e1814]:
+                    - link [aria-hidden] [ref=f4e1817] [cursor=pointer]:
+                      - /url: /FORTUNE-REFINED-SUNFLOWER-OIL-Jar/dp/B0GDQT3NNV/ref=sr_1_17?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-17
+                    - generic [ref=f4e1820]:
+                      - generic [ref=f4e1821]:
+                        - heading "FORTUNE" [level=2] [ref=f4e1823]
+                        - link [ref=f4e1824] [cursor=pointer]:
+                          - /url: /FORTUNE-REFINED-SUNFLOWER-OIL-Jar/dp/B0GDQT3NNV/ref=sr_1_17?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-17
+                          - heading "REFINED SUNFLOWER OIL 5L Jar" [level=2] [ref=f4e1825]
+                      - generic [ref=f4e1831]:
+                        - generic [ref=f4e1832]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e1834] [cursor=pointer]:
+                            - generic [ref=f4e1836]: 4.4 out of 5 stars
+                          - link "19,015 ratings" [ref=f4e1838] [cursor=pointer]:
+                            - /url: /FORTUNE-REFINED-SUNFLOWER-OIL-Jar/dp/B0GDQT3NNV/ref=sr_1_17?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-17#customerReviews
+                            - text: (19K)
+                        - generic [ref=f4e1839]: 7K+ bought in past month
+                      - generic [ref=f4e1840]:
+                        - generic [ref=f4e1842]:
+                          - generic [ref=f4e1843]: Price, product page
+                          - 'link "₹1,375 ( ₹275 /l) M.R.P: ₹1,550 M.R.P: ₹1,550" [ref=f4e1844] [cursor=pointer]':
+                            - /url: /FORTUNE-REFINED-SUNFLOWER-OIL-Jar/dp/B0GDQT3NNV/ref=sr_1_17?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-17
+                            - generic [ref=f4e1845]:
+                              - generic [ref=f4e1846]: ₹1,375
+                              - generic [aria-hidden] [ref=f4e1847]: ₹1,375
+                            - generic [ref=f4e1848]:
+                              - text: (
+                              - generic [ref=f4e1849]:
+                                - generic [ref=f4e1850]: ₹275
+                                - text: ₹275
+                              - text: /l)
+                            - generic [ref=f4e1851]: "M.R.P: ₹1,550"
+                            - generic [ref=f4e1852]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1853]:
+                                - generic [ref=f4e1854]: ₹1,550
+                                - text: ₹1,550
+                          - text: (11% off)
+                        - generic [ref=f4e1858]:
+                          - generic [ref=f4e1859]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1860]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1861]: FREE delivery Thu, 15 Oct
+                      - generic [ref=f4e1881] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1882]
+                        - generic [aria-hidden] [ref=f4e1883]: Add to cart
+                - listitem [ref=f4e1884]:
+                  - generic [ref=f4e1889]:
+                    - group "Best sellerin Rice bran Oil" [ref=f4e1894]:
+                      - generic "Best seller" [ref=f4e1896]
+                    - link [aria-hidden] [ref=f4e1899] [cursor=pointer]:
+                      - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18
+                    - generic [ref=f4e1902]:
+                      - generic [ref=f4e1903]:
+                        - heading "FORTUNE" [level=2] [ref=f4e1905]
+                        - link [ref=f4e1906] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18
+                          - heading "Rice Bran Health Oil | Reduces Bad Cholesterol | Rich in Gamma Oryzanol | 910g pouch[weight may vary]" [level=2] [ref=f4e1907]
+                      - generic [ref=f4e1913]:
+                        - generic [ref=f4e1914]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e1916] [cursor=pointer]:
+                            - generic [ref=f4e1918]: 4.3 out of 5 stars
+                          - link "26,648 ratings" [ref=f4e1920] [cursor=pointer]:
+                            - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18#customerReviews
+                            - text: (26.6K)
+                        - generic [ref=f4e1921]: 70K+ bought in past month
+                      - generic [ref=f4e1922]:
+                        - link "Free and Fast delivery" [ref=f4e1924] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18
+                        - generic [ref=f4e1926]:
+                          - generic [ref=f4e1927]: Price, product page
+                          - 'link "₹187 ( ₹187 /l) M.R.P: ₹219 M.R.P: ₹219" [ref=f4e1928] [cursor=pointer]':
+                            - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18
+                            - generic [ref=f4e1929]:
+                              - generic [ref=f4e1930]: ₹187
+                              - generic [aria-hidden] [ref=f4e1931]: ₹187
+                            - generic [ref=f4e1932]:
+                              - text: (
+                              - generic [ref=f4e1933]:
+                                - generic [ref=f4e1934]: ₹187
+                                - text: ₹187
+                              - text: /l)
+                            - generic [ref=f4e1935]: "M.R.P: ₹219"
+                            - generic [ref=f4e1936]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e1937]:
+                                - generic [ref=f4e1938]: ₹219
+                                - text: ₹219
+                          - text: (15% off)
+                        - generic [ref=f4e1942]:
+                          - generic [ref=f4e1943]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1944]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e1946]:
+                        - link [ref=f4e1948] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-18
+                          - img "Amazon Fresh" [ref=f4e1950]
+                        - generic [ref=f4e1951]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e1968] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1969]
+                        - generic [aria-hidden] [ref=f4e1970]: Add to cart
+                      - generic [ref=f4e1972]:
+                        - separator [aria-hidden] [ref=f4e1973]
+                        - link "One-time purchase" [ref=f4e1974] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-18
+                        - link:
+                          - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-18
+                        - generic [ref=f4e1975]:
+                          - link:
+                            - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-18
+                          - generic [ref=f4e1976]:
+                            - link "Price, product page":
+                              - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-18
+                            - link "₹199 ( ₹199 /l)" [ref=f4e1978] [cursor=pointer]:
+                              - /url: /Fortune-Rice-Bran-Health-1L/dp/B00NYZU698/ref=sr_1_18_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-18
+                              - generic [ref=f4e1979]:
+                                - generic [ref=f4e1980]: ₹199
+                                - generic [aria-hidden] [ref=f4e1981]: ₹199
+                              - generic [ref=f4e1982]:
+                                - text: (
+                                - generic [ref=f4e1983]:
+                                  - generic [ref=f4e1984]: ₹199
+                                  - text: ₹199
+                                - text: /l)
+                        - generic [ref=f4e1988]:
+                          - generic [ref=f4e1989]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e1990]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e1992]:
+                          - generic [ref=f4e1995]: ₹80 delivery Thu, 15 Oct
+                          - generic [ref=f4e1997]: Or fastest delivery Tomorrow, 14 Oct
+                - listitem [ref=f4e1999]:
+                  - generic [ref=f4e2004]:
+                    - link [aria-hidden] [ref=f4e2007] [cursor=pointer]:
+                      - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_primary_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                    - generic [ref=f4e2010]:
+                      - generic [ref=f4e2011]:
+                        - heading "FORTUNE" [level=2] [ref=f4e2013]
+                        - link [ref=f4e2014] [cursor=pointer]:
+                          - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_primary_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                          - heading "Filtered Groundnut Oil 1 Litre Pouch (910 g) | Groundnut Cooking Oil | Traditional 100% Filtered Oil | Weight May Vary" [level=2] [ref=f4e2015]
+                      - generic [ref=f4e2021]:
+                        - generic [ref=f4e2022]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e2024] [cursor=pointer]:
+                            - generic [ref=f4e2026]: 4.2 out of 5 stars
+                          - link "2,120 ratings" [ref=f4e2028] [cursor=pointer]:
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_primary_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19#customerReviews
+                            - text: (2.1K)
+                        - generic [ref=f4e2029]: 10K+ bought in past month
+                      - generic [ref=f4e2030]:
+                        - generic [ref=f4e2032]:
+                          - generic [ref=f4e2033]: Price, product page
+                          - 'link "₹219 ( ₹240.66 /kg) M.R.P: ₹250 M.R.P: ₹250" [ref=f4e2034] [cursor=pointer]':
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_primary_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                            - generic [ref=f4e2035]:
+                              - generic [ref=f4e2036]: ₹219
+                              - generic [aria-hidden] [ref=f4e2037]: ₹219
+                            - generic [ref=f4e2038]:
+                              - text: (
+                              - generic [ref=f4e2039]:
+                                - generic [ref=f4e2040]: ₹240.66
+                                - text: ₹240.66
+                              - text: /kg)
+                            - generic [ref=f4e2041]: "M.R.P: ₹250"
+                            - generic [ref=f4e2042]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2043]:
+                                - generic [ref=f4e2044]: ₹250
+                                - text: ₹250
+                          - text: (12% off)
+                        - generic [ref=f4e2048]:
+                          - generic [ref=f4e2049]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2050]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2051]: ₹55 delivery 21 - 23 Oct
+                      - generic [ref=f4e2071] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2072]
+                        - generic [aria-hidden] [ref=f4e2073]: Add to cart
+                      - generic [ref=f4e2075]:
+                        - text: More Buying Choices₹178
+                        - link "(3 new offers)" [ref=f4e2077] [cursor=pointer]:
+                          - /url: /gp/offer-listing/B085D9NPK7/ref=sr_1_19_olp?keywords=fortune+sunflower+oil+15&dib_tag=se&dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&qid=1791860772&sr=8-19
+                      - generic [ref=f4e2079]:
+                        - generic [ref=f4e2080]:
+                          - separator [aria-hidden] [ref=f4e2081]
+                          - link "Free and Fast delivery" [ref=f4e2082] [cursor=pointer]:
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                          - link "Supersaver" [ref=f4e2083] [cursor=pointer]:
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                          - generic [ref=f4e2088]:
+                            - link:
+                              - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                            - generic [ref=f4e2089]:
+                              - link "Price, product page":
+                                - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                              - 'link "₹203 ( ₹223.08 /kg) M.R.P: ₹260 M.R.P: ₹260" [ref=f4e2091] [cursor=pointer]':
+                                - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                                - generic [ref=f4e2092]:
+                                  - generic [ref=f4e2093]: ₹203
+                                  - generic [aria-hidden] [ref=f4e2094]: ₹203
+                                - generic [ref=f4e2095]:
+                                  - text: (
+                                  - generic [ref=f4e2096]:
+                                    - generic [ref=f4e2097]: ₹223.08
+                                    - text: ₹223.08
+                                  - text: /kg)
+                                - generic [ref=f4e2098]: "M.R.P: ₹260"
+                                - generic [ref=f4e2099]:
+                                  - text: "M.R.P:"
+                                  - generic [ref=f4e2100]:
+                                    - generic [ref=f4e2101]: ₹260
+                                    - text: ₹260
+                              - text: (22% off)
+                          - generic [ref=f4e2105]:
+                            - generic [ref=f4e2106]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [aria-hidden] [ref=f4e2107]: Up to 5% back with Amazon Pay...
+                          - generic [ref=f4e2108]:
+                            - link [ref=f4e2110] [cursor=pointer]:
+                              - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_in_f3_0o_fs_mod_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-19
+                              - img "Amazon Fresh" [ref=f4e2112]
+                            - generic [ref=f4e2113]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                        - generic [ref=f4e2117]:
+                          - separator [aria-hidden] [ref=f4e2118]
+                          - link "Get it faster" [ref=f4e2119] [cursor=pointer]:
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                          - link:
+                            - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                          - generic [ref=f4e2120]:
+                            - link:
+                              - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                            - generic [ref=f4e2121]:
+                              - link "Price, product page":
+                                - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                              - 'link "₹178 ( ₹195.60 /kg) M.R.P: ₹255 M.R.P: ₹255" [ref=f4e2123] [cursor=pointer]':
+                                - /url: /Fortune-Filtered-Groundnut-Oil-LTR/dp/B085D9NPK7/ref=sr_1_19_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-19
+                                - generic [ref=f4e2124]:
+                                  - generic [ref=f4e2125]: ₹178
+                                  - generic [aria-hidden] [ref=f4e2126]: ₹178
+                                - generic [ref=f4e2127]:
+                                  - text: (
+                                  - generic [ref=f4e2128]:
+                                    - generic [ref=f4e2129]: ₹195.60
+                                    - text: ₹195.60
+                                  - text: /kg)
+                                - generic [ref=f4e2130]: "M.R.P: ₹255"
+                                - generic [ref=f4e2131]:
+                                  - text: "M.R.P:"
+                                  - generic [ref=f4e2132]:
+                                    - generic [ref=f4e2133]: ₹255
+                                    - text: ₹255
+                              - text: (30% off)
+                          - generic [ref=f4e2137]:
+                            - generic [ref=f4e2138]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [aria-hidden] [ref=f4e2139]: Up to 5% back with Amazon Pay...
+                          - generic [ref=f4e2140]: ₹100 delivery Tue, 20 Oct
+                - listitem [ref=f4e2146]:
+                  - generic [ref=f4e2151]:
+                    - link [aria-hidden] [ref=f4e2154] [cursor=pointer]:
+                      - /url: /Fortune-Rice-Bran-Oil-Litre/dp/B0DFQ6QTV5/ref=sr_1_20_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-20
+                    - generic [ref=f4e2157]:
+                      - generic [ref=f4e2158]:
+                        - heading "FORTUNE" [level=2] [ref=f4e2160]
+                        - link [ref=f4e2161] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Oil-Litre/dp/B0DFQ6QTV5/ref=sr_1_20_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-20
+                          - heading "Rice Bran Health Oil | Reduces Bad Cholesterol | Rich in Gamma Oryzanol | 3L/2.5 Kg Jar (Weight May Vary)" [level=2] [ref=f4e2162]
+                      - generic [ref=f4e2168]:
+                        - generic [ref=f4e2169]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e2171] [cursor=pointer]:
+                            - generic [ref=f4e2173]: 4.1 out of 5 stars
+                          - link "251 ratings" [ref=f4e2175] [cursor=pointer]:
+                            - /url: /Fortune-Rice-Bran-Oil-Litre/dp/B0DFQ6QTV5/ref=sr_1_20_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-20#customerReviews
+                            - text: (251)
+                        - generic [ref=f4e2176]: 1K+ bought in past month
+                      - generic [ref=f4e2177]:
+                        - generic [ref=f4e2179]:
+                          - generic [ref=f4e2180]: Price, product page
+                          - 'link "₹586 ( ₹195.33 /l) M.R.P: ₹649 M.R.P: ₹649" [ref=f4e2181] [cursor=pointer]':
+                            - /url: /Fortune-Rice-Bran-Oil-Litre/dp/B0DFQ6QTV5/ref=sr_1_20_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-20
+                            - generic [ref=f4e2182]:
+                              - generic [ref=f4e2183]: ₹586
+                              - generic [aria-hidden] [ref=f4e2184]: ₹586
+                            - generic [ref=f4e2185]:
+                              - text: (
+                              - generic [ref=f4e2186]:
+                                - generic [ref=f4e2187]: ₹195.33
+                                - text: ₹195.33
+                              - text: /l)
+                            - generic [ref=f4e2188]: "M.R.P: ₹649"
+                            - generic [ref=f4e2189]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2190]:
+                                - generic [ref=f4e2191]: ₹649
+                                - text: ₹649
+                          - text: (10% off)
+                        - generic [ref=f4e2195]:
+                          - generic [ref=f4e2196]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2197]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2199]:
+                        - link [ref=f4e2201] [cursor=pointer]:
+                          - /url: /Fortune-Rice-Bran-Oil-Litre/dp/B0DFQ6QTV5/ref=sr_1_20_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-20
+                          - img "Amazon Fresh" [ref=f4e2203]
+                        - generic [ref=f4e2204]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e2221] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2222]
+                        - generic [aria-hidden] [ref=f4e2223]: Add to cart
+                - listitem [ref=f4e2224]:
+                  - generic [ref=f4e2231]:
+                    - link [aria-hidden] [ref=f4e2234] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM3Njk2ODA0MjEzMjo6MDo6&url=%2FNatureland-Organics-Sunflower-LTR-Pressed%2Fdp%2FB07B9VMHB8%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-21-spons%26aref%3DrfUgMmCTQG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rfUgMmCTQG&sp_cr=ZAZ
+                    - generic [ref=f4e2237]:
+                      - generic [ref=f4e2238]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e2241] [cursor=pointer]:
+                          - generic [ref=f4e2242]: Sponsored
+                        - heading "NATURELAND ORGANICS" [level=2] [ref=f4e2245]
+                        - link [ref=f4e2246] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM3Njk2ODA0MjEzMjo6MDo6&url=%2FNatureland-Organics-Sunflower-LTR-Pressed%2Fdp%2FB07B9VMHB8%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-21-spons%26aref%3DrfUgMmCTQG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rfUgMmCTQG&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Wood Cold Pressed Organic Sunflower Oil, 1 L" [level=2] [ref=f4e2247]: Wood Cold Pressed Organic Sunflower Oil, 1 L
+                        - generic "Unrefined cold-pressed sunflower oil. Light-textured cooking oil with a subtle taste for everyday meals." [ref=f4e2249]
+                      - generic [ref=f4e2250]:
+                        - generic [ref=f4e2251]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e2253] [cursor=pointer]:
+                            - generic [ref=f4e2255]: 4.4 out of 5 stars
+                          - link "1,532 ratings" [ref=f4e2257] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM3Njk2ODA0MjEzMjo6MDo6&url=%2FNatureland-Organics-Sunflower-LTR-Pressed%2Fdp%2FB07B9VMHB8%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-21-spons%26aref%3DrfUgMmCTQG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rfUgMmCTQG&sp_cr=ZAZ#customerReviews
+                            - text: (1.5K)
+                        - generic [ref=f4e2258]: 2K+ bought in past month
+                      - generic [ref=f4e2259]:
+                        - generic [ref=f4e2261]:
+                          - generic [ref=f4e2262]: Price, product page
+                          - 'link "₹307 ( ₹307 /l) M.R.P: ₹425 M.R.P: ₹425" [ref=f4e2263] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM3Njk2ODA0MjEzMjo6MDo6&url=%2FNatureland-Organics-Sunflower-LTR-Pressed%2Fdp%2FB07B9VMHB8%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-21-spons%26aref%3DrfUgMmCTQG%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rfUgMmCTQG&sp_cr=ZAZ
+                            - generic [ref=f4e2264]:
+                              - generic [ref=f4e2265]: ₹307
+                              - generic [aria-hidden] [ref=f4e2266]: ₹307
+                            - generic [ref=f4e2267]:
+                              - text: (
+                              - generic [ref=f4e2268]:
+                                - generic [ref=f4e2269]: ₹307
+                                - text: ₹307
+                              - text: /l)
+                            - generic [ref=f4e2270]: "M.R.P: ₹425"
+                            - generic [ref=f4e2271]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2272]:
+                                - generic [ref=f4e2273]: ₹425
+                                - text: ₹425
+                          - text: (28% off)
+                        - generic [ref=f4e2277]:
+                          - generic [ref=f4e2278]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2279]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2282]:
+                        - generic [ref=f4e2283]: FREE delivery Sun, 18 Oct
+                        - generic [ref=f4e2285]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e2300] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2301]
+                        - generic [aria-hidden] [ref=f4e2302]: Add to cart
+                - listitem [ref=f4e2303]:
+                  - generic [ref=f4e2310]:
+                    - link [aria-hidden] [ref=f4e2313] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM4NjU1MDQxMjQzMjo6MDo6&url=%2FJivo-Pressed-Chemical-Sunflower-Litre%2Fdp%2FB0992GRH3Z%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-22-spons%26aref%3DdnjBsAyAjX%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=dnjBsAyAjX&sp_cr=ZAZ
+                    - generic [ref=f4e2316]:
+                      - generic [ref=f4e2317]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e2320] [cursor=pointer]:
+                          - generic [ref=f4e2321]: Sponsored
+                        - heading "JIVO" [level=2] [ref=f4e2324]
+                        - link [ref=f4e2325] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM4NjU1MDQxMjQzMjo6MDo6&url=%2FJivo-Pressed-Chemical-Sunflower-Litre%2Fdp%2FB0992GRH3Z%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-22-spons%26aref%3DdnjBsAyAjX%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=dnjBsAyAjX&sp_cr=ZAZ
+                          - heading "Sponsored Ad - Cold Pressed Sunflower Oil 1 Litre (Pack of 2) | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [level=2] [ref=f4e2326]: Cold Pressed Sunflower Oil 1 Litre (Pack of 2) | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines
+                      - generic [ref=f4e2332]:
+                        - generic [ref=f4e2333]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e2335] [cursor=pointer]:
+                            - generic [ref=f4e2337]: 4.2 out of 5 stars
+                          - link "391 ratings" [ref=f4e2339] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM4NjU1MDQxMjQzMjo6MDo6&url=%2FJivo-Pressed-Chemical-Sunflower-Litre%2Fdp%2FB0992GRH3Z%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-22-spons%26aref%3DdnjBsAyAjX%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=dnjBsAyAjX&sp_cr=ZAZ#customerReviews
+                            - text: (391)
+                        - generic [ref=f4e2340]: 1K+ bought in past month
+                      - generic [ref=f4e2341]:
+                        - generic [ref=f4e2343]:
+                          - generic [ref=f4e2344]: Price, product page
+                          - 'link "₹389 ( ₹194.50 /l) M.R.P: ₹550 M.R.P: ₹550" [ref=f4e2345] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo0NDczNDQzMTIzMjg2NjM4OjE3OTE4NjA3NzI6c3BfbXRmOjMwMTM4NjU1MDQxMjQzMjo6MDo6&url=%2FJivo-Pressed-Chemical-Sunflower-Litre%2Fdp%2FB0992GRH3Z%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw%26dib_tag%3Dse%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26qid%3D1791860772%26sr%3D8-22-spons%26aref%3DdnjBsAyAjX%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=dnjBsAyAjX&sp_cr=ZAZ
+                            - generic [ref=f4e2346]:
+                              - generic [ref=f4e2347]: ₹389
+                              - generic [aria-hidden] [ref=f4e2348]: ₹389
+                            - generic [ref=f4e2349]:
+                              - text: (
+                              - generic [ref=f4e2350]:
+                                - generic [ref=f4e2351]: ₹194.50
+                                - text: ₹194.50
+                              - text: /l)
+                            - generic [ref=f4e2352]: "M.R.P: ₹550"
+                            - generic [ref=f4e2353]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2354]:
+                                - generic [ref=f4e2355]: ₹550
+                                - text: ₹550
+                          - text: (29% off)
+                        - generic [ref=f4e2359]:
+                          - generic [ref=f4e2360]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2361]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2364]:
+                        - generic [ref=f4e2365]: FREE delivery Sun, 18 Oct
+                        - generic [ref=f4e2367]: Or fastest delivery Tomorrow, 14 Oct
+                      - generic [ref=f4e2382] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2383]
+                        - generic [aria-hidden] [ref=f4e2384]: Add to cart
+                - listitem [ref=f4e2385]:
+                  - generic [ref=f4e2390]:
+                    - link [aria-hidden] [ref=f4e2393] [cursor=pointer]:
+                      - /url: /Fortune-Xpert-Pro-Immunity-Oil/dp/B08X7K8Q6C/ref=sr_1_23?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-23
+                    - generic [ref=f4e2396]:
+                      - generic [ref=f4e2397]:
+                        - heading "FORTUNE" [level=2] [ref=f4e2399]
+                        - link [ref=f4e2400] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Pro-Immunity-Oil/dp/B08X7K8Q6C/ref=sr_1_23?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-23
+                          - heading "Xpert Pro Immunity Oil | Blend of Rice Bran & Refined Sunflower Oil |To Boost Immunity |Best for Heart Patients |Edible 5L Jar/4.250L jar" [level=2] [ref=f4e2401]
+                      - generic [ref=f4e2407]:
+                        - generic [ref=f4e2408]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e2410] [cursor=pointer]:
+                            - generic [ref=f4e2412]: 4.2 out of 5 stars
+                          - link "4,249 ratings" [ref=f4e2414] [cursor=pointer]:
+                            - /url: /Fortune-Xpert-Pro-Immunity-Oil/dp/B08X7K8Q6C/ref=sr_1_23?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-23#customerReviews
+                            - text: (4.2K)
+                        - generic [ref=f4e2415]: 2K+ bought in past month
+                      - generic "Currently unavailable." [ref=f4e2418]
+                      - link "See options" [ref=f4e2425] [cursor=pointer]:
+                        - /url: /Fortune-Xpert-Pro-Immunity-Oil/dp/B08X7K8Q6C/ref=sr_1_23_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-23
+          - generic [ref=f4e2429]:
+            - generic [ref=f4e2434]:
+              - heading "Highly rated" [level=2] [ref=f4e2436]
+              - generic [ref=f4e2437]:
+                - button "View Sponsored information or leave ad feedback" [ref=f4e2439] [cursor=pointer]: Sponsored
+                - text: "| Based on star rating and number of customer ratings"
+            - region "Highly rated" [ref=f4e2441]:
+              - list [ref=f4e2447]:
+                - listitem "1 of 5" [ref=f4e2448]:
+                  - generic [ref=f4e2454]:
+                    - link [aria-hidden] [ref=f4e2457] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB09F3C5NZZ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26rdc%3D1%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                    - generic [ref=f4e2460]:
+                      - link [ref=f4e2462] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB09F3C5NZZ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26rdc%3D1%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Pure & Sure Organic Cold Pressed Sunflower Oil 5L | For Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [level=2] [ref=f4e2463]: Pure & Sure Organic Cold Pressed Sunflower Oil 5L | For Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free
+                      - generic [ref=f4e2469]:
+                        - generic [ref=f4e2470]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e2472] [cursor=pointer]:
+                            - generic [ref=f4e2474]: 4.3 out of 5 stars
+                          - link "1,262 ratings" [ref=f4e2476] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB09F3C5NZZ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26rdc%3D1%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ#customerReviews
+                            - text: (1.2K)
+                        - generic [ref=f4e2477]: 300+ bought in past month
+                      - generic [ref=f4e2478]:
+                        - link "Limited time deal" [ref=f4e2480] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e2486]:
+                          - generic [ref=f4e2487]: Price, product page
+                          - 'link "₹1,599 ( ₹319.80 /l) M.R.P: ₹2,150 M.R.P: ₹2,150" [ref=f4e2488] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzMDc5NzI4NzEzMjo6MDo6&url=%2FPure-Sure-Sunflower-Antioxidants-Delicious%2Fdp%2FB09F3C5NZZ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB09F3C5NZZ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26rdc%3D1%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DXXbgYrPdx6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=XXbgYrPdx6&sp_cr=ZAZ
+                            - generic [ref=f4e2489]:
+                              - generic [ref=f4e2490]: ₹1,599
+                              - generic [aria-hidden] [ref=f4e2491]: ₹1,599
+                            - generic [ref=f4e2492]:
+                              - text: (
+                              - generic [ref=f4e2493]:
+                                - generic [ref=f4e2494]: ₹319.80
+                                - text: ₹319.80
+                              - text: /l)
+                            - generic [ref=f4e2495]: "M.R.P: ₹2,150"
+                            - generic [ref=f4e2496]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2497]:
+                                - generic [ref=f4e2498]: ₹2,150
+                                - text: ₹2,150
+                          - text: (26% off)
+                        - generic [ref=f4e2501]:
+                          - generic [ref=f4e2502]: Extra 10% off
+                          - text: new subscription
+                      - generic [ref=f4e2506]:
+                        - generic [ref=f4e2507]: FREE delivery Mon, 19 Oct
+                        - generic [ref=f4e2509]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e2524] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2525]
+                        - generic [aria-hidden] [ref=f4e2526]: Add to cart
+                - listitem "2 of 5" [ref=f4e2527]:
+                  - generic [ref=f4e2533]:
+                    - link [aria-hidden] [ref=f4e2536] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTQwMzcxMzgxMDUzMjo6MTo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB019RJOB2C%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DeBIHmIo36u%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eBIHmIo36u&sp_cr=ZAZ
+                    - generic [ref=f4e2539]:
+                      - link [ref=f4e2541] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTQwMzcxMzgxMDUzMjo6MTo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB019RJOB2C%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DeBIHmIo36u%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eBIHmIo36u&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Sunrich Refined Sunflower Oil 750/800g Pouch | Edible Cooking Oil | Sunflower Oil for Everyday Cooking, Frying, Sautéing, Baking & Meal Preparation | Pouch" [level=2] [ref=f4e2542]: Sunrich Refined Sunflower Oil 750/800g Pouch | Edible Cooking Oil | Sunflower Oil for Everyday Cooking, Frying, Sautéing, Baking & Meal Preparation | Pouch
+                      - generic [ref=f4e2548]:
+                        - generic [ref=f4e2549]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=f4e2551] [cursor=pointer]:
+                            - generic [ref=f4e2553]: 4.0 out of 5 stars
+                          - link "6,440 ratings" [ref=f4e2555] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTQwMzcxMzgxMDUzMjo6MTo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB019RJOB2C%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DeBIHmIo36u%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eBIHmIo36u&sp_cr=ZAZ#customerReviews
+                            - text: (6.4K)
+                        - generic [ref=f4e2556]: 10K+ bought in past month
+                      - generic [ref=f4e2557]:
+                        - generic [ref=f4e2559]:
+                          - generic [ref=f4e2560]: Price, product page
+                          - 'link "₹160 ( ₹213.33 /l) M.R.P: ₹186 M.R.P: ₹186" [ref=f4e2561] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTQwMzcxMzgxMDUzMjo6MTo6&url=%2FSunrich-Sunflower-Oil-Pouch-1L%2Fdp%2FB019RJOB2C%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB019RJOB2C%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DeBIHmIo36u%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eBIHmIo36u&sp_cr=ZAZ
+                            - generic [ref=f4e2562]:
+                              - generic [ref=f4e2563]: ₹160
+                              - generic [aria-hidden] [ref=f4e2564]: ₹160
+                            - generic [ref=f4e2565]:
+                              - text: (
+                              - generic [ref=f4e2566]:
+                                - generic [ref=f4e2567]: ₹213.33
+                                - text: ₹213.33
+                              - text: /l)
+                            - generic [ref=f4e2568]: "M.R.P: ₹186"
+                            - generic [ref=f4e2569]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2570]:
+                                - generic [ref=f4e2571]: ₹186
+                                - text: ₹186
+                          - text: (14% off)
+                        - generic [ref=f4e2575]:
+                          - generic [ref=f4e2576]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2577]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2581]:
+                        - generic [ref=f4e2584]: ₹80 delivery Thu, 15 Oct
+                        - generic [ref=f4e2586]: Or fastest delivery Tomorrow, 14 Oct
+                      - generic [ref=f4e2601] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2602]
+                        - generic [aria-hidden] [ref=f4e2603]: Add to cart
+                - listitem "3 of 5" [ref=f4e2604]:
+                  - generic [ref=f4e2610]:
+                    - link [aria-hidden] [ref=f4e2613] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDY0MzA2NTM0ODkzMjo6Mjo6&url=%2FAnveshan-Pressed-Sunflower-Extracted-Chemical-Free%2Fdp%2FB0FJ2KDX11%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0FJ2KDX11%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DooRFEfcV9C%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ooRFEfcV9C&sp_cr=ZAZ
+                    - generic [ref=f4e2616]:
+                      - link [ref=f4e2618] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDY0MzA2NTM0ODkzMjo6Mjo6&url=%2FAnveshan-Pressed-Sunflower-Extracted-Chemical-Free%2Fdp%2FB0FJ2KDX11%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0FJ2KDX11%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DooRFEfcV9C%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ooRFEfcV9C&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Anveshan Wood Pressed Sunflower Oil 3Litre | HDPE Can | Kolhu/Chekku| Natural Antioxidants & Rich in Omega-6 | Hexane Free| Cholesterol Free" [level=2] [ref=f4e2619]: Anveshan Wood Pressed Sunflower Oil 3Litre | HDPE Can | Kolhu/Chekku| Natural Antioxidants & Rich in Omega-6 | Hexane Free| Cholesterol Free
+                      - generic [ref=f4e2625]:
+                        - generic [ref=f4e2626]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e2628] [cursor=pointer]:
+                            - generic [ref=f4e2630]: 4.2 out of 5 stars
+                          - link "440 ratings" [ref=f4e2632] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDY0MzA2NTM0ODkzMjo6Mjo6&url=%2FAnveshan-Pressed-Sunflower-Extracted-Chemical-Free%2Fdp%2FB0FJ2KDX11%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0FJ2KDX11%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DooRFEfcV9C%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ooRFEfcV9C&sp_cr=ZAZ#customerReviews
+                            - text: (440)
+                        - generic [ref=f4e2633]: 800+ bought in past month
+                      - generic [ref=f4e2634]:
+                        - generic [ref=f4e2636]:
+                          - generic [ref=f4e2637]: Price, product page
+                          - 'link "₹1,199 ( ₹399.67 /l) M.R.P: ₹1,375 M.R.P: ₹1,375" [ref=f4e2638] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDY0MzA2NTM0ODkzMjo6Mjo6&url=%2FAnveshan-Pressed-Sunflower-Extracted-Chemical-Free%2Fdp%2FB0FJ2KDX11%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0FJ2KDX11%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DooRFEfcV9C%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ooRFEfcV9C&sp_cr=ZAZ
+                            - generic [ref=f4e2639]:
+                              - generic [ref=f4e2640]: ₹1,199
+                              - generic [aria-hidden] [ref=f4e2641]: ₹1,199
+                            - generic [ref=f4e2642]:
+                              - text: (
+                              - generic [ref=f4e2643]:
+                                - generic [ref=f4e2644]: ₹399.67
+                                - text: ₹399.67
+                              - text: /l)
+                            - generic [ref=f4e2645]: "M.R.P: ₹1,375"
+                            - generic [ref=f4e2646]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2647]:
+                                - generic [ref=f4e2648]: ₹1,375
+                                - text: ₹1,375
+                          - text: (13% off)
+                        - generic [ref=f4e2652]:
+                          - generic [ref=f4e2653]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2654]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2658]:
+                        - generic [ref=f4e2659]: FREE delivery Thu, 15 Oct
+                        - generic [ref=f4e2661]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e2676] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2677]
+                        - generic [aria-hidden] [ref=f4e2678]: Add to cart
+                - listitem "4 of 5" [ref=f4e2679]:
+                  - generic [ref=f4e2685]:
+                    - link [aria-hidden] [ref=f4e2688] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDQ2ODE2MTY2MjA2OjozOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08KWBGCCD%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                    - generic [ref=f4e2691]:
+                      - link [ref=f4e2693] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDQ2ODE2MTY2MjA2OjozOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08KWBGCCD%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                        - heading "Sponsored Ad - MR. GOLD Refined Sunflower Oil Can,5L | light oil | Agmark |Vitamin Enriched - Total 5L" [level=2] [ref=f4e2694]: MR. GOLD Refined Sunflower Oil Can,5L | light oil | Agmark |Vitamin Enriched - Total 5L
+                      - generic [ref=f4e2700]:
+                        - generic [ref=f4e2701]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e2703] [cursor=pointer]:
+                            - generic [ref=f4e2705]: 4.2 out of 5 stars
+                          - link "853 ratings" [ref=f4e2707] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDQ2ODE2MTY2MjA2OjozOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08KWBGCCD%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ#customerReviews
+                            - text: (853)
+                        - generic [ref=f4e2708]: 50+ bought in past month
+                      - generic [ref=f4e2709]:
+                        - link "Mega Festival Deal" [ref=f4e2711] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e2717]:
+                          - generic [ref=f4e2718]: Price, product page
+                          - 'link "₹1,234 ( ₹246.80 /l) M.R.P: ₹1,800 M.R.P: ₹1,800" [ref=f4e2719] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDQ2ODE2MTY2MjA2OjozOjo&url=%2FMr-Gold-Refined-Sunflower-Oil%2Fdp%2FB08KWBGCCD%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08KWBGCCD%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Drs8z2G7lrc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=rs8z2G7lrc&sp_cr=ZAZ
+                            - generic [ref=f4e2720]:
+                              - generic [ref=f4e2721]: ₹1,234
+                              - generic [aria-hidden] [ref=f4e2722]: ₹1,234
+                            - generic [ref=f4e2723]:
+                              - text: (
+                              - generic [ref=f4e2724]:
+                                - generic [ref=f4e2725]: ₹246.80
+                                - text: ₹246.80
+                              - text: /l)
+                            - generic [ref=f4e2726]: "M.R.P: ₹1,800"
+                            - generic [ref=f4e2727]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2728]:
+                                - generic [ref=f4e2729]: ₹1,800
+                                - text: ₹1,800
+                          - text: (31% off)
+                        - generic [ref=f4e2733]:
+                          - generic [ref=f4e2734]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2735]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2736]: FREE delivery Tue, 20 Oct
+                      - generic [ref=f4e2755] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2756]
+                        - generic [aria-hidden] [ref=f4e2757]: Add to cart
+                - listitem "5 of 5" [ref=f4e2758]:
+                  - generic [ref=f4e2764]:
+                    - link [aria-hidden] [ref=f4e2767] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzczOTMwNTk4Ojo0Ojo&url=%2FConscious-Food-Organic-Pressed-Sunflower%2Fdp%2FB0BJP63TPJ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJP63TPJ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Dn9KPYAnVop%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=n9KPYAnVop&sp_cr=ZAZ
+                    - generic [ref=f4e2770]:
+                      - link [ref=f4e2772] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzczOTMwNTk4Ojo0Ojo&url=%2FConscious-Food-Organic-Pressed-Sunflower%2Fdp%2FB0BJP63TPJ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJP63TPJ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Dn9KPYAnVop%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=n9KPYAnVop&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Conscious Food Cold Pressed Sunflower Oil | 5 Litre | Natural | Healthy Cooking Oil | Tin Can | High in Antioxidants, Delicious & Healthy" [level=2] [ref=f4e2773]: Conscious Food Cold Pressed Sunflower Oil | 5 Litre | Natural | Healthy Cooking Oil | Tin Can | High in Antioxidants, Delicious & Healthy
+                      - generic [ref=f4e2779]:
+                        - generic [ref=f4e2780]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e2782] [cursor=pointer]:
+                            - generic [ref=f4e2784]: 4.1 out of 5 stars
+                          - link "455 ratings" [ref=f4e2786] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzczOTMwNTk4Ojo0Ojo&url=%2FConscious-Food-Organic-Pressed-Sunflower%2Fdp%2FB0BJP63TPJ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJP63TPJ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Dn9KPYAnVop%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=n9KPYAnVop&sp_cr=ZAZ#customerReviews
+                            - text: (455)
+                        - generic [ref=f4e2787]: 100+ bought in past month
+                      - generic [ref=f4e2788]:
+                        - generic [ref=f4e2790]:
+                          - generic [ref=f4e2791]: Price, product page
+                          - 'link "₹1,799 ( ₹359.80 /l) M.R.P: ₹2,350 M.R.P: ₹2,350" [ref=f4e2792] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyMDYzMjczNTY0NjUyNTY5OjE3OTE4NjA3NzI6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTA1MzczOTMwNTk4Ojo0Ojo&url=%2FConscious-Food-Organic-Pressed-Sunflower%2Fdp%2FB0BJP63TPJ%2Fref%3Dsxin_26_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%253Aamzn1.sym.78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26cv_ct_cx%3Dfortune%2Bsunflower%2Boil%2B15%26keywords%3Dfortune%2Bsunflower%2Boil%2B15%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJP63TPJ%26pd_rd_r%3D803d544f-04e7-4268-9af3-2190ff291794%26pd_rd_w%3Dp4cdC%26pd_rd_wg%3DBzfKk%26pf_rd_p%3D78bd8e5e-519c-4559-b0ac-60a6f0fa2401%26pf_rd_r%3DBCG7MPB3VH91KPRFGWQ9%26qid%3D1791860772%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Dn9KPYAnVop%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=n9KPYAnVop&sp_cr=ZAZ
+                            - generic [ref=f4e2793]:
+                              - generic [ref=f4e2794]: ₹1,799
+                              - generic [aria-hidden] [ref=f4e2795]: ₹1,799
+                            - generic [ref=f4e2796]:
+                              - text: (
+                              - generic [ref=f4e2797]:
+                                - generic [ref=f4e2798]: ₹359.80
+                                - text: ₹359.80
+                              - text: /l)
+                            - generic [ref=f4e2799]: "M.R.P: ₹2,350"
+                            - generic [ref=f4e2800]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e2801]:
+                                - generic [ref=f4e2802]: ₹2,350
+                                - text: ₹2,350
+                          - text: (23% off)
+                        - generic [ref=f4e2806]:
+                          - generic [ref=f4e2807]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e2808]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e2812]:
+                        - generic [ref=f4e2813]: FREE delivery Sun, 18 Oct
+                        - generic [ref=f4e2815]: Or fastest delivery Thu, 15 Oct
+                      - generic [ref=f4e2830] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e2831]
+                        - generic [aria-hidden] [ref=f4e2832]: Add to cart
+          - generic [ref=f4e2840]:
+            - link "Sponsored video; click to navigate to featured product page. Tata Simply Better Cold Pressed Sunflower Oil, 1L" [ref=f4e2844] [cursor=pointer]:
+              - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/dp/B0DJW59678?aref=W8pWabKFv0&pd_rd_i=B0DJW59678&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pd_rd_wg=BzfKk&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_w=Wpesa&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+            - generic [ref=f4e2853]:
+              - link [aria-hidden] [ref=f4e2859] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+              - generic [ref=f4e2864]:
+                - generic [ref=f4e2865]:
+                  - generic [ref=f4e2866]: Sponsored
+                  - link [ref=f4e2870] [cursor=pointer]:
+                    - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                    - heading "Tata Simply Better Cold Pressed Sunflower Oil, 1L" [level=2] [ref=f4e2871]
+                - generic [ref=f4e2872]:
+                  - generic [ref=f4e2873]:
+                    - text: "4.3"
+                    - button "4.3 out of 5 stars, rating details" [ref=f4e2875] [cursor=pointer]:
+                      - generic [ref=f4e2877]: 4.3 out of 5 stars
+                    - link "580 ratings" [ref=f4e2879] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413#customerReviews
+                      - text: (580)
+                  - generic [ref=f4e2880]: 1K+ bought in past month
+                - generic [ref=f4e2883]:
+                  - generic [ref=f4e2884]:
+                    - link "Free and Fast delivery" [ref=f4e2886] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                    - generic [ref=f4e2888]:
+                      - generic [ref=f4e2889]: Price, product page
+                      - 'link "₹489 ( ₹489 /l) M.R.P: ₹599 M.R.P: ₹599" [ref=f4e2890] [cursor=pointer]':
+                        - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                        - generic [ref=f4e2891]:
+                          - generic [ref=f4e2892]: ₹489
+                          - generic [aria-hidden] [ref=f4e2893]: ₹489
+                        - generic [ref=f4e2894]:
+                          - text: (
+                          - generic [ref=f4e2895]:
+                            - generic [ref=f4e2896]: ₹489
+                            - text: ₹489
+                          - text: /l)
+                        - generic [ref=f4e2897]: "M.R.P: ₹599"
+                        - generic [ref=f4e2898]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e2899]:
+                            - generic [ref=f4e2900]: ₹599
+                            - text: ₹599
+                      - text: (18% off)
+                    - generic [ref=f4e2904]:
+                      - generic [ref=f4e2905]: Up to 5% back with Amazon Pay ICICI card
+                      - generic [aria-hidden] [ref=f4e2906]: Up to 5% back with Amazon Pay ICI...
+                  - generic [ref=f4e2908]:
+                    - link [ref=f4e2910] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrsbJyo0zvoMps87CgDPfykoxkA9-wivIgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kXLmUoZKxBenJhYlZ8QXpBYl5-cklqTGZ-blZOalxieVpAlxJuYmVuXn6WXmSXEVJ5XpQtQqsabmxXv6KZlxMRoITLh3bf_nbS5SfFDzdCHalfiNDAwMTC0MDEyMLI0tTAyNmD39gqyYnQOctfyFrF2cHJ0L3Dx1zR3rnAohIN2xzimw2NnVLd8RFdQ5pdc5BdY5OYIZ6VICzumuFe5eZcmOmS4-xU4mtkZhXCEZJSUFxVb6-uXl5XpwR-unFOg7Gbh4hZtamplb2CcWpabZhlsUhCcmebuVGagVpMQXpcRn2iKUQIUKcjJSimxLABsIfG8&v=c1&r=https://www.amazon.in/Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sxin_27_sbv_search_btf_in_f3_0o_fs_mod_primary_alm?aref=W8pWabKFv0&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0DJW59678&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794&pd_rd_w=Wpesa&pd_rd_wg=BzfKk&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                      - img "Amazon Fresh" [ref=f4e2912]
+                    - generic [ref=f4e2913]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+          - generic [ref=f4e2919]:
+            - link "Sponsored ad from Jivo Mart. \"Jivo Cold Pressed, Chemical Free Sunflower Oil.\" Shop Jivo Mart." [ref=f4e2920] [cursor=pointer]:
+              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVVsBJTyVRZHCpgoii4pJZvxOkYU8tpu4SZw2dlKRzcixJ4mpY7sep0lZZM-OT2DBBgkkxII1X8Fv8AsoTUHq0V0c6Z5zH6fg737-9fP33eIjjUPuca_ft4VWY1DeQgd7YxqHS7JkS9hvdK7mga6_DZ3J4d7pBd_u4Na7yDw795v1maTMAZv0HnCCVF2XXIXDbQePdjXTbZo9yyk-K9wLKDvPk7T4sG_3TL3bsK2haZR-bBVe3HQIo17mT0lKMz-JvJySMI7CmJJRPi7e92be-ySuhnHpORsBP_IYC32wsYCNEKSofIfGxLIPRDYC-ZTOaAD8JIqon4dJDC45cLML-F4WMJB6YZzTDPhJnNM4517inmYbRO-226buWl3bIZbdtmyTtK2BSQzTabndk7JU2IJPP3748_XTF6P0-N_IzRHlJzyEkJM5XoQIirzE7Vh273BHP9EPusXXBtb09MgCsrbCFxtMtBU-Zbp5lGi3scKTFT5dYe2aTEpP9Ym5bBxf-lpotBkWVO77duHb9jTPU3ZYqy0Wi-r_lGosTzLKaqk3oTXEIwVymgSQYGIgKFgCmsabQDAUxEFe4WUev7k2kIyOVQcTDYoSlGQku2gwtFq80-yaQIMyUqDIK3XHkN2zpiS2pEoakCwgaTQNMjWvTJlH_IyEgQorUUo8FsZMxbBeR4OOgdErDLHgHLv2EbemjROjMxT1tfJiTrMrdZxk-Tym-2wej6NkQbP9JIz2kbhWsCjJ1dtZV1iQEi8gkyyZp-o6d0VEdQEipPBCJVS9lFW89UctOTh3B-MjOPsLKVXtgQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F131802A6-14EB-48B6-AA3E-4D812038373B%3Fstore_ref%3DSB_A05606717T1VZIK3SHOE-A071805389SD7TWH65K6%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0991VMDB1%2CB0B4SJTNF2%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300085194011834%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+            - generic [ref=f4e2921]:
+              - generic [ref=f4e2923]:
+                - link "Jivo Mart" [ref=f4e2925] [cursor=pointer]:
+                  - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVVsBJTyVRZHCpgoii4pJZvxOkYU8tpu4SZw2dlKRzcixJ4mpY7sep0lZZM-OT2DBBgkkxII1X8Fv8AsoTUHq0V0c6Z5zH6fg737-9fP33eIjjUPuca_ft4VWY1DeQgd7YxqHS7JkS9hvdK7mga6_DZ3J4d7pBd_u4Na7yDw795v1maTMAZv0HnCCVF2XXIXDbQePdjXTbZo9yyk-K9wLKDvPk7T4sG_3TL3bsK2haZR-bBVe3HQIo17mT0lKMz-JvJySMI7CmJJRPi7e92be-ySuhnHpORsBP_IYC32wsYCNEKSofIfGxLIPRDYC-ZTOaAD8JIqon4dJDC45cLML-F4WMJB6YZzTDPhJnNM4517inmYbRO-226buWl3bIZbdtmyTtK2BSQzTabndk7JU2IJPP3748_XTF6P0-N_IzRHlJzyEkJM5XoQIirzE7Vh273BHP9EPusXXBtb09MgCsrbCFxtMtBU-Zbp5lGi3scKTFT5dYe2aTEpP9Ym5bBxf-lpotBkWVO77duHb9jTPU3ZYqy0Wi-r_lGosTzLKaqk3oTXEIwVymgSQYGIgKFgCmsabQDAUxEFe4WUev7k2kIyOVQcTDYoSlGQku2gwtFq80-yaQIMyUqDIK3XHkN2zpiS2pEoakCwgaTQNMjWvTJlH_IyEgQorUUo8FsZMxbBeR4OOgdErDLHgHLv2EbemjROjMxT1tfJiTrMrdZxk-Tym-2wej6NkQbP9JIz2kbhWsCjJ1dtZV1iQEi8gkyyZp-o6d0VEdQEipPBCJVS9lFW89UctOTh3B-MjOPsLKVXtgQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F131802A6-14EB-48B6-AA3E-4D812038373B%3Fstore_ref%3DSB_A05606717T1VZIK3SHOE-A071805389SD7TWH65K6%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0991VMDB1%2CB0B4SJTNF2%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300085194011834%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_logo&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                  - img "Jivo Mart" [ref=f4e2927]
+                - generic [ref=f4e2929]:
+                  - link "Jivo Cold Pressed, Chemical Free Sunflower Oil" [ref=f4e2930] [cursor=pointer]:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVVsBJTyVRZHCpgoii4pJZvxOkYU8tpu4SZw2dlKRzcixJ4mpY7sep0lZZM-OT2DBBgkkxII1X8Fv8AsoTUHq0V0c6Z5zH6fg737-9fP33eIjjUPuca_ft4VWY1DeQgd7YxqHS7JkS9hvdK7mga6_DZ3J4d7pBd_u4Na7yDw795v1maTMAZv0HnCCVF2XXIXDbQePdjXTbZo9yyk-K9wLKDvPk7T4sG_3TL3bsK2haZR-bBVe3HQIo17mT0lKMz-JvJySMI7CmJJRPi7e92be-ySuhnHpORsBP_IYC32wsYCNEKSofIfGxLIPRDYC-ZTOaAD8JIqon4dJDC45cLML-F4WMJB6YZzTDPhJnNM4517inmYbRO-226buWl3bIZbdtmyTtK2BSQzTabndk7JU2IJPP3748_XTF6P0-N_IzRHlJzyEkJM5XoQIirzE7Vh273BHP9EPusXXBtb09MgCsrbCFxtMtBU-Zbp5lGi3scKTFT5dYe2aTEpP9Ym5bBxf-lpotBkWVO77duHb9jTPU3ZYqy0Wi-r_lGosTzLKaqk3oTXEIwVymgSQYGIgKFgCmsabQDAUxEFe4WUev7k2kIyOVQcTDYoSlGQku2gwtFq80-yaQIMyUqDIK3XHkN2zpiS2pEoakCwgaTQNMjWvTJlH_IyEgQorUUo8FsZMxbBeR4OOgdErDLHgHLv2EbemjROjMxT1tfJiTrMrdZxk-Tym-2wej6NkQbP9JIz2kbhWsCjJ1dtZV1iQEi8gkyyZp-o6d0VEdQEipPBCJVS9lFW89UctOTh3B-MjOPsLKVXtgQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F131802A6-14EB-48B6-AA3E-4D812038373B%3Fstore_ref%3DSB_A05606717T1VZIK3SHOE-A071805389SD7TWH65K6%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0991VMDB1%2CB0B4SJTNF2%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300085194011834%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_hl&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                    - generic [ref=f4e2931]:
+                      - generic [ref=f4e2932]: Jivo Cold Pressed, Chemical Free Sunflower Oil
+                      - generic [aria-hidden] [ref=f4e2933]: Jivo Cold Pressed, Chemical Free Sunflower Oil
+                  - generic [ref=f4e2934]:
+                    - button "Leave feedback on Sponsored ad" [ref=f4e2938] [cursor=pointer]: Sponsored
+                    - generic [ref=f4e2940]: "|"
+                    - generic [ref=f4e2941]: Top 10 best-selling brand in oils
+                    - generic [ref=f4e2942]: "|"
+                    - link "Shop Jivo Mart" [ref=f4e2944] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVVsBJTyVRZHCpgoii4pJZvxOkYU8tpu4SZw2dlKRzcixJ4mpY7sep0lZZM-OT2DBBgkkxII1X8Fv8AsoTUHq0V0c6Z5zH6fg737-9fP33eIjjUPuca_ft4VWY1DeQgd7YxqHS7JkS9hvdK7mga6_DZ3J4d7pBd_u4Na7yDw795v1maTMAZv0HnCCVF2XXIXDbQePdjXTbZo9yyk-K9wLKDvPk7T4sG_3TL3bsK2haZR-bBVe3HQIo17mT0lKMz-JvJySMI7CmJJRPi7e92be-ySuhnHpORsBP_IYC32wsYCNEKSofIfGxLIPRDYC-ZTOaAD8JIqon4dJDC45cLML-F4WMJB6YZzTDPhJnNM4517inmYbRO-226buWl3bIZbdtmyTtK2BSQzTabndk7JU2IJPP3748_XTF6P0-N_IzRHlJzyEkJM5XoQIirzE7Vh273BHP9EPusXXBtb09MgCsrbCFxtMtBU-Zbp5lGi3scKTFT5dYe2aTEpP9Ym5bBxf-lpotBkWVO77duHb9jTPU3ZYqy0Wi-r_lGosTzLKaqk3oTXEIwVymgSQYGIgKFgCmsabQDAUxEFe4WUev7k2kIyOVQcTDYoSlGQku2gwtFq80-yaQIMyUqDIK3XHkN2zpiS2pEoakCwgaTQNMjWvTJlH_IyEgQorUUo8FsZMxbBeR4OOgdErDLHgHLv2EbemjROjMxT1tfJiTrMrdZxk-Tym-2wej6NkQbP9JIz2kbhWsCjJ1dtZV1iQEi8gkyyZp-o6d0VEdQEipPBCJVS9lFW89UctOTh3B-MjOPsLKVXtgQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F131802A6-14EB-48B6-AA3E-4D812038373B%3Fstore_ref%3DSB_A05606717T1VZIK3SHOE-A071805389SD7TWH65K6%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0991VMDB1%2CB0B4SJTNF2%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300085194011834%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_cta&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                      - generic [ref=f4e2947]:
+                        - text: Shop Jivo
+                        - generic [ref=f4e2948]: Mart
+              - group [ref=f4e2952]:
+                - group [ref=f4e2956]:
+                  - list [ref=f4e2957]:
+                    - listitem [ref=f4e2958]:
+                      - generic [ref=f4e2960]:
+                        - link [aria-hidden] [ref=f4e2961] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                        - link [ref=f4e2963] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_img&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - img "Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [ref=f4e2966]
+                        - generic [ref=f4e2967]:
+                          - link [aria-hidden] [ref=f4e2968] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - link "Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [ref=f4e2970] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e2971]:
+                              - generic [ref=f4e2972]: Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines
+                              - generic [aria-hidden] [ref=f4e2973]: Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking,…
+                          - link "Rated 4 out of 5 stars by 5483 reviews. Go to review section." [ref=f4e2974] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_rating&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794#customerReviews
+                            - generic [ref=f4e2975]:
+                              - generic [ref=f4e2976]: "4"
+                              - generic [ref=f4e2977]: 4 out of 5 stars.
+                              - generic [ref=f4e2979]: 5,483
+                          - link "₹999.00 (₹199.80 / l)" [ref=f4e2981] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVULuO00AUVVgBS3itUixS6IJIEWnisZPY6yAL-ZWsN4mzeSK2GY1nxo6JYzse7yZQpKdDQqKmoEGioqDmK_gNfgFBFiSObnGkc889V6dIDj99__bjVum-LonTs_Fs5jZ73XmlINaOfRaHW7TlWzjrDl5fUtN8GU6C9vFo3egPjN6ryH6xJKfqSj65BDwY35Wacv33KHV4cWNieIe6PT21x86k9Kh4mzK-zJO0dG_mjm1z2HWdC9sqfy0Un1wriDOckQVKWUaSCOcMhXEUxgx5uV-6g1f4TRLXw7j8mHuARJjzkIC9BewXQSpWbrIYOW6txT2QL9iKUUCSKGIkD5MYXEngOgsQnFEOUhzGOcsASeKcxbn01BjrroXMYb9vm1Nn6E6Q4_Yd10Z9Z24jy570psPzilwswKN3b39--fjZKj_4e3L_ROVhA0IoKVKjBUXYasjSgeOO2wfmuVkblp5Zhm6mHQco-s5Y7xHoO2PETbuT6P9jZwQ7Y7Qz9D8kKB-Zgb3tnl0RPbT63Ghq0odC8X1hkecpbwvCZrOp_2tJCFIBbwQqGFBVxfnAMsTnKUUZRWm0oJmWVxccI5KhkGqwug6pJiqqeCJDRZGqPNNEIALVp00mExlAvyGBpih6QMUeAdSnqkIpJJjSaqjhlFdxxnytp9DldO534OoXQZG9QQ&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0991VMDB1%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_0_price&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e2983]:
+                              - generic [ref=f4e2984]: ₹999.00
+                              - generic [aria-hidden] [ref=f4e2985]:
+                                - text: ₹
+                                - generic [ref=f4e2986]:
+                                  - text: "999"
+                                  - generic [ref=f4e2987]: .
+                                - text: "00"
+                            - generic [ref=f4e2988]: (₹199.80 / l)
+                          - generic [ref=f4e2989]: "M.R.P: ₹1,350.00"
+                    - listitem [ref=f4e2992]:
+                      - generic [ref=f4e2994]:
+                        - link [aria-hidden] [ref=f4e2995] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                        - link [ref=f4e2997] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_img&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - img "Jivo Cold Pressed Sunflower Oil 1 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [ref=f4e3000]
+                        - generic [ref=f4e3001]:
+                          - link [aria-hidden] [ref=f4e3002] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - link "Jivo Cold Pressed Sunflower Oil 1 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [ref=f4e3004] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_title&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e3005]:
+                              - generic [ref=f4e3006]: Jivo Cold Pressed Sunflower Oil 1 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines
+                              - generic [aria-hidden] [ref=f4e3007]: Jivo Cold Pressed Sunflower Oil 1 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking,…
+                          - link "Rated 4 out of 5 stars by 5483 reviews. Go to review section." [ref=f4e3008] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_rating&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794#customerReviews
+                            - generic [ref=f4e3009]:
+                              - generic [ref=f4e3010]: "4"
+                              - generic [ref=f4e3011]: 4 out of 5 stars.
+                              - generic [ref=f4e3013]: 5,483
+                          - link "₹189.00 (₹189.00 / l)" [ref=f4e3015] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4LdAOmMb0C6bQKQMUjLN5eX3vtVRKW_o6A7pg787ExLULNyauXLj2V_g3_AtGGU08uYuTnHvuuTlFcvjp-7cft0r3VVFwB5PZzGkN-_NKQagd-ywOt2jLt3DWP3t9SXX9ZTgNusfjddM-04avIvPFkpx2VtLJJeDB5K7Ykuq_R67DixtTzTtUTffUnFjT0qPibcr4Mk_S0r2ZMzH1Ud-xLkyj_LVQfHKtIM5wRhYoZRlJIpwzFMZRGDPk5X7pDl7hN0lcD-PyY-4BEmHOQwL2FrBfBKlQucliZDm1NvdAvmArRgFJooiRPExicCWC6yxAcEY5SHEY5ywDJIlzFufiU22iOgbSR7Zt6q41cqbIcmzLMZFtzU1kmNOhOzqvSMUCPHr39ueXj5-N8oO_J_dPVB42IYSiLDbbUIDtpiQeWM6ke6Cf67VR6ZmhqXras4Cs7rT1HoG608ZcN3uJ-j92WrDTxjtN_UOC8pEemNv-4IqooWFzraWIHwrF94VFnqe822hsNpv6v5YaQdrAmwZtaFBrTQeu0xOfpxRlFKXRgmZKXl1wjEiGQqrA6jqkiiB3hBMJyrJY5ZkiABF0fNpiEpEA9JsiaAmCBzrYI4D6tCNTCgmmtBoqOOVVnDFfGcp06c79Hlz9AlbVvXI&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0B4SJTNF2%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_1_price&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e3017]:
+                              - generic [ref=f4e3018]: ₹189.00
+                              - generic [aria-hidden] [ref=f4e3019]:
+                                - text: ₹
+                                - generic [ref=f4e3020]:
+                                  - text: "189"
+                                  - generic [ref=f4e3021]: .
+                                - text: "00"
+                            - generic [ref=f4e3022]: (₹189.00 / l)
+                          - generic [ref=f4e3023]: "M.R.P: ₹275.00"
+                    - listitem [ref=f4e3026]:
+                      - generic [ref=f4e3028]:
+                        - link [aria-hidden] [ref=f4e3029] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                        - link [ref=f4e3031] [cursor=pointer]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_img&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - img "Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking" [ref=f4e3034]
+                        - generic [ref=f4e3035]:
+                          - link [aria-hidden] [ref=f4e3036] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                          - link "Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking" [ref=f4e3038] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_title&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e3039]:
+                              - generic [ref=f4e3040]: Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking
+                              - generic [aria-hidden] [ref=f4e3041]: Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting &…
+                          - link "Rated 4.2 out of 5 stars by 41 reviews. Go to review section." [ref=f4e3042] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_rating&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794#customerReviews
+                            - generic [ref=f4e3043]:
+                              - generic [ref=f4e3044]: "4.2"
+                              - generic [ref=f4e3045]: 4.2 out of 5 stars.
+                              - generic [ref=f4e3047]: "41"
+                          - link "₹1,188.00" [ref=f4e3049] [cursor=pointer]:
+                            - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0lAUDU7UEb8mLMYEdxhZkDx4baEdMI3pF0wHKN8Y2by8vvdaKqUtfZ0BXbB3Z2Li2oUbE1cuXPsr_Bv-BaOMJp7cxUnOPffcnDw5_vT9249bhfuaKEwvxrOZU-925qWcUDn1WBTs0I7v4KzTf31JDeNlMPFbp6ON1Ovr3Veh9WJFzptr-ewScH98V6zL1d-jVOHixkR3jzVrem6N7UnhUf42ZXyVxUnh3swZW8ag49gLyyx-zeWfXCuIM5ySJUpYSuIQZwwFURhEDLmZV7iD1_hNHFWDqPiYu4CEmPOAgIMFHBZBIpRusgjZTqXBXZAt2ZpRQOIwZCQL4ghcieA6CxCcUg4SHEQZSwGJo4xFmfhUH2uOiYxBr2cZU3vgTJDt9GzHQj17biHTmnSng2FJzufgybu3P798_GwWH_w9eXii9FCCEIqKKDWgABuSLB7Zzrh1ZAyNyqDwzNQ1I2nbQNH2-uYAX9vrI25Y7Vj7H3vd3-ujva79IX7xxPCtXefiimiB2eN6XRU_5PLvc8ssS3irVttut9V_LdX8pIa3NVrTod4Zmv1Fw3ieUJRSlIRLmqpZeckxIikKqArLm4CqgtIUzmSoKGKZp6oAJND0aJ3JRAbQk0RQFwQXNLFLAPVoU6EUEkxpOVBxwss4ZZ7aVehqOvfacP0LXaK9gg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0BGPDMZ5C%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791860772%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DK7dkTVfF0m&ref_=sbx__sbtcd2_asin_2_price&pd_rd_w=QR06O&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=BzfKk&pd_rd_r=803d544f-04e7-4268-9af3-2190ff291794
+                            - generic [ref=f4e3051]:
+                              - generic [ref=f4e3052]: ₹1,188.00
+                              - generic [aria-hidden] [ref=f4e3053]:
+                                - text: ₹
+                                - generic [ref=f4e3054]:
+                                  - text: 1,188
+                                  - generic [ref=f4e3055]: .
+                                - text: "00"
+                          - generic [ref=f4e3056]: "List: ₹1,625.00"
+          - generic [ref=f4e3060]:
+            - heading "More results" [level=2] [ref=f4e3064]
+            - generic:
+              - list:
+                - listitem [ref=f4e3065]:
+                  - generic [ref=f4e3070]:
+                    - link [aria-hidden] [ref=f4e3073] [cursor=pointer]:
+                      - /url: /Fortune-Refined-Sunflower-Oil-Litre/dp/B0BSH35N3T/ref=sr_1_24?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-24
+                    - generic [ref=f4e3076]:
+                      - generic [ref=f4e3077]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3079]
+                        - link [ref=f4e3080] [cursor=pointer]:
+                          - /url: /Fortune-Refined-Sunflower-Oil-Litre/dp/B0BSH35N3T/ref=sr_1_24?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-24
+                          - heading "Refined Sunflower Oil, 5 litre Jar" [level=2] [ref=f4e3081]
+                      - generic [ref=f4e3088]:
+                        - text: "3.9"
+                        - button "3.9 out of 5 stars, rating details" [ref=f4e3090] [cursor=pointer]:
+                          - generic [ref=f4e3092]: 3.9 out of 5 stars
+                        - link "17 ratings" [ref=f4e3094] [cursor=pointer]:
+                          - /url: /Fortune-Refined-Sunflower-Oil-Litre/dp/B0BSH35N3T/ref=sr_1_24?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-24#customerReviews
+                          - text: (17)
+                      - generic [ref=f4e3095]:
+                        - generic [ref=f4e3097]:
+                          - generic [ref=f4e3098]: Price, product page
+                          - 'link "₹1,300 ( ₹260 /l) M.R.P: ₹1,350 M.R.P: ₹1,350" [ref=f4e3099] [cursor=pointer]':
+                            - /url: /Fortune-Refined-Sunflower-Oil-Litre/dp/B0BSH35N3T/ref=sr_1_24?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-24
+                            - generic [ref=f4e3100]:
+                              - generic [ref=f4e3101]: ₹1,300
+                              - generic [aria-hidden] [ref=f4e3102]: ₹1,300
+                            - generic [ref=f4e3103]:
+                              - text: (
+                              - generic [ref=f4e3104]:
+                                - generic [ref=f4e3105]: ₹260
+                                - text: ₹260
+                              - text: /l)
+                            - generic [ref=f4e3106]: "M.R.P: ₹1,350"
+                            - generic [ref=f4e3107]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3108]:
+                                - generic [ref=f4e3109]: ₹1,350
+                                - text: ₹1,350
+                          - text: (4% off)
+                        - generic [ref=f4e3113]:
+                          - generic [ref=f4e3114]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3115]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3116]: ₹119 delivery Tue, 27 Oct
+                      - generic [ref=f4e3136] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3137]
+                        - generic [aria-hidden] [ref=f4e3138]: Add to cart
+                - listitem [ref=f4e3139]:
+                  - generic [ref=f4e3144]:
+                    - link [aria-hidden] [ref=f4e3147] [cursor=pointer]:
+                      - /url: /Emami-Healthy-Tasty-Refined-Sunflower/dp/B01MZZKFYC/ref=sr_1_25_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-25
+                    - generic [ref=f4e3150]:
+                      - link [ref=f4e3152] [cursor=pointer]:
+                        - /url: /Emami-Healthy-Tasty-Refined-Sunflower/dp/B01MZZKFYC/ref=sr_1_25_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-25
+                        - heading "Emami Healthy & Tasty Refined Sunflower Oil 910 g Pouch" [level=2] [ref=f4e3153]
+                      - generic [ref=f4e3159]:
+                        - generic [ref=f4e3160]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e3162] [cursor=pointer]:
+                            - generic [ref=f4e3164]: 4.2 out of 5 stars
+                          - link "6,052 ratings" [ref=f4e3166] [cursor=pointer]:
+                            - /url: /Emami-Healthy-Tasty-Refined-Sunflower/dp/B01MZZKFYC/ref=sr_1_25_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-25#customerReviews
+                            - text: (6K)
+                        - generic [ref=f4e3167]: 7K+ bought in past month
+                      - generic [ref=f4e3168]:
+                        - generic [ref=f4e3169]: Supersaver
+                        - generic [ref=f4e3174]:
+                          - generic [ref=f4e3175]: Price, product page
+                          - 'link "₹171 ( ₹207.27 /l) M.R.P: ₹194 M.R.P: ₹194" [ref=f4e3176] [cursor=pointer]':
+                            - /url: /Emami-Healthy-Tasty-Refined-Sunflower/dp/B01MZZKFYC/ref=sr_1_25_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-25
+                            - generic [ref=f4e3177]:
+                              - generic [ref=f4e3178]: ₹171
+                              - generic [aria-hidden] [ref=f4e3179]: ₹171
+                            - generic [ref=f4e3180]:
+                              - text: (
+                              - generic [ref=f4e3181]:
+                                - generic [ref=f4e3182]: ₹207.27
+                                - text: ₹207.27
+                              - text: /l)
+                            - generic [ref=f4e3183]: "M.R.P: ₹194"
+                            - generic [ref=f4e3184]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3185]:
+                                - generic [ref=f4e3186]: ₹194
+                                - text: ₹194
+                          - text: (12% off)
+                        - generic [ref=f4e3190]:
+                          - generic [ref=f4e3191]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3192]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3194]:
+                        - link [ref=f4e3196] [cursor=pointer]:
+                          - /url: /Emami-Healthy-Tasty-Refined-Sunflower/dp/B01MZZKFYC/ref=sr_1_25_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-25
+                          - img "Amazon Fresh" [ref=f4e3198]
+                        - generic [ref=f4e3199]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3216] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3217]
+                        - generic [aria-hidden] [ref=f4e3218]: Add to cart
+                - listitem [ref=f4e3219]:
+                  - generic [ref=f4e3224]:
+                    - link [aria-hidden] [ref=f4e3227] [cursor=pointer]:
+                      - /url: /Kten-SINCE-1984-TASTY-HEALTHY/dp/B09RT3CNKH/ref=sr_1_26?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-26
+                    - generic [ref=f4e3230]:
+                      - generic [ref=f4e3231]:
+                        - heading "Kten SINCE 1984 TASTY FOOD... HEALTHY MOOD!" [level=2] [ref=f4e3233]
+                        - link [ref=f4e3234] [cursor=pointer]:
+                          - /url: /Kten-SINCE-1984-TASTY-HEALTHY/dp/B09RT3CNKH/ref=sr_1_26?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-26
+                          - heading "Fortune Sunlite Refined Sunflower Oil, 5L With Long Handle Dessert Spoon Free" [level=2] [ref=f4e3235]
+                      - generic [ref=f4e3242]:
+                        - text: "4.2"
+                        - button "4.2 out of 5 stars, rating details" [ref=f4e3244] [cursor=pointer]:
+                          - generic [ref=f4e3246]: 4.2 out of 5 stars
+                        - link "27 ratings" [ref=f4e3248] [cursor=pointer]:
+                          - /url: /Kten-SINCE-1984-TASTY-HEALTHY/dp/B09RT3CNKH/ref=sr_1_26?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-26#customerReviews
+                          - text: (27)
+                      - generic [ref=f4e3249]:
+                        - generic [ref=f4e3251]:
+                          - generic [ref=f4e3252]: Price, product page
+                          - 'link "₹1,200 ( ₹240 /l) M.R.P: ₹1,800 M.R.P: ₹1,800" [ref=f4e3253] [cursor=pointer]':
+                            - /url: /Kten-SINCE-1984-TASTY-HEALTHY/dp/B09RT3CNKH/ref=sr_1_26?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-26
+                            - generic [ref=f4e3254]:
+                              - generic [ref=f4e3255]: ₹1,200
+                              - generic [aria-hidden] [ref=f4e3256]: ₹1,200
+                            - generic [ref=f4e3257]:
+                              - text: (
+                              - generic [ref=f4e3258]:
+                                - generic [ref=f4e3259]: ₹240
+                                - text: ₹240
+                              - text: /l)
+                            - generic [ref=f4e3260]: "M.R.P: ₹1,800"
+                            - generic [ref=f4e3261]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3262]:
+                                - generic [ref=f4e3263]: ₹1,800
+                                - text: ₹1,800
+                          - text: (33% off)
+                        - generic [ref=f4e3267]:
+                          - generic [ref=f4e3268]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3269]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3270]: ₹110 delivery Tue, 27 Oct
+                      - generic [ref=f4e3290] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3291]
+                        - generic [aria-hidden] [ref=f4e3292]: Add to cart
+                - listitem [ref=f4e3293]:
+                  - generic [ref=f4e3298]:
+                    - link [aria-hidden] [ref=f4e3301] [cursor=pointer]:
+                      - /url: /Fortune-Xpert-Pro-Immunity-Pouch/dp/B08X7HWQJM/ref=sr_1_27?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-27
+                    - generic [ref=f4e3304]:
+                      - generic [ref=f4e3305]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3307]
+                        - link [ref=f4e3308] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Pro-Immunity-Pouch/dp/B08X7HWQJM/ref=sr_1_27?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-27
+                          - heading "Xpert Pro Immunity Oil, 1L Pouch" [level=2] [ref=f4e3309]
+                      - generic [ref=f4e3315]:
+                        - generic [ref=f4e3316]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e3318] [cursor=pointer]:
+                            - generic [ref=f4e3320]: 4.1 out of 5 stars
+                          - link "6,184 ratings" [ref=f4e3322] [cursor=pointer]:
+                            - /url: /Fortune-Xpert-Pro-Immunity-Pouch/dp/B08X7HWQJM/ref=sr_1_27?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-27#customerReviews
+                            - text: (6.1K)
+                        - generic [ref=f4e3323]: 30K+ bought in past month
+                      - generic "Currently unavailable." [ref=f4e3326]
+                      - link "See options" [ref=f4e3333] [cursor=pointer]:
+                        - /url: /Fortune-Xpert-Pro-Immunity-Pouch/dp/B08X7HWQJM/ref=sr_1_27_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-27
+                - listitem [ref=f4e3334]:
+                  - generic [ref=f4e3339]:
+                    - link [aria-hidden] [ref=f4e3342] [cursor=pointer]:
+                      - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28
+                    - generic [ref=f4e3345]:
+                      - generic [ref=f4e3346]:
+                        - heading "Dhara" [level=2] [ref=f4e3348]
+                        - link [ref=f4e3349] [cursor=pointer]:
+                          - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28
+                          - heading "Refined Sunflower Oil 910grams/840grams(weight may vary)" [level=2] [ref=f4e3350]
+                      - generic [ref=f4e3356]:
+                        - generic [ref=f4e3357]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e3359] [cursor=pointer]:
+                            - generic [ref=f4e3361]: 4.3 out of 5 stars
+                          - link "11,315 ratings" [ref=f4e3363] [cursor=pointer]:
+                            - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28#customerReviews
+                            - text: (11.3K)
+                        - generic [ref=f4e3364]: 10K+ bought in past month
+                      - generic [ref=f4e3365]:
+                        - link "Free and Fast delivery" [ref=f4e3367] [cursor=pointer]:
+                          - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28
+                        - generic [ref=f4e3369]:
+                          - generic [ref=f4e3370]: Price, product page
+                          - 'link "₹200 ( ₹200 /l) M.R.P: ₹235 M.R.P: ₹235" [ref=f4e3371] [cursor=pointer]':
+                            - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28
+                            - generic [ref=f4e3372]:
+                              - generic [ref=f4e3373]: ₹200
+                              - generic [aria-hidden] [ref=f4e3374]: ₹200
+                            - generic [ref=f4e3375]:
+                              - text: (
+                              - generic [ref=f4e3376]:
+                                - generic [ref=f4e3377]: ₹200
+                                - text: ₹200
+                              - text: /l)
+                            - generic [ref=f4e3378]: "M.R.P: ₹235"
+                            - generic [ref=f4e3379]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3380]:
+                                - generic [ref=f4e3381]: ₹235
+                                - text: ₹235
+                          - text: (15% off)
+                        - generic [ref=f4e3385]:
+                          - generic [ref=f4e3386]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3387]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3389]:
+                        - link [ref=f4e3391] [cursor=pointer]:
+                          - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-28
+                          - img "Amazon Fresh" [ref=f4e3393]
+                        - generic [ref=f4e3394]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3411] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3412]
+                        - generic [aria-hidden] [ref=f4e3413]: Add to cart
+                      - generic [ref=f4e3415]:
+                        - separator [aria-hidden] [ref=f4e3416]
+                        - link "One-time purchase" [ref=f4e3417] [cursor=pointer]:
+                          - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-28
+                        - link:
+                          - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-28
+                        - generic [ref=f4e3418]:
+                          - link:
+                            - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-28
+                          - generic [ref=f4e3419]:
+                            - link "Price, product page":
+                              - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-28
+                            - link "₹200 ( ₹200 /l)" [ref=f4e3421] [cursor=pointer]:
+                              - /url: /Dhara-Health-Refined-Sunflower-Pouch/dp/B01N5VGYRM/ref=sr_1_28_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-28
+                              - generic [ref=f4e3422]:
+                                - generic [ref=f4e3423]: ₹200
+                                - generic [aria-hidden] [ref=f4e3424]: ₹200
+                              - generic [ref=f4e3425]:
+                                - text: (
+                                - generic [ref=f4e3426]:
+                                  - generic [ref=f4e3427]: ₹200
+                                  - text: ₹200
+                                - text: /l)
+                        - generic [ref=f4e3431]:
+                          - generic [ref=f4e3432]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3433]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e3434]: ₹100 delivery Fri, 23 Oct
+                - listitem [ref=f4e3440]:
+                  - generic [ref=f4e3445]:
+                    - link [aria-hidden] [ref=f4e3448] [cursor=pointer]:
+                      - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM5V1F9/ref=sr_1_29_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-29
+                    - generic [ref=f4e3451]:
+                      - generic [ref=f4e3452]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3454]
+                        - link [ref=f4e3455] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM5V1F9/ref=sr_1_29_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-29
+                          - 'heading "Xpert Total Balance Oil | Blend of Rice Bran, Soyabean & Flaxseed Oil | Balance of Fats & Omega 3 : Omega 6 | Best Oil for Heart Health| 5L Jar" [level=2] [ref=f4e3456]'
+                      - generic [ref=f4e3462]:
+                        - generic [ref=f4e3463]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e3465] [cursor=pointer]:
+                            - generic [ref=f4e3467]: 4.2 out of 5 stars
+                          - link "631 ratings" [ref=f4e3469] [cursor=pointer]:
+                            - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM5V1F9/ref=sr_1_29_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-29#customerReviews
+                            - text: (631)
+                        - generic [ref=f4e3470]: 1K+ bought in past month
+                      - generic [ref=f4e3471]:
+                        - generic [ref=f4e3472]: Supersaver
+                        - generic [ref=f4e3477]:
+                          - generic [ref=f4e3478]: Price, product page
+                          - 'link "₹889 ( ₹177.80 /l) M.R.P: ₹1,000 M.R.P: ₹1,000" [ref=f4e3479] [cursor=pointer]':
+                            - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM5V1F9/ref=sr_1_29_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-29
+                            - generic [ref=f4e3480]:
+                              - generic [ref=f4e3481]: ₹889
+                              - generic [aria-hidden] [ref=f4e3482]: ₹889
+                            - generic [ref=f4e3483]:
+                              - text: (
+                              - generic [ref=f4e3484]:
+                                - generic [ref=f4e3485]: ₹177.80
+                                - text: ₹177.80
+                              - text: /l)
+                            - generic [ref=f4e3486]: "M.R.P: ₹1,000"
+                            - generic [ref=f4e3487]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3488]:
+                                - generic [ref=f4e3489]: ₹1,000
+                                - text: ₹1,000
+                          - text: (11% off)
+                        - generic [ref=f4e3493]:
+                          - generic [ref=f4e3494]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3495]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3497]:
+                        - link [ref=f4e3499] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM5V1F9/ref=sr_1_29_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-29
+                          - img "Amazon Fresh" [ref=f4e3501]
+                        - generic [ref=f4e3502]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3519] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3520]
+                        - generic [aria-hidden] [ref=f4e3521]: Add to cart
+                - listitem [ref=f4e3522]:
+                  - generic [ref=f4e3527]:
+                    - link [aria-hidden] [ref=f4e3530] [cursor=pointer]:
+                      - /url: /Fortune-Vivo-Diabetes-Care-Oil/dp/B01A6PNZFU/ref=sr_1_30_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-30
+                    - generic [ref=f4e3533]:
+                      - generic [ref=f4e3534]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3536]
+                        - link [ref=f4e3537] [cursor=pointer]:
+                          - /url: /Fortune-Vivo-Diabetes-Care-Oil/dp/B01A6PNZFU/ref=sr_1_30_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-30
+                          - heading "Xpert Pro Sugar Conscious Edible Oil, Jar, 5 L" [level=2] [ref=f4e3538]
+                      - generic [ref=f4e3544]:
+                        - generic [ref=f4e3545]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e3547] [cursor=pointer]:
+                            - generic [ref=f4e3549]: 4.3 out of 5 stars
+                          - link "2,300 ratings" [ref=f4e3551] [cursor=pointer]:
+                            - /url: /Fortune-Vivo-Diabetes-Care-Oil/dp/B01A6PNZFU/ref=sr_1_30_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-30#customerReviews
+                            - text: (2.3K)
+                        - generic [ref=f4e3552]: 1K+ bought in past month
+                      - generic [ref=f4e3553]:
+                        - generic [ref=f4e3554]: Supersaver
+                        - generic [ref=f4e3559]:
+                          - generic [ref=f4e3560]: Price, product page
+                          - 'link "₹939 ( ₹187.80 /l) M.R.P: ₹1,100 M.R.P: ₹1,100" [ref=f4e3561] [cursor=pointer]':
+                            - /url: /Fortune-Vivo-Diabetes-Care-Oil/dp/B01A6PNZFU/ref=sr_1_30_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-30
+                            - generic [ref=f4e3562]:
+                              - generic [ref=f4e3563]: ₹939
+                              - generic [aria-hidden] [ref=f4e3564]: ₹939
+                            - generic [ref=f4e3565]:
+                              - text: (
+                              - generic [ref=f4e3566]:
+                                - generic [ref=f4e3567]: ₹187.80
+                                - text: ₹187.80
+                              - text: /l)
+                            - generic [ref=f4e3568]: "M.R.P: ₹1,100"
+                            - generic [ref=f4e3569]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3570]:
+                                - generic [ref=f4e3571]: ₹1,100
+                                - text: ₹1,100
+                          - text: (15% off)
+                        - generic [ref=f4e3575]:
+                          - generic [ref=f4e3576]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3577]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3579]:
+                        - link [ref=f4e3581] [cursor=pointer]:
+                          - /url: /Fortune-Vivo-Diabetes-Care-Oil/dp/B01A6PNZFU/ref=sr_1_30_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-30
+                          - img "Amazon Fresh" [ref=f4e3583]
+                        - generic [ref=f4e3584]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3601] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3602]
+                        - generic [aria-hidden] [ref=f4e3603]: Add to cart
+                - listitem [ref=f4e3604]:
+                  - generic [ref=f4e3609]:
+                    - link [aria-hidden] [ref=f4e3612] [cursor=pointer]:
+                      - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM4XYKB/ref=sr_1_31_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-31
+                    - generic [ref=f4e3615]:
+                      - generic [ref=f4e3616]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3618]
+                        - link [ref=f4e3619] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM4XYKB/ref=sr_1_31_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-31
+                          - 'heading "Xpert Total Balance Oil 850g pouch | Blend of Rice Bran, Soyabean & Flaxseed | Balance of Fats & Omega 3 : Omega 6 | Best for Heart Health" [level=2] [ref=f4e3620]'
+                      - generic [ref=f4e3626]:
+                        - generic [ref=f4e3627]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e3629] [cursor=pointer]:
+                            - generic [ref=f4e3631]: 4.1 out of 5 stars
+                          - link "1,731 ratings" [ref=f4e3633] [cursor=pointer]:
+                            - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM4XYKB/ref=sr_1_31_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-31#customerReviews
+                            - text: (1.7K)
+                        - generic [ref=f4e3634]: 3K+ bought in past month
+                      - generic [ref=f4e3635]:
+                        - generic [ref=f4e3636]: Supersaver
+                        - generic [ref=f4e3641]:
+                          - generic [ref=f4e3642]: Price, product page
+                          - 'link "₹165 ( ₹194.12 /kg) M.R.P: ₹200 M.R.P: ₹200" [ref=f4e3643] [cursor=pointer]':
+                            - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM4XYKB/ref=sr_1_31_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-31
+                            - generic [ref=f4e3644]:
+                              - generic [ref=f4e3645]: ₹165
+                              - generic [aria-hidden] [ref=f4e3646]: ₹165
+                            - generic [ref=f4e3647]:
+                              - text: (
+                              - generic [ref=f4e3648]:
+                                - generic [ref=f4e3649]: ₹194.12
+                                - text: ₹194.12
+                              - text: /kg)
+                            - generic [ref=f4e3650]: "M.R.P: ₹200"
+                            - generic [ref=f4e3651]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3652]:
+                                - generic [ref=f4e3653]: ₹200
+                                - text: ₹200
+                          - text: (18% off)
+                        - generic [ref=f4e3657]:
+                          - generic [ref=f4e3658]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3659]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3661]:
+                        - link [ref=f4e3663] [cursor=pointer]:
+                          - /url: /Fortune-Xpert-Balance-Soyabean-Flaxseed/dp/B09NM4XYKB/ref=sr_1_31_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-31
+                          - img "Amazon Fresh" [ref=f4e3665]
+                        - generic [ref=f4e3666]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3683] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3684]
+                        - generic [aria-hidden] [ref=f4e3685]: Add to cart
+                - listitem [ref=f4e3686]:
+                  - generic [ref=f4e3691]:
+                    - link [aria-hidden] [ref=f4e3694] [cursor=pointer]:
+                      - /url: /Fortune-Sunlite-Refined-Sunflower-Weight/dp/B0GDQWH88W/ref=sr_1_32?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-32
+                    - generic [ref=f4e3697]:
+                      - generic [ref=f4e3698]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3700]
+                        - link [ref=f4e3701] [cursor=pointer]:
+                          - /url: /Fortune-Sunlite-Refined-Sunflower-Weight/dp/B0GDQWH88W/ref=sr_1_32?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-32
+                          - heading "Sunlite Refined Sunflower Oil, 910gm/1L Pouch (Weight May Vary)" [level=2] [ref=f4e3702]
+                      - generic [ref=f4e3708]:
+                        - generic [ref=f4e3709]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e3711] [cursor=pointer]:
+                            - generic [ref=f4e3713]: 4.4 out of 5 stars
+                          - link "45,201 ratings" [ref=f4e3715] [cursor=pointer]:
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Weight/dp/B0GDQWH88W/ref=sr_1_32?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-32#customerReviews
+                            - text: (45.2K)
+                        - generic [ref=f4e3716]: 30K+ bought in past month
+                      - generic [ref=f4e3717]:
+                        - generic [ref=f4e3719]:
+                          - generic [ref=f4e3720]: Price, product page
+                          - 'link "₹195 ( ₹214.29 /kg) M.R.P: ₹215 M.R.P: ₹215" [ref=f4e3721] [cursor=pointer]':
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Weight/dp/B0GDQWH88W/ref=sr_1_32?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-32
+                            - generic [ref=f4e3722]:
+                              - generic [ref=f4e3723]: ₹195
+                              - generic [aria-hidden] [ref=f4e3724]: ₹195
+                            - generic [ref=f4e3725]:
+                              - text: (
+                              - generic [ref=f4e3726]:
+                                - generic [ref=f4e3727]: ₹214.29
+                                - text: ₹214.29
+                              - text: /kg)
+                            - generic [ref=f4e3728]: "M.R.P: ₹215"
+                            - generic [ref=f4e3729]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e3730]:
+                                - generic [ref=f4e3731]: ₹215
+                                - text: ₹215
+                          - text: (9% off)
+                        - generic [ref=f4e3735]:
+                          - generic [ref=f4e3736]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3737]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3738]: ₹70 delivery Thu, 22 Oct
+                      - generic [ref=f4e3758] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3759]
+                        - generic [aria-hidden] [ref=f4e3760]: Add to cart
+                - listitem [ref=f4e3761]:
+                  - generic [ref=f4e3766]:
+                    - link [aria-hidden] [ref=f4e3769] [cursor=pointer]:
+                      - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33
+                    - generic [ref=f4e3772]:
+                      - generic [ref=f4e3773]:
+                        - heading "Patanjali" [level=2] [ref=f4e3775]
+                        - link [ref=f4e3776] [cursor=pointer]:
+                          - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33
+                          - heading "Fortified Sunflower Oil 1L, Cold Pressed Cooking oil suitable for Cooking & Frying, Nutrient-Rich & Cholesterol Free Cooking Oil for Everyday Use" [level=2] [ref=f4e3777]
+                      - generic [ref=f4e3783]:
+                        - generic [ref=f4e3784]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e3786] [cursor=pointer]:
+                            - generic [ref=f4e3788]: 4.1 out of 5 stars
+                          - link "386 ratings" [ref=f4e3790] [cursor=pointer]:
+                            - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33#customerReviews
+                            - text: (386)
+                        - generic [ref=f4e3791]: 700+ bought in past month
+                      - generic [ref=f4e3792]:
+                        - link "Free and Fast delivery" [ref=f4e3794] [cursor=pointer]:
+                          - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33
+                        - generic [ref=f4e3796]:
+                          - generic [ref=f4e3797]: Price, product page
+                          - link "₹225 ( ₹225 /l)" [ref=f4e3798] [cursor=pointer]:
+                            - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33
+                            - generic [ref=f4e3799]:
+                              - generic [ref=f4e3800]: ₹225
+                              - generic [aria-hidden] [ref=f4e3801]: ₹225
+                            - generic [ref=f4e3802]:
+                              - text: (
+                              - generic [ref=f4e3803]:
+                                - generic [ref=f4e3804]: ₹225
+                                - text: ₹225
+                              - text: /l)
+                        - generic [ref=f4e3808]:
+                          - generic [ref=f4e3809]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3810]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3812]:
+                        - link [ref=f4e3814] [cursor=pointer]:
+                          - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-33
+                          - img "Amazon Fresh" [ref=f4e3816]
+                        - generic [ref=f4e3817]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e3834] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3835]
+                        - generic [aria-hidden] [ref=f4e3836]: Add to cart
+                      - generic [ref=f4e3838]:
+                        - separator [aria-hidden] [ref=f4e3839]
+                        - link "One-time purchase" [ref=f4e3840] [cursor=pointer]:
+                          - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-33
+                        - link:
+                          - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-33
+                        - generic [ref=f4e3841]:
+                          - link:
+                            - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-33
+                          - generic [ref=f4e3842]:
+                            - link "Price, product page":
+                              - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-33
+                            - link "₹175 ( ₹175 /l)" [ref=f4e3844] [cursor=pointer]:
+                              - /url: /Patanjali-Fortified-Sunflower-Cooking-Delicious/dp/B0CPY5MWTH/ref=sr_1_33_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-33
+                              - generic [ref=f4e3845]:
+                                - generic [ref=f4e3846]: ₹175
+                                - generic [aria-hidden] [ref=f4e3847]: ₹175
+                              - generic [ref=f4e3848]:
+                                - text: (
+                                - generic [ref=f4e3849]:
+                                  - generic [ref=f4e3850]: ₹175
+                                  - text: ₹175
+                                - text: /l)
+                        - generic [ref=f4e3854]:
+                          - generic [ref=f4e3855]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3856]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e3857]: ₹55 delivery 21 - 23 Oct
+                - listitem [ref=f4e3863]:
+                  - generic [ref=f4e3868]:
+                    - link [aria-hidden] [ref=f4e3871] [cursor=pointer]:
+                      - /url: /Fortune-Refined-Soyabean-Fortified-Vitamins/dp/B0FP2Z1NSP/ref=sr_1_34?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-34
+                    - generic [ref=f4e3874]:
+                      - generic [ref=f4e3875]:
+                        - heading "FORTUNE" [level=2] [ref=f4e3877]
+                        - link [ref=f4e3878] [cursor=pointer]:
+                          - /url: /Fortune-Refined-Soyabean-Fortified-Vitamins/dp/B0FP2Z1NSP/ref=sr_1_34?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-34
+                          - heading "Soya Health Refined Soyabean Oil, 750g, Fortified with Vitamins A and D" [level=2] [ref=f4e3879]
+                      - generic [ref=f4e3885]:
+                        - generic [ref=f4e3886]:
+                          - text: "3.9"
+                          - button "3.9 out of 5 stars, rating details" [ref=f4e3888] [cursor=pointer]:
+                            - generic [ref=f4e3890]: 3.9 out of 5 stars
+                          - link "1,411 ratings" [ref=f4e3892] [cursor=pointer]:
+                            - /url: /Fortune-Refined-Soyabean-Fortified-Vitamins/dp/B0FP2Z1NSP/ref=sr_1_34?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-34#customerReviews
+                            - text: (1.4K)
+                        - generic [ref=f4e3893]: 50K+ bought in past month
+                      - generic [ref=f4e3894]:
+                        - generic [ref=f4e3896]:
+                          - generic [ref=f4e3897]: Price, product page
+                          - link "₹195 ( ₹260 /l)" [ref=f4e3898] [cursor=pointer]:
+                            - /url: /Fortune-Refined-Soyabean-Fortified-Vitamins/dp/B0FP2Z1NSP/ref=sr_1_34?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-34
+                            - generic [ref=f4e3899]:
+                              - generic [ref=f4e3900]: ₹195
+                              - generic [aria-hidden] [ref=f4e3901]: ₹195
+                            - generic [ref=f4e3902]:
+                              - text: (
+                              - generic [ref=f4e3903]:
+                                - generic [ref=f4e3904]: ₹260
+                                - text: ₹260
+                              - text: /l)
+                        - generic [ref=f4e3908]:
+                          - generic [ref=f4e3909]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3910]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3911]: ₹74 delivery Fri, 23 Oct
+                      - generic [ref=f4e3931] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e3932]
+                        - generic [aria-hidden] [ref=f4e3933]: Add to cart
+                - listitem [ref=f4e3934]:
+                  - generic [ref=f4e3939]:
+                    - link [aria-hidden] [ref=f4e3942] [cursor=pointer]:
+                      - /url: /Sunrich-Sunflower-Oil-Jar-5L/dp/B019RJOB04/ref=sr_1_35_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-35
+                    - generic [ref=f4e3945]:
+                      - generic [ref=f4e3946]:
+                        - heading "Sunrich" [level=2] [ref=f4e3948]
+                        - link [ref=f4e3949] [cursor=pointer]:
+                          - /url: /Sunrich-Sunflower-Oil-Jar-5L/dp/B019RJOB04/ref=sr_1_35_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-35
+                          - heading "Refined Sunflower Oil(Jar) 4.25 kg / 4.5 kg (Weight May Vary)" [level=2] [ref=f4e3950]
+                      - generic [ref=f4e3957]:
+                        - text: "4.1"
+                        - button "4.1 out of 5 stars, rating details" [ref=f4e3959] [cursor=pointer]:
+                          - generic [ref=f4e3961]: 4.1 out of 5 stars
+                        - link "184 ratings" [ref=f4e3963] [cursor=pointer]:
+                          - /url: /Sunrich-Sunflower-Oil-Jar-5L/dp/B019RJOB04/ref=sr_1_35_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-35#customerReviews
+                          - text: (184)
+                      - generic [ref=f4e3964]:
+                        - generic [ref=f4e3966]:
+                          - generic [ref=f4e3967]: Price, product page
+                          - link "₹1,190 ( ₹261.54 /kg)" [ref=f4e3968] [cursor=pointer]:
+                            - /url: /Sunrich-Sunflower-Oil-Jar-5L/dp/B019RJOB04/ref=sr_1_35_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-35
+                            - generic [ref=f4e3969]:
+                              - generic [ref=f4e3970]: ₹1,190
+                              - generic [aria-hidden] [ref=f4e3971]: ₹1,190
+                            - generic [ref=f4e3972]:
+                              - text: (
+                              - generic [ref=f4e3973]:
+                                - generic [ref=f4e3974]: ₹261.54
+                                - text: ₹261.54
+                              - text: /kg)
+                        - generic [ref=f4e3978]:
+                          - generic [ref=f4e3979]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e3980]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e3982]:
+                        - link [ref=f4e3984] [cursor=pointer]:
+                          - /url: /Sunrich-Sunflower-Oil-Jar-5L/dp/B019RJOB04/ref=sr_1_35_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-35
+                          - img "Amazon Fresh" [ref=f4e3986]
+                        - generic [ref=f4e3987]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e4004] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4005]
+                        - generic [aria-hidden] [ref=f4e4006]: Add to cart
+                - listitem [ref=f4e4007]:
+                  - generic [ref=f4e4012]:
+                    - link [aria-hidden] [ref=f4e4015] [cursor=pointer]:
+                      - /url: /Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sr_1_36?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-36
+                    - generic [ref=f4e4018]:
+                      - generic [ref=f4e4019]:
+                        - heading "JIVO" [level=2] [ref=f4e4021]
+                        - link [ref=f4e4022] [cursor=pointer]:
+                          - /url: /Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sr_1_36?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-36
+                          - heading "Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [level=2] [ref=f4e4023]
+                      - generic [ref=f4e4029]:
+                        - generic [ref=f4e4030]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=f4e4032] [cursor=pointer]:
+                            - generic [ref=f4e4034]: 4.0 out of 5 stars
+                          - link "5,483 ratings" [ref=f4e4036] [cursor=pointer]:
+                            - /url: /Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sr_1_36?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-36#customerReviews
+                            - text: (5.4K)
+                        - generic [ref=f4e4037]: 10K+ bought in past month
+                      - generic [ref=f4e4038]:
+                        - generic [ref=f4e4040]:
+                          - generic [ref=f4e4041]: Price, product page
+                          - 'link "₹999 ( ₹199.80 /l) M.R.P: ₹1,350 M.R.P: ₹1,350" [ref=f4e4042] [cursor=pointer]':
+                            - /url: /Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sr_1_36?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-36
+                            - generic [ref=f4e4043]:
+                              - generic [ref=f4e4044]: ₹999
+                              - generic [aria-hidden] [ref=f4e4045]: ₹999
+                            - generic [ref=f4e4046]:
+                              - text: (
+                              - generic [ref=f4e4047]:
+                                - generic [ref=f4e4048]: ₹199.80
+                                - text: ₹199.80
+                              - text: /l)
+                            - generic [ref=f4e4049]: "M.R.P: ₹1,350"
+                            - generic [ref=f4e4050]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4051]:
+                                - generic [ref=f4e4052]: ₹1,350
+                                - text: ₹1,350
+                          - text: (26% off)
+                        - generic [ref=f4e4056]:
+                          - generic [ref=f4e4057]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4058]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4059]: FREE delivery 15 - 22 Oct
+                      - generic [ref=f4e4077] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4078]
+                        - generic [aria-hidden] [ref=f4e4079]: Add to cart
+                - listitem [ref=f4e4080]:
+                  - generic [ref=f4e4085]:
+                    - link [aria-hidden] [ref=f4e4088] [cursor=pointer]:
+                      - /url: /Sundrop-Superlite-Advanced-Sunflower-Oil/dp/B07HCMPG78/ref=sr_1_37_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-37
+                    - generic [ref=f4e4091]:
+                      - generic [ref=f4e4092]:
+                        - heading "Sundrop" [level=2] [ref=f4e4094]
+                        - link [ref=f4e4095] [cursor=pointer]:
+                          - /url: /Sundrop-Superlite-Advanced-Sunflower-Oil/dp/B07HCMPG78/ref=sr_1_37_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-37
+                          - heading "Superlite Advanced Oil, 3L(Offer Pack)" [level=2] [ref=f4e4096]
+                      - generic [ref=f4e4102]:
+                        - generic [ref=f4e4103]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=f4e4105] [cursor=pointer]:
+                            - generic [ref=f4e4107]: 4.5 out of 5 stars
+                          - link "2,207 ratings" [ref=f4e4109] [cursor=pointer]:
+                            - /url: /Sundrop-Superlite-Advanced-Sunflower-Oil/dp/B07HCMPG78/ref=sr_1_37_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-37#customerReviews
+                            - text: (2.2K)
+                        - generic [ref=f4e4110]: 6K+ bought in past month
+                      - generic [ref=f4e4111]:
+                        - generic [ref=f4e4113]:
+                          - generic [ref=f4e4114]: Price, product page
+                          - 'link "₹668 ( ₹244.69 /l) M.R.P: ₹699 M.R.P: ₹699" [ref=f4e4115] [cursor=pointer]':
+                            - /url: /Sundrop-Superlite-Advanced-Sunflower-Oil/dp/B07HCMPG78/ref=sr_1_37_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-37
+                            - generic [ref=f4e4116]:
+                              - generic [ref=f4e4117]: ₹668
+                              - generic [aria-hidden] [ref=f4e4118]: ₹668
+                            - generic [ref=f4e4119]:
+                              - text: (
+                              - generic [ref=f4e4120]:
+                                - generic [ref=f4e4121]: ₹244.69
+                                - text: ₹244.69
+                              - text: /l)
+                            - generic [ref=f4e4122]: "M.R.P: ₹699"
+                            - generic [ref=f4e4123]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4124]:
+                                - generic [ref=f4e4125]: ₹699
+                                - text: ₹699
+                          - text: (4% off)
+                        - generic [ref=f4e4129]:
+                          - generic [ref=f4e4130]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4131]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4133]:
+                        - link [ref=f4e4135] [cursor=pointer]:
+                          - /url: /Sundrop-Superlite-Advanced-Sunflower-Oil/dp/B07HCMPG78/ref=sr_1_37_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-37
+                          - img "Amazon Fresh" [ref=f4e4137]
+                        - generic [ref=f4e4138]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e4155] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4156]
+                        - generic [aria-hidden] [ref=f4e4157]: Add to cart
+                - listitem [ref=f4e4158]:
+                  - generic [ref=f4e4163]:
+                    - link [aria-hidden] [ref=f4e4166] [cursor=pointer]:
+                      - /url: /Saffola-Sunflower-Multi-source-absorption-Vitamin/dp/B00QV90A72/ref=sr_1_38_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-38
+                    - generic [ref=f4e4169]:
+                      - generic [ref=f4e4170]:
+                        - heading "Saffola" [level=2] [ref=f4e4172]
+                        - link [ref=f4e4173] [cursor=pointer]:
+                          - /url: /Saffola-Sunflower-Multi-source-absorption-Vitamin/dp/B00QV90A72/ref=sr_1_38_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-38
+                          - heading "Total | Rice Bran & Sunflower Multi-source Edible Oil| Less oil absorption | Vitamin A & D | 5 Litre Jar" [level=2] [ref=f4e4174]
+                      - generic [ref=f4e4180]:
+                        - generic [ref=f4e4181]: Number 1 Top-Rated
+                        - generic [ref=f4e4182]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e4184] [cursor=pointer]:
+                            - generic [ref=f4e4186]: 4.4 out of 5 stars
+                          - link "9,905 ratings" [ref=f4e4188] [cursor=pointer]:
+                            - /url: /Saffola-Sunflower-Multi-source-absorption-Vitamin/dp/B00QV90A72/ref=sr_1_38_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-38#customerReviews
+                            - text: (9.9K)
+                        - generic [ref=f4e4189]: 3K+ bought in past month
+                      - generic [ref=f4e4190]:
+                        - generic [ref=f4e4192]:
+                          - generic [ref=f4e4193]: Price, product page
+                          - 'link "₹1,175 ( ₹235 /l) M.R.P: ₹1,425 M.R.P: ₹1,425" [ref=f4e4194] [cursor=pointer]':
+                            - /url: /Saffola-Sunflower-Multi-source-absorption-Vitamin/dp/B00QV90A72/ref=sr_1_38_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-38
+                            - generic [ref=f4e4195]:
+                              - generic [ref=f4e4196]: ₹1,175
+                              - generic [aria-hidden] [ref=f4e4197]: ₹1,175
+                            - generic [ref=f4e4198]:
+                              - text: (
+                              - generic [ref=f4e4199]:
+                                - generic [ref=f4e4200]: ₹235
+                                - text: ₹235
+                              - text: /l)
+                            - generic [ref=f4e4201]: "M.R.P: ₹1,425"
+                            - generic [ref=f4e4202]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4203]:
+                                - generic [ref=f4e4204]: ₹1,425
+                                - text: ₹1,425
+                          - text: (18% off)
+                        - generic [ref=f4e4208]:
+                          - generic [ref=f4e4209]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4210]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4212]:
+                        - link [ref=f4e4214] [cursor=pointer]:
+                          - /url: /Saffola-Sunflower-Multi-source-absorption-Vitamin/dp/B00QV90A72/ref=sr_1_38_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-38
+                          - img "Amazon Fresh" [ref=f4e4216]
+                        - generic [ref=f4e4217]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e4234] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4235]
+                        - generic [aria-hidden] [ref=f4e4236]: Add to cart
+                - listitem [ref=f4e4237]:
+                  - generic [ref=f4e4242]:
+                    - link [aria-hidden] [ref=f4e4245] [cursor=pointer]:
+                      - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39
+                    - generic [ref=f4e4248]:
+                      - generic [ref=f4e4249]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4251]
+                        - link [ref=f4e4252] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39
+                          - heading "Pehli Dhaar First Pressed Kachi Ghani Mustard Oil 1 L" [level=2] [ref=f4e4253]
+                      - generic [ref=f4e4259]:
+                        - generic [ref=f4e4260]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e4262] [cursor=pointer]:
+                            - generic [ref=f4e4264]: 4.4 out of 5 stars
+                          - link "1,660 ratings" [ref=f4e4266] [cursor=pointer]:
+                            - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39#customerReviews
+                            - text: (1.6K)
+                        - generic [ref=f4e4267]: 4K+ bought in past month
+                      - generic [ref=f4e4268]:
+                        - link "Free and Fast delivery" [ref=f4e4270] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39
+                        - generic [ref=f4e4271]: Supersaver
+                        - generic [ref=f4e4276]:
+                          - generic [ref=f4e4277]: Price, product page
+                          - 'link "₹215 ( ₹215 /l) M.R.P: ₹299 M.R.P: ₹299" [ref=f4e4278] [cursor=pointer]':
+                            - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39
+                            - generic [ref=f4e4279]:
+                              - generic [ref=f4e4280]: ₹215
+                              - generic [aria-hidden] [ref=f4e4281]: ₹215
+                            - generic [ref=f4e4282]:
+                              - text: (
+                              - generic [ref=f4e4283]:
+                                - generic [ref=f4e4284]: ₹215
+                                - text: ₹215
+                              - text: /l)
+                            - generic [ref=f4e4285]: "M.R.P: ₹299"
+                            - generic [ref=f4e4286]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4287]:
+                                - generic [ref=f4e4288]: ₹299
+                                - text: ₹299
+                          - text: (28% off)
+                        - generic [ref=f4e4292]:
+                          - generic [ref=f4e4293]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4294]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4296]:
+                        - link [ref=f4e4298] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-39
+                          - img "Amazon Fresh" [ref=f4e4300]
+                        - generic [ref=f4e4301]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e4318] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4319]
+                        - generic [aria-hidden] [ref=f4e4320]: Add to cart
+                      - generic [ref=f4e4322]:
+                        - separator [aria-hidden] [ref=f4e4323]
+                        - link "One-time purchase" [ref=f4e4324] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39
+                        - link:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39
+                        - generic [ref=f4e4325]:
+                          - link:
+                            - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39
+                          - generic [ref=f4e4326]:
+                            - link "Price, product page":
+                              - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39
+                            - link "₹230 ( ₹230 /l)" [ref=f4e4328] [cursor=pointer]:
+                              - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45H471Q/ref=sr_1_39_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39
+                              - generic [ref=f4e4329]:
+                                - generic [ref=f4e4330]: ₹230
+                                - generic [aria-hidden] [ref=f4e4331]: ₹230
+                              - generic [ref=f4e4332]:
+                                - text: (
+                                - generic [ref=f4e4333]:
+                                  - generic [ref=f4e4334]: ₹230
+                                  - text: ₹230
+                                - text: /l)
+                        - generic [ref=f4e4338]:
+                          - generic [ref=f4e4339]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4340]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e4342]:
+                          - generic [ref=f4e4343]: FREE delivery Thu, 15 Oct
+                          - generic [ref=f4e4345]: Or fastest delivery Today 11 am - 1 pm
+                - listitem [ref=f4e4347]:
+                  - generic [ref=f4e4352]:
+                    - link [aria-hidden] [ref=f4e4355] [cursor=pointer]:
+                      - /url: /KUNDAN-Refined-Sunflower-Oil-Enriched/dp/B0H7J822DZ/ref=sr_1_40?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-40
+                    - generic [ref=f4e4358]:
+                      - generic [ref=f4e4359]:
+                        - heading "KUNDAN" [level=2] [ref=f4e4361]
+                        - link [ref=f4e4362] [cursor=pointer]:
+                          - /url: /KUNDAN-Refined-Sunflower-Oil-Enriched/dp/B0H7J822DZ/ref=sr_1_40?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-40
+                          - heading "Refined Sunflower Oil - 15 Litre, Enriched with Vitamin A & D, High Smoke Point Cooking Oil for Frying Sautéing Baking and Everyday Cooking" [level=2] [ref=f4e4363]
+                      - generic [ref=f4e4369]:
+                        - generic [ref=f4e4371]:
+                          - generic [ref=f4e4372]: Price, product page
+                          - 'link "₹3,699 ( ₹246.60 /l) M.R.P: ₹4,999 M.R.P: ₹4,999" [ref=f4e4373] [cursor=pointer]':
+                            - /url: /KUNDAN-Refined-Sunflower-Oil-Enriched/dp/B0H7J822DZ/ref=sr_1_40?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-40
+                            - generic [ref=f4e4374]:
+                              - generic [ref=f4e4375]: ₹3,699
+                              - generic [aria-hidden] [ref=f4e4376]: ₹3,699
+                            - generic [ref=f4e4377]:
+                              - text: (
+                              - generic [ref=f4e4378]:
+                                - generic [ref=f4e4379]: ₹246.60
+                                - text: ₹246.60
+                              - text: /l)
+                            - generic [ref=f4e4380]: "M.R.P: ₹4,999"
+                            - generic [ref=f4e4381]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4382]:
+                                - generic [ref=f4e4383]: ₹4,999
+                                - text: ₹4,999
+                          - text: (26% off)
+                        - generic [ref=f4e4387]:
+                          - generic [ref=f4e4388]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4389]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4390]: FREE delivery Mon, 19 Oct
+                      - generic [ref=f4e4410] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4411]
+                        - generic [aria-hidden] [ref=f4e4412]: Add to cart
+                - listitem [ref=f4e4413]:
+                  - generic [ref=f4e4418]:
+                    - link [aria-hidden] [ref=f4e4421] [cursor=pointer]:
+                      - /url: /Fortune-Cooking-Nutrients-Oryzanol-Soyabean/dp/B0GKPXD6ZD/ref=sr_1_41?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-41
+                    - generic [ref=f4e4424]:
+                      - generic [ref=f4e4425]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4427]
+                        - link [ref=f4e4428] [cursor=pointer]:
+                          - /url: /Fortune-Cooking-Nutrients-Oryzanol-Soyabean/dp/B0GKPXD6ZD/ref=sr_1_41?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-41
+                          - heading "Xpert Active Cooking Oil 850gm | 5 Active Nutrients | Rich in Omega 3 & Oryzanol | Blend of Rice Bran Oil & Soyabean Oil" [level=2] [ref=f4e4429]
+                      - generic [ref=f4e4435]:
+                        - generic [ref=f4e4436]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e4438] [cursor=pointer]:
+                            - generic [ref=f4e4440]: 4.1 out of 5 stars
+                          - link "22 ratings" [ref=f4e4442] [cursor=pointer]:
+                            - /url: /Fortune-Cooking-Nutrients-Oryzanol-Soyabean/dp/B0GKPXD6ZD/ref=sr_1_41?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-41#customerReviews
+                            - text: (22)
+                        - generic [ref=f4e4443]: 800+ bought in past month
+                      - generic "Currently unavailable." [ref=f4e4446]
+                      - link "See options" [ref=f4e4453] [cursor=pointer]:
+                        - /url: /Fortune-Cooking-Nutrients-Oryzanol-Soyabean/dp/B0GKPXD6ZD/ref=sr_1_41_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-41
+                - listitem [ref=f4e4454]:
+                  - generic [ref=f4e4459]:
+                    - link [aria-hidden] [ref=f4e4462] [cursor=pointer]:
+                      - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45GNDRR/ref=sr_1_42_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-42
+                    - generic [ref=f4e4465]:
+                      - generic [ref=f4e4466]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4468]
+                        - link [ref=f4e4469] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45GNDRR/ref=sr_1_42_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-42
+                          - heading "Pehli Dhaar First Pressed Kachi Ghani Mustard Oil 1 L (Pouch)" [level=2] [ref=f4e4470]
+                      - generic [ref=f4e4476]:
+                        - generic [ref=f4e4477]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e4479] [cursor=pointer]:
+                            - generic [ref=f4e4481]: 4.3 out of 5 stars
+                          - link "879 ratings" [ref=f4e4483] [cursor=pointer]:
+                            - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45GNDRR/ref=sr_1_42_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-42#customerReviews
+                            - text: (879)
+                        - generic [ref=f4e4484]: 1K+ bought in past month
+                      - generic [ref=f4e4485]:
+                        - generic [ref=f4e4486]: Supersaver
+                        - generic [ref=f4e4491]:
+                          - generic [ref=f4e4492]: Price, product page
+                          - 'link "₹229 ( ₹251.65 /kg) M.R.P: ₹269 M.R.P: ₹269" [ref=f4e4493] [cursor=pointer]':
+                            - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45GNDRR/ref=sr_1_42_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-42
+                            - generic [ref=f4e4494]:
+                              - generic [ref=f4e4495]: ₹229
+                              - generic [aria-hidden] [ref=f4e4496]: ₹229
+                            - generic [ref=f4e4497]:
+                              - text: (
+                              - generic [ref=f4e4498]:
+                                - generic [ref=f4e4499]: ₹251.65
+                                - text: ₹251.65
+                              - text: /kg)
+                            - generic [ref=f4e4500]: "M.R.P: ₹269"
+                            - generic [ref=f4e4501]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4502]:
+                                - generic [ref=f4e4503]: ₹269
+                                - text: ₹269
+                          - text: (15% off)
+                        - generic [ref=f4e4507]:
+                          - generic [ref=f4e4508]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4509]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4511]:
+                        - link [ref=f4e4513] [cursor=pointer]:
+                          - /url: /Fortune-Pehli-Dhaar-Pressed-Mustard/dp/B0D45GNDRR/ref=sr_1_42_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-42
+                          - img "Amazon Fresh" [ref=f4e4515]
+                        - generic [ref=f4e4516]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e4533] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4534]
+                        - generic [aria-hidden] [ref=f4e4535]: Add to cart
+                - listitem [ref=f4e4536]:
+                  - generic [ref=f4e4541]:
+                    - link [aria-hidden] [ref=f4e4544] [cursor=pointer]:
+                      - /url: /Eywa-Seeds-Exports-Pvt-Ltd/dp/B0BTHNHFPB/ref=sr_1_43?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-43
+                    - generic [ref=f4e4547]:
+                      - generic [ref=f4e4548]:
+                        - heading "Eywa Seeds & Exports Pvt Ltd" [level=2] [ref=f4e4550]
+                        - link [ref=f4e4551] [cursor=pointer]:
+                          - /url: /Eywa-Seeds-Exports-Pvt-Ltd/dp/B0BTHNHFPB/ref=sr_1_43?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-43
+                          - heading "Organic Sunflower Oil(10 Liter) Cold Pressed|Surajmukhi/Sumflower Kachi Ghani Oil Wooden Press Oil by (Suhani) Eywa" [level=2] [ref=f4e4552]
+                      - generic [ref=f4e4559]:
+                        - text: "3.8"
+                        - button "3.8 out of 5 stars, rating details" [ref=f4e4561] [cursor=pointer]:
+                          - generic [ref=f4e4563]: 3.8 out of 5 stars
+                        - link "80 ratings" [ref=f4e4565] [cursor=pointer]:
+                          - /url: /Eywa-Seeds-Exports-Pvt-Ltd/dp/B0BTHNHFPB/ref=sr_1_43?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-43#customerReviews
+                          - text: (80)
+                      - generic [ref=f4e4566]:
+                        - generic [ref=f4e4568]:
+                          - generic [ref=f4e4569]: Price, product page
+                          - 'link "₹2,999 ( ₹299.90 /l) M.R.P: ₹3,540 M.R.P: ₹3,540" [ref=f4e4570] [cursor=pointer]':
+                            - /url: /Eywa-Seeds-Exports-Pvt-Ltd/dp/B0BTHNHFPB/ref=sr_1_43?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-43
+                            - generic [ref=f4e4571]:
+                              - generic [ref=f4e4572]: ₹2,999
+                              - generic [aria-hidden] [ref=f4e4573]: ₹2,999
+                            - generic [ref=f4e4574]:
+                              - text: (
+                              - generic [ref=f4e4575]:
+                                - generic [ref=f4e4576]: ₹299.90
+                                - text: ₹299.90
+                              - text: /l)
+                            - generic [ref=f4e4577]: "M.R.P: ₹3,540"
+                            - generic [ref=f4e4578]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4579]:
+                                - generic [ref=f4e4580]: ₹3,540
+                                - text: ₹3,540
+                          - text: (15% off)
+                        - generic [ref=f4e4584]:
+                          - generic [ref=f4e4585]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4586]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4587]: FREE delivery Mon, 19 Oct
+                      - generic [ref=f4e4607] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4608]
+                        - generic [aria-hidden] [ref=f4e4609]: Add to cart
+                - listitem [ref=f4e4610]:
+                  - generic [ref=f4e4615]:
+                    - link [aria-hidden] [ref=f4e4618] [cursor=pointer]:
+                      - /url: /Fortune-Sunlite-Refined-Sunflower-Stainless/dp/B0H58BGMKZ/ref=sr_1_44?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-44
+                    - generic [ref=f4e4621]:
+                      - link [ref=f4e4623] [cursor=pointer]:
+                        - /url: /Fortune-Sunlite-Refined-Sunflower-Stainless/dp/B0H58BGMKZ/ref=sr_1_44?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-44
+                        - heading "Fortune Sunlite Refined Sunflower Oil, 1 Liter with Stainless Steel Spoon" [level=2] [ref=f4e4624]
+                      - generic [ref=f4e4625]:
+                        - generic [ref=f4e4627]:
+                          - generic [ref=f4e4628]: Price, product page
+                          - 'link "₹219 ( ₹21.90 /100 ml) M.R.P: ₹429 M.R.P: ₹429" [ref=f4e4629] [cursor=pointer]':
+                            - /url: /Fortune-Sunlite-Refined-Sunflower-Stainless/dp/B0H58BGMKZ/ref=sr_1_44?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-44
+                            - generic [ref=f4e4630]:
+                              - generic [ref=f4e4631]: ₹219
+                              - generic [aria-hidden] [ref=f4e4632]: ₹219
+                            - generic [ref=f4e4633]:
+                              - text: (
+                              - generic [ref=f4e4634]:
+                                - generic [ref=f4e4635]: ₹21.90
+                                - text: ₹21.90
+                              - text: /100 ml)
+                            - generic [ref=f4e4636]: "M.R.P: ₹429"
+                            - generic [ref=f4e4637]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4638]:
+                                - generic [ref=f4e4639]: ₹429
+                                - text: ₹429
+                          - text: (49% off)
+                        - generic [ref=f4e4643]:
+                          - generic [ref=f4e4644]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4645]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4646]: ₹80 delivery Sat, 17 Oct
+                      - generic [ref=f4e4666] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4667]
+                        - generic [aria-hidden] [ref=f4e4668]: Add to cart
+                - listitem [ref=f4e4669]:
+                  - generic [ref=f4e4674]:
+                    - link [aria-hidden] [ref=f4e4677] [cursor=pointer]:
+                      - /url: /Sunflower-Fortified-Cholesterol-Roasting-Saut%C3%A9ing/dp/B0H5KGC6P7/ref=sr_1_45?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-45
+                    - generic [ref=f4e4680]:
+                      - generic [ref=f4e4681]:
+                        - heading "JIVO" [level=2] [ref=f4e4683]
+                        - link [ref=f4e4684] [cursor=pointer]:
+                          - /url: /Sunflower-Fortified-Cholesterol-Roasting-Saut%C3%A9ing/dp/B0H5KGC6P7/ref=sr_1_45?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-45
+                          - heading "First Pressed Sunflower Oil 1 Litre | High in PUFA | Vitamin A and D Fortified Oil | Cholesterol Free Oil | Ideal for Deep Frying, Roasting and Sautéing" [level=2] [ref=f4e4685]
+                      - generic [ref=f4e4691]:
+                        - generic [ref=f4e4692]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e4694] [cursor=pointer]:
+                            - generic [ref=f4e4696]: 4.2 out of 5 stars
+                          - link "69 ratings" [ref=f4e4698] [cursor=pointer]:
+                            - /url: /Sunflower-Fortified-Cholesterol-Roasting-Saut%C3%A9ing/dp/B0H5KGC6P7/ref=sr_1_45?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-45#customerReviews
+                            - text: (69)
+                        - generic [ref=f4e4699]: 600+ bought in past month
+                      - generic [ref=f4e4700]:
+                        - generic [ref=f4e4702]:
+                          - generic [ref=f4e4703]: Price, product page
+                          - 'link "₹239 ( ₹239 /l) M.R.P: ₹600 M.R.P: ₹600" [ref=f4e4704] [cursor=pointer]':
+                            - /url: /Sunflower-Fortified-Cholesterol-Roasting-Saut%C3%A9ing/dp/B0H5KGC6P7/ref=sr_1_45?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-45
+                            - generic [ref=f4e4705]:
+                              - generic [ref=f4e4706]: ₹239
+                              - generic [aria-hidden] [ref=f4e4707]: ₹239
+                            - generic [ref=f4e4708]:
+                              - text: (
+                              - generic [ref=f4e4709]:
+                                - generic [ref=f4e4710]: ₹239
+                                - text: ₹239
+                              - text: /l)
+                            - generic [ref=f4e4711]: "M.R.P: ₹600"
+                            - generic [ref=f4e4712]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4713]:
+                                - generic [ref=f4e4714]: ₹600
+                                - text: ₹600
+                          - text: (60% off)
+                        - generic [ref=f4e4718]:
+                          - generic [ref=f4e4719]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4720]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4723]:
+                        - generic [ref=f4e4724]: FREE delivery Mon, 19 Oct
+                        - generic [ref=f4e4726]: Or fastest delivery Today 11 am - 1 pm
+                      - generic [ref=f4e4741] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4742]
+                        - generic [aria-hidden] [ref=f4e4743]: Add to cart
+                - listitem [ref=f4e4744]:
+                  - generic [ref=f4e4749]:
+                    - link [aria-hidden] [ref=f4e4752] [cursor=pointer]:
+                      - /url: /Fortune-Plus-Soyabean-Oil-5l/dp/B09QM8MGT8/ref=sr_1_46?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-46
+                    - generic [ref=f4e4755]:
+                      - generic [ref=f4e4756]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4758]
+                        - link [ref=f4e4759] [cursor=pointer]:
+                          - /url: /Fortune-Plus-Soyabean-Oil-5l/dp/B09QM8MGT8/ref=sr_1_46?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-46
+                          - heading "Plus Soyabean Oil, 5l" [level=2] [ref=f4e4760]
+                      - generic [ref=f4e4767]:
+                        - text: "3.6"
+                        - button "3.6 out of 5 stars, rating details" [ref=f4e4769] [cursor=pointer]:
+                          - generic [ref=f4e4771]: 3.6 out of 5 stars
+                        - link "18 ratings" [ref=f4e4773] [cursor=pointer]:
+                          - /url: /Fortune-Plus-Soyabean-Oil-5l/dp/B09QM8MGT8/ref=sr_1_46?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-46#customerReviews
+                          - text: (18)
+                      - generic [ref=f4e4774]:
+                        - generic [ref=f4e4776]:
+                          - generic [ref=f4e4777]: Price, product page
+                          - 'link "₹1,445 ( ₹1,445 /count) M.R.P: ₹1,550 M.R.P: ₹1,550" [ref=f4e4778] [cursor=pointer]':
+                            - /url: /Fortune-Plus-Soyabean-Oil-5l/dp/B09QM8MGT8/ref=sr_1_46?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-46
+                            - generic [ref=f4e4779]:
+                              - generic [ref=f4e4780]: ₹1,445
+                              - generic [aria-hidden] [ref=f4e4781]: ₹1,445
+                            - generic [ref=f4e4782]:
+                              - text: (
+                              - generic [ref=f4e4783]:
+                                - generic [ref=f4e4784]: ₹1,445
+                                - text: ₹1,445
+                              - text: /count)
+                            - generic [ref=f4e4785]: "M.R.P: ₹1,550"
+                            - generic [ref=f4e4786]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4787]:
+                                - generic [ref=f4e4788]: ₹1,550
+                                - text: ₹1,550
+                          - text: (7% off)
+                        - generic [ref=f4e4792]:
+                          - generic [ref=f4e4793]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4794]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4795]: FREE delivery Thu, 15 Oct
+                      - generic [ref=f4e4815] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4816]
+                        - generic [aria-hidden] [ref=f4e4817]: Add to cart
+                - listitem [ref=f4e4818]:
+                  - generic [ref=f4e4823]:
+                    - link [aria-hidden] [ref=f4e4826] [cursor=pointer]:
+                      - /url: /Fortune-Filterd-Groundnut-Oil-1L/dp/B074RYYJHL/ref=sr_1_47?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-47
+                    - generic [ref=f4e4829]:
+                      - generic [ref=f4e4830]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4832]
+                        - link [ref=f4e4833] [cursor=pointer]:
+                          - /url: /Fortune-Filterd-Groundnut-Oil-1L/dp/B074RYYJHL/ref=sr_1_47?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-47
+                          - heading "Filterd Groundnut Oil - 1L" [level=2] [ref=f4e4834]
+                      - generic [ref=f4e4836]:
+                        - text: "3.9"
+                        - button "3.9 out of 5 stars, rating details" [ref=f4e4838] [cursor=pointer]:
+                          - generic [ref=f4e4840]: 3.9 out of 5 stars
+                        - link "26 ratings" [ref=f4e4842] [cursor=pointer]:
+                          - /url: /Fortune-Filterd-Groundnut-Oil-1L/dp/B074RYYJHL/ref=sr_1_47?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-47#customerReviews
+                          - text: (26)
+                      - generic [ref=f4e4843]:
+                        - generic [ref=f4e4845]:
+                          - generic [ref=f4e4846]: Price, product page
+                          - link "₹250 ( ₹250 /l)" [ref=f4e4847] [cursor=pointer]:
+                            - /url: /Fortune-Filterd-Groundnut-Oil-1L/dp/B074RYYJHL/ref=sr_1_47?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-47
+                            - generic [ref=f4e4848]:
+                              - generic [ref=f4e4849]: ₹250
+                              - generic [aria-hidden] [ref=f4e4850]: ₹250
+                            - generic [ref=f4e4851]:
+                              - text: (
+                              - generic [ref=f4e4852]:
+                                - generic [ref=f4e4853]: ₹250
+                                - text: ₹250
+                              - text: /l)
+                        - generic [ref=f4e4857]:
+                          - generic [ref=f4e4858]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4859]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4860]: ₹50 delivery Thu, 22 Oct
+                      - generic [ref=f4e4880] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4881]
+                        - generic [aria-hidden] [ref=f4e4882]: Add to cart
+                - listitem [ref=f4e4883]:
+                  - generic [ref=f4e4888]:
+                    - link [aria-hidden] [ref=f4e4891] [cursor=pointer]:
+                      - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B06XH9QPX2/ref=sr_1_48?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-48
+                    - generic [ref=f4e4894]:
+                      - generic [ref=f4e4895]:
+                        - heading "FORTUNE" [level=2] [ref=f4e4897]
+                        - link [ref=f4e4898] [cursor=pointer]:
+                          - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B06XH9QPX2/ref=sr_1_48?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-48
+                          - heading "Premium Kachi Ghani Pure Mustard Oil, 1 ltr pouch" [level=2] [ref=f4e4899]
+                      - generic [ref=f4e4905]:
+                        - generic [ref=f4e4906]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e4908] [cursor=pointer]:
+                            - generic [ref=f4e4910]: 4.4 out of 5 stars
+                          - link "58,346 ratings" [ref=f4e4912] [cursor=pointer]:
+                            - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B06XH9QPX2/ref=sr_1_48?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-48#customerReviews
+                            - text: (58.3K)
+                        - generic [ref=f4e4913]: 60K+ bought in past month
+                      - generic [ref=f4e4914]:
+                        - generic [ref=f4e4916]:
+                          - generic [ref=f4e4917]: Price, product page
+                          - 'link "₹178 ( ₹178 /l) M.R.P: ₹240 M.R.P: ₹240" [ref=f4e4918] [cursor=pointer]':
+                            - /url: /Fortune-Kachi-Ghani-Pure-Mustard/dp/B06XH9QPX2/ref=sr_1_48?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-48
+                            - generic [ref=f4e4919]:
+                              - generic [ref=f4e4920]: ₹178
+                              - generic [aria-hidden] [ref=f4e4921]: ₹178
+                            - generic [ref=f4e4922]:
+                              - text: (
+                              - generic [ref=f4e4923]:
+                                - generic [ref=f4e4924]: ₹178
+                                - text: ₹178
+                              - text: /l)
+                            - generic [ref=f4e4925]: "M.R.P: ₹240"
+                            - generic [ref=f4e4926]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e4927]:
+                                - generic [ref=f4e4928]: ₹240
+                                - text: ₹240
+                          - text: (26% off)
+                        - generic [ref=f4e4932]:
+                          - generic [ref=f4e4933]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e4934]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e4935]: ₹99 delivery 21 - 23 Oct
+                      - generic [ref=f4e4955] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e4956]
+                        - generic [aria-hidden] [ref=f4e4957]: Add to cart
+                - listitem [ref=f4e4958]:
+                  - generic [ref=f4e4963]:
+                    - link [aria-hidden] [ref=f4e4966] [cursor=pointer]:
+                      - /url: /Priya-Refined-Sunflower-Oil-Pouch/dp/B07WNJ4N8J/ref=sr_1_49?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-49
+                    - generic [ref=f4e4969]:
+                      - generic [ref=f4e4970]:
+                        - heading "Priya" [level=2] [ref=f4e4972]
+                        - link [ref=f4e4973] [cursor=pointer]:
+                          - /url: /Priya-Refined-Sunflower-Oil-Pouch/dp/B07WNJ4N8J/ref=sr_1_49?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-49
+                          - heading "Refined sunflower oil 750 gm / 1ltr weight may vary" [level=2] [ref=f4e4974]
+                      - generic [ref=f4e4980]:
+                        - generic [ref=f4e4981]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e4983] [cursor=pointer]:
+                            - generic [ref=f4e4985]: 4.2 out of 5 stars
+                          - link "2,546 ratings" [ref=f4e4987] [cursor=pointer]:
+                            - /url: /Priya-Refined-Sunflower-Oil-Pouch/dp/B07WNJ4N8J/ref=sr_1_49?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-49#customerReviews
+                            - text: (2.5K)
+                        - generic [ref=f4e4988]: 900+ bought in past month
+                      - generic [ref=f4e4989]:
+                        - generic [ref=f4e4991]:
+                          - generic [ref=f4e4992]: Price, product page
+                          - 'link "₹199 ( ₹199 /l) M.R.P: ₹225 M.R.P: ₹225" [ref=f4e4993] [cursor=pointer]':
+                            - /url: /Priya-Refined-Sunflower-Oil-Pouch/dp/B07WNJ4N8J/ref=sr_1_49?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-49
+                            - generic [ref=f4e4994]:
+                              - generic [ref=f4e4995]: ₹199
+                              - generic [aria-hidden] [ref=f4e4996]: ₹199
+                            - generic [ref=f4e4997]:
+                              - text: (
+                              - generic [ref=f4e4998]:
+                                - generic [ref=f4e4999]: ₹199
+                                - text: ₹199
+                              - text: /l)
+                            - generic [ref=f4e5000]: "M.R.P: ₹225"
+                            - generic [ref=f4e5001]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5002]:
+                                - generic [ref=f4e5003]: ₹225
+                                - text: ₹225
+                          - text: (12% off)
+                        - generic [ref=f4e5007]:
+                          - generic [ref=f4e5008]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5009]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5012]:
+                        - generic [ref=f4e5015]: ₹80 delivery Thu, 15 Oct
+                        - generic [ref=f4e5017]: Or fastest delivery Tomorrow, 14 Oct
+                      - generic [ref=f4e5032] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5033]
+                        - generic [aria-hidden] [ref=f4e5034]: Add to cart
+                      - generic [ref=f4e5036]:
+                        - text: More Buying Choices₹173
+                        - link "(2 new offers)" [ref=f4e5038] [cursor=pointer]:
+                          - /url: /gp/offer-listing/B07WNJ4N8J/ref=sr_1_49_olp?keywords=fortune+sunflower+oil+15&dib_tag=se&dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&qid=1791860772&sr=8-49
+                - listitem [ref=f4e5039]:
+                  - generic [ref=f4e5044]:
+                    - link [aria-hidden] [ref=f4e5047] [cursor=pointer]:
+                      - /url: /Conscious-Diabetes-Reducing-Pressure-Sugar-Free/dp/B01A6PNYXI/ref=sr_1_50?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-50
+                    - generic [ref=f4e5050]:
+                      - generic [ref=f4e5051]:
+                        - heading "FORTUNE" [level=2] [ref=f4e5053]
+                        - link [ref=f4e5054] [cursor=pointer]:
+                          - /url: /Conscious-Diabetes-Reducing-Pressure-Sugar-Free/dp/B01A6PNYXI/ref=sr_1_50?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-50
+                          - heading "Xpert Pro Sugar Conscious Edible Oil | Blend of Rice Bran Oil and Sesame Oil | Best Oil for Diabetes & Reducing Blood Pressure | Sugar-Free Oil | 1L Pouch" [level=2] [ref=f4e5055]
+                      - generic [ref=f4e5061]:
+                        - generic [ref=f4e5062]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e5064] [cursor=pointer]:
+                            - generic [ref=f4e5066]: 4.3 out of 5 stars
+                          - link "2,712 ratings" [ref=f4e5068] [cursor=pointer]:
+                            - /url: /Conscious-Diabetes-Reducing-Pressure-Sugar-Free/dp/B01A6PNYXI/ref=sr_1_50?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-50#customerReviews
+                            - text: (2.7K)
+                        - generic [ref=f4e5069]: 4K+ bought in past month
+                      - generic "Currently unavailable." [ref=f4e5072]
+                      - link "See options" [ref=f4e5079] [cursor=pointer]:
+                        - /url: /Conscious-Diabetes-Reducing-Pressure-Sugar-Free/dp/B01A6PNYXI/ref=sr_1_50_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-50
+                - listitem [ref=f4e5080]:
+                  - generic [ref=f4e5085]:
+                    - link [aria-hidden] [ref=f4e5088] [cursor=pointer]:
+                      - /url: /Fortunee-Sunlite-Refined-Sunflower-Oil/dp/B0DTZ6LVLR/ref=sr_1_51?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-51
+                    - generic [ref=f4e5091]:
+                      - link [ref=f4e5093] [cursor=pointer]:
+                        - /url: /Fortunee-Sunlite-Refined-Sunflower-Oil/dp/B0DTZ6LVLR/ref=sr_1_51?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-51
+                        - heading "Fortunee Sunlite Refined Sunflower Oil, 1L" [level=2] [ref=f4e5094]
+                      - generic [ref=f4e5101]:
+                        - text: "5.0"
+                        - button "5.0 out of 5 stars, rating details" [ref=f4e5103] [cursor=pointer]:
+                          - generic [ref=f4e5105]: 5.0 out of 5 stars
+                        - link "1 ratings" [ref=f4e5107] [cursor=pointer]:
+                          - /url: /Fortunee-Sunlite-Refined-Sunflower-Oil/dp/B0DTZ6LVLR/ref=sr_1_51?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-51#customerReviews
+                          - text: (1)
+                      - generic [ref=f4e5108]:
+                        - generic [ref=f4e5110]:
+                          - generic [ref=f4e5111]: Price, product page
+                          - 'link "₹299 ( ₹299 /l) M.R.P: ₹395 M.R.P: ₹395" [ref=f4e5112] [cursor=pointer]':
+                            - /url: /Fortunee-Sunlite-Refined-Sunflower-Oil/dp/B0DTZ6LVLR/ref=sr_1_51?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-51
+                            - generic [ref=f4e5113]:
+                              - generic [ref=f4e5114]: ₹299
+                              - generic [aria-hidden] [ref=f4e5115]: ₹299
+                            - generic [ref=f4e5116]:
+                              - text: (
+                              - generic [ref=f4e5117]:
+                                - generic [ref=f4e5118]: ₹299
+                                - text: ₹299
+                              - text: /l)
+                            - generic [ref=f4e5119]: "M.R.P: ₹395"
+                            - generic [ref=f4e5120]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5121]:
+                                - generic [ref=f4e5122]: ₹395
+                                - text: ₹395
+                          - text: (24% off)
+                        - generic [ref=f4e5126]:
+                          - generic [ref=f4e5127]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5128]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5129]: ₹118 delivery Mon, 19 Oct
+                      - generic [ref=f4e5149] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5150]
+                        - generic [aria-hidden] [ref=f4e5151]: Add to cart
+                - listitem [ref=f4e5152]:
+                  - generic [ref=f4e5157]:
+                    - link [aria-hidden] [ref=f4e5160] [cursor=pointer]:
+                      - /url: /Mr-Gold-Refined-Sunflower-Oil/dp/B08KWBGCCD/ref=sr_1_52?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-52
+                    - generic [ref=f4e5163]:
+                      - generic [ref=f4e5164]:
+                        - heading "MR. GOLD" [level=2] [ref=f4e5166]
+                        - link [ref=f4e5167] [cursor=pointer]:
+                          - /url: /Mr-Gold-Refined-Sunflower-Oil/dp/B08KWBGCCD/ref=sr_1_52?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-52
+                          - heading "Refined Sunflower Oil Can,5L | light oil | Agmark |Vitamin Enriched - Total 5L" [level=2] [ref=f4e5168]
+                      - generic [ref=f4e5174]:
+                        - generic [ref=f4e5175]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e5177] [cursor=pointer]:
+                            - generic [ref=f4e5179]: 4.2 out of 5 stars
+                          - link "853 ratings" [ref=f4e5181] [cursor=pointer]:
+                            - /url: /Mr-Gold-Refined-Sunflower-Oil/dp/B08KWBGCCD/ref=sr_1_52?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-52#customerReviews
+                            - text: (853)
+                        - generic [ref=f4e5182]: 50+ bought in past month
+                      - generic [ref=f4e5183]:
+                        - link "Mega Festival Deal" [ref=f4e5185] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e5191]:
+                          - generic [ref=f4e5192]: Price, product page
+                          - 'link "₹1,234 ( ₹246.80 /l) M.R.P: ₹1,800 M.R.P: ₹1,800" [ref=f4e5193] [cursor=pointer]':
+                            - /url: /Mr-Gold-Refined-Sunflower-Oil/dp/B08KWBGCCD/ref=sr_1_52?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-52
+                            - generic [ref=f4e5194]:
+                              - generic [ref=f4e5195]: ₹1,234
+                              - generic [aria-hidden] [ref=f4e5196]: ₹1,234
+                            - generic [ref=f4e5197]:
+                              - text: (
+                              - generic [ref=f4e5198]:
+                                - generic [ref=f4e5199]: ₹246.80
+                                - text: ₹246.80
+                              - text: /l)
+                            - generic [ref=f4e5200]: "M.R.P: ₹1,800"
+                            - generic [ref=f4e5201]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5202]:
+                                - generic [ref=f4e5203]: ₹1,800
+                                - text: ₹1,800
+                          - text: (31% off)
+                        - generic [ref=f4e5207]:
+                          - generic [ref=f4e5208]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5209]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5210]: FREE delivery Tue, 20 Oct
+                      - generic [ref=f4e5228] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5229]
+                        - generic [aria-hidden] [ref=f4e5230]: Add to cart
+                - listitem [ref=f4e5231]:
+                  - generic [ref=f4e5236]:
+                    - link [aria-hidden] [ref=f4e5239] [cursor=pointer]:
+                      - /url: /Gemini-Groundnut-Oil-Pouch-1L/dp/B079H8D8L4/ref=sr_1_53_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-53
+                    - generic [ref=f4e5242]:
+                      - link [ref=f4e5244] [cursor=pointer]:
+                        - /url: /Gemini-Groundnut-Oil-Pouch-1L/dp/B079H8D8L4/ref=sr_1_53_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-53
+                        - heading "Gemini Groundnut Oil Pouch, 1L" [level=2] [ref=f4e5245]
+                      - generic [ref=f4e5251]:
+                        - generic [ref=f4e5252]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=f4e5254] [cursor=pointer]:
+                            - generic [ref=f4e5256]: 4.1 out of 5 stars
+                          - link "2,218 ratings" [ref=f4e5258] [cursor=pointer]:
+                            - /url: /Gemini-Groundnut-Oil-Pouch-1L/dp/B079H8D8L4/ref=sr_1_53_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-53#customerReviews
+                            - text: (2.2K)
+                        - generic [ref=f4e5259]: 1K+ bought in past month
+                      - generic [ref=f4e5260]:
+                        - generic [ref=f4e5262]:
+                          - generic [ref=f4e5263]: Price, product page
+                          - 'link "₹191 ( ₹209.89 /kg) M.R.P: ₹265 M.R.P: ₹265" [ref=f4e5264] [cursor=pointer]':
+                            - /url: /Gemini-Groundnut-Oil-Pouch-1L/dp/B079H8D8L4/ref=sr_1_53_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-53
+                            - generic [ref=f4e5265]:
+                              - generic [ref=f4e5266]: ₹191
+                              - generic [aria-hidden] [ref=f4e5267]: ₹191
+                            - generic [ref=f4e5268]:
+                              - text: (
+                              - generic [ref=f4e5269]:
+                                - generic [ref=f4e5270]: ₹209.89
+                                - text: ₹209.89
+                              - text: /kg)
+                            - generic [ref=f4e5271]: "M.R.P: ₹265"
+                            - generic [ref=f4e5272]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5273]:
+                                - generic [ref=f4e5274]: ₹265
+                                - text: ₹265
+                          - text: (28% off)
+                        - generic [ref=f4e5278]:
+                          - generic [ref=f4e5279]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5280]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5282]:
+                        - link [ref=f4e5284] [cursor=pointer]:
+                          - /url: /Gemini-Groundnut-Oil-Pouch-1L/dp/B079H8D8L4/ref=sr_1_53_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-53
+                          - img "Amazon Fresh" [ref=f4e5286]
+                        - generic [ref=f4e5287]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e5304] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5305]
+                        - generic [aria-hidden] [ref=f4e5306]: Add to cart
+                - listitem [ref=f4e5307]:
+                  - generic [ref=f4e5312]:
+                    - link [aria-hidden] [ref=f4e5315] [cursor=pointer]:
+                      - /url: /Sundrop-Heart-Oil-3000/dp/B08HJM978V/ref=sr_1_54?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-54
+                    - generic [ref=f4e5318]:
+                      - generic [ref=f4e5319]:
+                        - heading "Sundrop" [level=2] [ref=f4e5321]
+                        - link [ref=f4e5322] [cursor=pointer]:
+                          - /url: /Sundrop-Heart-Oil-3000/dp/B08HJM978V/ref=sr_1_54?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-54
+                          - heading "Heart Refined Oil | Rice Bran Oil & Sunflower Oil |Reduce Cholesterol in 30 Day | Rich in Omega 3, Oryzanol & Antioxidants | Cooking Oil | 3L/2.73 Kg Jar (Weight May Vary)" [level=2] [ref=f4e5323]
+                      - generic [ref=f4e5329]:
+                        - generic [ref=f4e5330]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=f4e5332] [cursor=pointer]:
+                            - generic [ref=f4e5334]: 4.4 out of 5 stars
+                          - link "2,355 ratings" [ref=f4e5336] [cursor=pointer]:
+                            - /url: /Sundrop-Heart-Oil-3000/dp/B08HJM978V/ref=sr_1_54?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-54#customerReviews
+                            - text: (2.3K)
+                        - generic [ref=f4e5337]: 1K+ bought in past month
+                      - generic "Currently unavailable." [ref=f4e5340]
+                      - link "See options" [ref=f4e5347] [cursor=pointer]:
+                        - /url: /Sundrop-Heart-Oil-3000/dp/B08HJM978V/ref=sr_1_54_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-54
+                - listitem [ref=f4e5348]:
+                  - generic [ref=f4e5353]:
+                    - link [aria-hidden] [ref=f4e5356] [cursor=pointer]:
+                      - /url: /Fortune-Premium-Pure-Mustard-Oil/dp/B01HGWHAY8/ref=sr_1_55?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-55
+                    - generic [ref=f4e5359]:
+                      - generic [ref=f4e5360]:
+                        - heading "FORTUNE" [level=2] [ref=f4e5362]
+                        - link [ref=f4e5363] [cursor=pointer]:
+                          - /url: /Fortune-Premium-Pure-Mustard-Oil/dp/B01HGWHAY8/ref=sr_1_55?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-55
+                          - heading "Premium Pure Mustard Oil - Kachi Ghani, 1L Bottle" [level=2] [ref=f4e5364]
+                      - generic [ref=f4e5371]:
+                        - text: "4.7"
+                        - button "4.7 out of 5 stars, rating details" [ref=f4e5373] [cursor=pointer]:
+                          - generic [ref=f4e5375]: 4.7 out of 5 stars
+                        - link "15 ratings" [ref=f4e5377] [cursor=pointer]:
+                          - /url: /Fortune-Premium-Pure-Mustard-Oil/dp/B01HGWHAY8/ref=sr_1_55?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-55#customerReviews
+                          - text: (15)
+                      - generic [ref=f4e5378]:
+                        - generic [ref=f4e5380]:
+                          - generic [ref=f4e5381]: Price, product page
+                          - 'link "₹250 M.R.P: ₹255 M.R.P: ₹255" [ref=f4e5382] [cursor=pointer]':
+                            - /url: /Fortune-Premium-Pure-Mustard-Oil/dp/B01HGWHAY8/ref=sr_1_55?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-55
+                            - generic [ref=f4e5383]:
+                              - generic [ref=f4e5384]: ₹250
+                              - generic [aria-hidden] [ref=f4e5385]: ₹250
+                            - generic [ref=f4e5386]: "M.R.P: ₹255"
+                            - generic [ref=f4e5387]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5388]:
+                                - generic [ref=f4e5389]: ₹255
+                                - text: ₹255
+                          - text: (2% off)
+                        - generic [ref=f4e5393]:
+                          - generic [ref=f4e5394]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5395]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5396]: ₹50 delivery Thu, 22 Oct
+                      - generic [ref=f4e5416] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5417]
+                        - generic [aria-hidden] [ref=f4e5418]: Add to cart
+                - listitem [ref=f4e5419]:
+                  - generic [ref=f4e5424]:
+                    - link [aria-hidden] [ref=f4e5427] [cursor=pointer]:
+                      - /url: /Peanutji-Filtered-Groundnut-Mungfali-Unrefined/dp/B0DPXC8B14/ref=sr_1_56?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-56
+                    - generic [ref=f4e5430]:
+                      - generic [ref=f4e5431]:
+                        - heading "Peanutji" [level=2] [ref=f4e5433]
+                        - link [ref=f4e5434] [cursor=pointer]:
+                          - /url: /Peanutji-Filtered-Groundnut-Mungfali-Unrefined/dp/B0DPXC8B14/ref=sr_1_56?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-56
+                          - heading "Filtered Groundnut Oil, 15 Liter TIN, Pure Peanut Oil, Natural & Healthy Mungfali Oil, Unrefined Chemical Free Sing Tel Oil for Cooking" [level=2] [ref=f4e5435]
+                      - generic [ref=f4e5442]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e5444] [cursor=pointer]:
+                          - generic [ref=f4e5446]: 4.4 out of 5 stars
+                        - link "7 ratings" [ref=f4e5448] [cursor=pointer]:
+                          - /url: /Peanutji-Filtered-Groundnut-Mungfali-Unrefined/dp/B0DPXC8B14/ref=sr_1_56?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-56#customerReviews
+                          - text: (7)
+                      - generic [ref=f4e5449]:
+                        - generic [ref=f4e5451]:
+                          - generic [ref=f4e5452]: Price, product page
+                          - 'link "₹3,800 ( ₹253.33 /l) M.R.P: ₹4,450 M.R.P: ₹4,450" [ref=f4e5453] [cursor=pointer]':
+                            - /url: /Peanutji-Filtered-Groundnut-Mungfali-Unrefined/dp/B0DPXC8B14/ref=sr_1_56?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-56
+                            - generic [ref=f4e5454]:
+                              - generic [ref=f4e5455]: ₹3,800
+                              - generic [aria-hidden] [ref=f4e5456]: ₹3,800
+                            - generic [ref=f4e5457]:
+                              - text: (
+                              - generic [ref=f4e5458]:
+                                - generic [ref=f4e5459]: ₹253.33
+                                - text: ₹253.33
+                              - text: /l)
+                            - generic [ref=f4e5460]: "M.R.P: ₹4,450"
+                            - generic [ref=f4e5461]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5462]:
+                                - generic [ref=f4e5463]: ₹4,450
+                                - text: ₹4,450
+                          - text: (15% off)
+                        - generic [ref=f4e5467]:
+                          - generic [ref=f4e5468]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5469]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5470]: FREE delivery Mon, 19 Oct
+                      - generic [ref=f4e5490] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5491]
+                        - generic [aria-hidden] [ref=f4e5492]: Add to cart
+                - listitem [ref=f4e5493]:
+                  - generic [ref=f4e5498]:
+                    - link [aria-hidden] [ref=f4e5501] [cursor=pointer]:
+                      - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57
+                    - generic [ref=f4e5504]:
+                      - generic [ref=f4e5505]:
+                        - heading "Tata Simply Better" [level=2] [ref=f4e5507]
+                        - link [ref=f4e5508] [cursor=pointer]:
+                          - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57
+                          - heading "Cold Pressed Sunflower Oil, 1L" [level=2] [ref=f4e5509]
+                      - generic [ref=f4e5515]:
+                        - generic [ref=f4e5516]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e5518] [cursor=pointer]:
+                            - generic [ref=f4e5520]: 4.3 out of 5 stars
+                          - link "580 ratings" [ref=f4e5522] [cursor=pointer]:
+                            - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57#customerReviews
+                            - text: (580)
+                        - generic [ref=f4e5523]: 1K+ bought in past month
+                      - generic [ref=f4e5524]:
+                        - link "Free and Fast delivery" [ref=f4e5526] [cursor=pointer]:
+                          - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57
+                        - generic [ref=f4e5528]:
+                          - generic [ref=f4e5529]: Price, product page
+                          - 'link "₹489 ( ₹489 /l) M.R.P: ₹599 M.R.P: ₹599" [ref=f4e5530] [cursor=pointer]':
+                            - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57
+                            - generic [ref=f4e5531]:
+                              - generic [ref=f4e5532]: ₹489
+                              - generic [aria-hidden] [ref=f4e5533]: ₹489
+                            - generic [ref=f4e5534]:
+                              - text: (
+                              - generic [ref=f4e5535]:
+                                - generic [ref=f4e5536]: ₹489
+                                - text: ₹489
+                              - text: /l)
+                            - generic [ref=f4e5537]: "M.R.P: ₹599"
+                            - generic [ref=f4e5538]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5539]:
+                                - generic [ref=f4e5540]: ₹599
+                                - text: ₹599
+                          - text: (18% off)
+                        - generic [ref=f4e5544]:
+                          - generic [ref=f4e5545]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5546]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5548]:
+                        - link [ref=f4e5550] [cursor=pointer]:
+                          - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_in_f3_0o_fs_mod_primary_alm?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=8-57
+                          - img "Amazon Fresh" [ref=f4e5552]
+                        - generic [ref=f4e5553]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e5570] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5571]
+                        - generic [aria-hidden] [ref=f4e5572]: Add to cart
+                      - generic [ref=f4e5574]:
+                        - separator [aria-hidden] [ref=f4e5575]
+                        - link "One-time purchase" [ref=f4e5576] [cursor=pointer]:
+                          - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-57
+                        - link:
+                          - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-57
+                        - generic [ref=f4e5577]:
+                          - link:
+                            - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-57
+                          - generic [ref=f4e5578]:
+                            - link "Price, product page":
+                              - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-57
+                            - 'link "₹489 ( ₹489 /l) M.R.P: ₹649 M.R.P: ₹649" [ref=f4e5580] [cursor=pointer]':
+                              - /url: /Tata-Simply-Better-Cholesterol-Antioxidants/dp/B0DJW59678/ref=sr_1_57_mod_new?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-57
+                              - generic [ref=f4e5581]:
+                                - generic [ref=f4e5582]: ₹489
+                                - generic [aria-hidden] [ref=f4e5583]: ₹489
+                              - generic [ref=f4e5584]:
+                                - text: (
+                                - generic [ref=f4e5585]:
+                                  - generic [ref=f4e5586]: ₹489
+                                  - text: ₹489
+                                - text: /l)
+                              - generic [ref=f4e5587]: "M.R.P: ₹649"
+                              - generic [ref=f4e5588]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e5589]:
+                                  - generic [ref=f4e5590]: ₹649
+                                  - text: ₹649
+                            - text: (25% off)
+                        - generic [ref=f4e5594]:
+                          - generic [ref=f4e5595]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5596]: Up to 5% back with Amazon Pay...
+                        - generic [ref=f4e5597]: FREE delivery
+                        - generic "Only 1 left in stock." [ref=f4e5602]
+                - listitem [ref=f4e5603]:
+                  - generic [ref=f4e5608]:
+                    - link [aria-hidden] [ref=f4e5611] [cursor=pointer]:
+                      - /url: /Dhara-Soyabean-Oil-1L-Pouch/dp/B079GXSPL4/ref=sr_1_58_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-58
+                    - generic [ref=f4e5614]:
+                      - generic [ref=f4e5615]:
+                        - heading "Dhara" [level=2] [ref=f4e5617]
+                        - link [ref=f4e5618] [cursor=pointer]:
+                          - /url: /Dhara-Soyabean-Oil-1L-Pouch/dp/B079GXSPL4/ref=sr_1_58_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-58
+                          - heading "Lite n Fine Refined Soyabean Oil, 840 Gm/910 Gm/1 Litre(Weight may vary)" [level=2] [ref=f4e5619]
+                      - generic [ref=f4e5625]:
+                        - generic [ref=f4e5626]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e5628] [cursor=pointer]:
+                            - generic [ref=f4e5630]: 4.3 out of 5 stars
+                          - link "11,196 ratings" [ref=f4e5632] [cursor=pointer]:
+                            - /url: /Dhara-Soyabean-Oil-1L-Pouch/dp/B079GXSPL4/ref=sr_1_58_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-58#customerReviews
+                            - text: (11.1K)
+                        - generic [ref=f4e5633]: 1K+ bought in past month
+                      - generic [ref=f4e5634]:
+                        - generic [ref=f4e5636]:
+                          - generic [ref=f4e5637]: Price, product page
+                          - 'link "₹191 ( ₹254.67 /l) M.R.P: ₹215 M.R.P: ₹215" [ref=f4e5638] [cursor=pointer]':
+                            - /url: /Dhara-Soyabean-Oil-1L-Pouch/dp/B079GXSPL4/ref=sr_1_58_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-58
+                            - generic [ref=f4e5639]:
+                              - generic [ref=f4e5640]: ₹191
+                              - generic [aria-hidden] [ref=f4e5641]: ₹191
+                            - generic [ref=f4e5642]:
+                              - text: (
+                              - generic [ref=f4e5643]:
+                                - generic [ref=f4e5644]: ₹254.67
+                                - text: ₹254.67
+                              - text: /l)
+                            - generic [ref=f4e5645]: "M.R.P: ₹215"
+                            - generic [ref=f4e5646]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5647]:
+                                - generic [ref=f4e5648]: ₹215
+                                - text: ₹215
+                          - text: (11% off)
+                        - generic [ref=f4e5652]:
+                          - generic [ref=f4e5653]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [aria-hidden] [ref=f4e5654]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e5656]:
+                        - link [ref=f4e5658] [cursor=pointer]:
+                          - /url: /Dhara-Soyabean-Oil-1L-Pouch/dp/B079GXSPL4/ref=sr_1_58_in_f3_0o_fs?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-58
+                          - img "Amazon Fresh" [ref=f4e5660]
+                        - generic [ref=f4e5661]: FREE delivery Tomorrow 6 am - 8 am on orders over ₹149
+                      - generic [ref=f4e5678] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5679]
+                        - generic [aria-hidden] [ref=f4e5680]: Add to cart
+                - listitem [ref=f4e5681]:
+                  - generic [ref=f4e5686]:
+                    - link [aria-hidden] [ref=f4e5689] [cursor=pointer]:
+                      - /url: /Sundrop-Cooking-Oil-Advanced-Carton/dp/B077ZG1PR4/ref=sr_1_59?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-59
+                    - generic [ref=f4e5692]:
+                      - generic [ref=f4e5693]:
+                        - heading "Sundrop" [level=2] [ref=f4e5695]
+                        - link [ref=f4e5696] [cursor=pointer]:
+                          - /url: /Sundrop-Cooking-Oil-Advanced-Carton/dp/B077ZG1PR4/ref=sr_1_59?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-59
+                          - heading "Cooking Oil - Super Lite Advanced, 15L Carton" [level=2] [ref=f4e5697]
+                      - generic [ref=f4e5704]:
+                        - text: "3.4"
+                        - button "3.4 out of 5 stars, rating details" [ref=f4e5706] [cursor=pointer]:
+                          - generic [ref=f4e5708]: 3.4 out of 5 stars
+                        - link "2 ratings" [ref=f4e5710] [cursor=pointer]:
+                          - /url: /Sundrop-Cooking-Oil-Advanced-Carton/dp/B077ZG1PR4/ref=sr_1_59?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-59#customerReviews
+                          - text: (2)
+                      - link "See options" [ref=f4e5718] [cursor=pointer]:
+                        - /url: /Sundrop-Cooking-Oil-Advanced-Carton/dp/B077ZG1PR4/ref=sr_1_59_so_EDIBLE_OIL_VEGETABLE?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&sr=8-59
+                      - generic [ref=f4e5720]:
+                        - text: No featured offers available₹4,952
+                        - link "(1 new offer)" [ref=f4e5722] [cursor=pointer]:
+                          - /url: /gp/offer-listing/B077ZG1PR4/ref=sr_1_59_olp?keywords=fortune+sunflower+oil+15&dib_tag=se&dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&qid=1791860772&sr=8-59
+                - listitem [ref=f4e5723]:
+                  - generic [ref=f4e5728]:
+                    - link [aria-hidden] [ref=f4e5731] [cursor=pointer]:
+                      - /url: /Natureland-Organics-Sunflower-Oil-Jar/dp/B07W5SYPR9/ref=sr_1_60?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&rdc=1&sr=8-60
+                    - generic [ref=f4e5734]:
+                      - generic [ref=f4e5735]:
+                        - heading "NATURELAND ORGANICS" [level=2] [ref=f4e5737]
+                        - link [ref=f4e5738] [cursor=pointer]:
+                          - /url: /Natureland-Organics-Sunflower-Oil-Jar/dp/B07W5SYPR9/ref=sr_1_60?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&rdc=1&sr=8-60
+                          - heading "Wood Cold Pressed Organic Sunflower Oil, 5 L" [level=2] [ref=f4e5739]
+                        - generic "Cold-pressed sunflower oil in a 5 L jar. Light-textured oil suitable for everyday family cooking and frying." [ref=f4e5741]
+                      - generic [ref=f4e5742]:
+                        - generic [ref=f4e5743]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=f4e5745] [cursor=pointer]:
+                            - generic [ref=f4e5747]: 4.2 out of 5 stars
+                          - link "741 ratings" [ref=f4e5749] [cursor=pointer]:
+                            - /url: /Natureland-Organics-Sunflower-Oil-Jar/dp/B07W5SYPR9/ref=sr_1_60?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&rdc=1&sr=8-60#customerReviews
+                            - text: (741)
+                        - generic [ref=f4e5750]: 400+ bought in past month
+                      - generic [ref=f4e5751]:
+                        - link "Limited time deal" [ref=f4e5753] [cursor=pointer]:
+                          - /url: /deals
+                        - generic [ref=f4e5759]:
+                          - generic [ref=f4e5760]: Price, product page
+                          - 'link "₹1,424 ( ₹284.80 /l) M.R.P: ₹2,075 M.R.P: ₹2,075" [ref=f4e5761] [cursor=pointer]':
+                            - /url: /Natureland-Organics-Sunflower-Oil-Jar/dp/B07W5SYPR9/ref=sr_1_60?dib=eyJ2IjoiMSJ9.nC2n_uIyUrYdjK4__j3pVg6voPAbvQQ7Blsu0XdaBHiV0VLw65yD14A6yz-dWPakjQ2_7bugqxxPmkvsTKDswCxXnV3sdKkGty4omHSnesFRhQGuTQNpObuODWDGrhRIXikLy1yEOA0_sSzQUjeD7OCgAVIf7uXHKf3DQXNJ-VEHpiL3ZT1xZDO-wpUQfU8nsEvaQ4IrmlwDYZdsWvMpPAFpRBghFqg-okGhnJ0P9jnA1mHBz6Dm_Sp-z2yBPYx7Mn3vXXcX2Lrb6E0J0qG4ovruKSQZFpzqD6tqDH4JEz0.jE9IEh9o0IKeRnr7bdcrlLh3qKuQeEUWlgP_6w37MQw&dib_tag=se&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&qid=1791860772&rdc=1&sr=8-60
+                            - generic [ref=f4e5762]:
+                              - generic [ref=f4e5763]: ₹1,424
+                              - generic [aria-hidden] [ref=f4e5764]: ₹1,424
+                            - generic [ref=f4e5765]:
+                              - text: (
+                              - generic [ref=f4e5766]:
+                                - generic [ref=f4e5767]: ₹284.80
+                                - text: ₹284.80
+                              - text: /l)
+                            - generic [ref=f4e5768]: "M.R.P: ₹2,075"
+                            - generic [ref=f4e5769]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e5770]:
+                                - generic [ref=f4e5771]: ₹2,075
+                                - text: ₹2,075
+                          - text: (31% off)
+                        - generic [ref=f4e5774]:
+                          - generic [ref=f4e5775]: Extra 5% off
+                          - text: new subscription
+                      - generic [ref=f4e5776]: FREE delivery
+                      - generic [ref=f4e5794] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e5795]
+                        - generic [aria-hidden] [ref=f4e5796]: Add to cart
+          - generic [ref=f4e5804]:
+            - link "Sponsored video; click to navigate to featured product page. Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [ref=f4e5808] [cursor=pointer]:
+              - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrMXNXQ7dkJ_-iCL0A3cKogqhwXVNLp8AgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kfLiUoZKxBenJhYlZ8QXpBYl5-cklqTGJ-WXlOTnxieVpAlxJuYmVuXn6WXmSQkWJ5XpQtTqQlQosabmxXv6KZlxMRoIPDh163bHchcpPqixMDX8xgYGBoaWloYmhqaGxsZmRsyefkFWzM4Bzlr-QtYuTo7OBW6euuaOdU6FEJDuWOcUWOzs6pbviArqnNLrnALrnBzBjHQpAed01wp3r7Jkx0wXn2InE1ujMK6QjJKSgmIrff3y8nI9uNv1Uwr0nQwsLQ3DfF2cDO0Ti1LTbMsqPDPcEh1TfMPUClLii1LiM20RSqBCBTkZKUW2JQDxNn38&v=c1&r=https://www.amazon.in/dp/B0991VMDB1?aref=vxIhFaAdMV&pd_rd_i=B0991VMDB1&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pd_rd_wg=VbkTG&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_w=Lm813&pd_rd_r=29b58c4c-ca66-4077-a76d-a49c65435007
+            - generic [ref=f4e5817]:
+              - link [aria-hidden] [ref=f4e5823] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrMXNXQ7dkJ_-iCL0A3cKogqhwXVNLp8AgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kfLiUoZKxBenJhYlZ8QXpBYl5-cklqTGJ-WXlOTnxieVpAlxJuYmVuXn6WXmSQkWJ5XpQtTqQlQosabmxXv6KZlxMRoIPDh163bHchcpPqixMDX8xgYGBoaWloYmhqaGxsZmRsyefkFWzM4Bzlr-QtYuTo7OBW6euuaOdU6FEJDuWOcUWOzs6pbviArqnNLrnALrnBzBjHQpAed01wp3r7Jkx0wXn2InE1ujMK6QjJKSgmIrff3y8nI9uNv1Uwr0nQwsLQ3DfF2cDO0Ti1LTbMsqPDPcEh1TfMPUClLii1LiM20RSqBCBTkZKUW2JQDxNn38&v=c1&r=https://www.amazon.in/Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sxbs_sbv_search_btf?aref=vxIhFaAdMV&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0991VMDB1&pd_rd_r=29b58c4c-ca66-4077-a76d-a49c65435007&pd_rd_w=Lm813&pd_rd_wg=VbkTG&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+              - generic [ref=f4e5828]:
+                - generic [ref=f4e5829]:
+                  - generic [ref=f4e5830]: Sponsored
+                  - link [ref=f4e5834] [cursor=pointer]:
+                    - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrMXNXQ7dkJ_-iCL0A3cKogqhwXVNLp8AgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kfLiUoZKxBenJhYlZ8QXpBYl5-cklqTGJ-WXlOTnxieVpAlxJuYmVuXn6WXmSQkWJ5XpQtTqQlQosabmxXv6KZlxMRoIPDh163bHchcpPqixMDX8xgYGBoaWloYmhqaGxsZmRsyefkFWzM4Bzlr-QtYuTo7OBW6euuaOdU6FEJDuWOcUWOzs6pbviArqnNLrnALrnBzBjHQpAed01wp3r7Jkx0wXn2InE1ujMK6QjJKSgmIrff3y8nI9uNv1Uwr0nQwsLQ3DfF2cDO0Ti1LTbMsqPDPcEh1TfMPUClLii1LiM20RSqBCBTkZKUW2JQDxNn38&v=c1&r=https://www.amazon.in/Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sxbs_sbv_search_btf?aref=vxIhFaAdMV&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0991VMDB1&pd_rd_r=29b58c4c-ca66-4077-a76d-a49c65435007&pd_rd_w=Lm813&pd_rd_wg=VbkTG&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+                    - heading "Jivo Cold Pressed Sunflower Oil 5 Litre | High in Polyunsaturated Fats | Vitamin A and D Fortified | Cholesterol Free Edible Oil | Ideal for Roasting, Frying, Baking, and All Types of Cuisines" [level=2] [ref=f4e5835]
+                - generic [ref=f4e5836]:
+                  - generic [ref=f4e5837]:
+                    - text: "4.0"
+                    - button "4.0 out of 5 stars, rating details" [ref=f4e5839] [cursor=pointer]:
+                      - generic [ref=f4e5841]: 4.0 out of 5 stars
+                    - link "5,483 ratings" [ref=f4e5843] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrMXNXQ7dkJ_-iCL0A3cKogqhwXVNLp8AgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kfLiUoZKxBenJhYlZ8QXpBYl5-cklqTGJ-WXlOTnxieVpAlxJuYmVuXn6WXmSQkWJ5XpQtTqQlQosabmxXv6KZlxMRoIPDh163bHchcpPqixMDX8xgYGBoaWloYmhqaGxsZmRsyefkFWzM4Bzlr-QtYuTo7OBW6euuaOdU6FEJDuWOcUWOzs6pbviArqnNLrnALrnBzBjHQpAed01wp3r7Jkx0wXn2InE1ujMK6QjJKSgmIrff3y8nI9uNv1Uwr0nQwsLQ3DfF2cDO0Ti1LTbMsqPDPcEh1TfMPUClLii1LiM20RSqBCBTkZKUW2JQDxNn38&v=c1&r=https://www.amazon.in/Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sxbs_sbv_search_btf?aref=vxIhFaAdMV&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0991VMDB1&pd_rd_r=29b58c4c-ca66-4077-a76d-a49c65435007&pd_rd_w=Lm813&pd_rd_wg=VbkTG&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1#customerReviews
+                      - text: (5.4K)
+                  - generic [ref=f4e5844]: 10K+ bought in past month
+                - generic [ref=f4e5847]:
+                  - generic [ref=f4e5848]:
+                    - generic [ref=f4e5850]:
+                      - generic [ref=f4e5851]: Price, product page
+                      - 'link "₹999 ( ₹199.80 /l) M.R.P: ₹1,350 M.R.P: ₹1,350" [ref=f4e5852] [cursor=pointer]':
+                        - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8uZYcmDbNTYhXkcjwxCvoNBQPxNv9zAlRkMrMXNXQ7dkJ_-iCL0A3cKogqhwXVNLp8AgbiMTMz0QMtcziGIKdkricHQN8XAN8gwWEudiT0ktzi7JLxDiCfULcnX2d_fzjHJ1kfLiUoZKxBenJhYlZ8QXpBYl5-cklqTGJ-WXlOTnxieVpAlxJuYmVuXn6WXmSQkWJ5XpQtTqQlQosabmxXv6KZlxMRoIPDh163bHchcpPqixMDX8xgYGBoaWloYmhqaGxsZmRsyefkFWzM4Bzlr-QtYuTo7OBW6euuaOdU6FEJDuWOcUWOzs6pbviArqnNLrnALrnBzBjHQpAed01wp3r7Jkx0wXn2InE1ujMK6QjJKSgmIrff3y8nI9uNv1Uwr0nQwsLQ3DfF2cDO0Ti1LTbMsqPDPcEh1TfMPUClLii1LiM20RSqBCBTkZKUW2JQDxNn38&v=c1&r=https://www.amazon.in/Jivo-Pressed-Chemical-Sunflower-Litre/dp/B0991VMDB1/ref=sxbs_sbv_search_btf?aref=vxIhFaAdMV&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&cv_ct_cx=fortune+sunflower+oil+15&keywords=fortune+sunflower+oil+15&nsdOptOutParam=true&pd_rd_i=B0991VMDB1&pd_rd_r=29b58c4c-ca66-4077-a76d-a49c65435007&pd_rd_w=Lm813&pd_rd_wg=VbkTG&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&qid=1791860772&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+                        - generic [ref=f4e5853]:
+                          - generic [ref=f4e5854]: ₹999
+                          - generic [aria-hidden] [ref=f4e5855]: ₹999
+                        - generic [ref=f4e5856]:
+                          - text: (
+                          - generic [ref=f4e5857]:
+                            - generic [ref=f4e5858]: ₹199.80
+                            - text: ₹199.80
+                          - text: /l)
+                        - generic [ref=f4e5859]: "M.R.P: ₹1,350"
+                        - generic [ref=f4e5860]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e5861]:
+                            - generic [ref=f4e5862]: ₹1,350
+                            - text: ₹1,350
+                      - text: (26% off)
+                    - generic [ref=f4e5866]:
+                      - generic [ref=f4e5867]: Up to 5% back with Amazon Pay ICICI card
+                      - generic [aria-hidden] [ref=f4e5868]: Up to 5% back with Amazon Pay ICI...
+                  - generic [ref=f4e5869]: FREE delivery 15 - 22 Oct
+          - navigation "pagination" [ref=f4e5876]:
+            - list [ref=f4e5878]:
+              - listitem [ref=f4e5879]:
+                - button "Previous" [disabled] [ref=f4e5881]
+              - listitem [ref=f4e5884]:
+                - button "Page 1" [ref=f4e5886]: "1"
+              - listitem [ref=f4e5887]:
+                - button "Go to page 2" [ref=f4e5889] [cursor=pointer]: "2"
+              - listitem [ref=f4e5890]:
+                - button "Go to page 3" [ref=f4e5892] [cursor=pointer]: "3"
+              - listitem [ref=f4e5893]:
+                - button "Go to next page, page 2" [ref=f4e5895] [cursor=pointer]: Next
+          - generic [ref=f4e5901]:
+            - generic [ref=f4e5902]:
+              - heading "Brands related to your search" [ref=f4e5903]
+              - button "Leave feedback on Sponsored ad" [ref=f4e5908] [cursor=pointer]: Sponsored
+            - list [ref=f4e5913]:
+              - listitem [ref=f4e5914]:
+                - generic [ref=f4e5915]:
+                  - link [aria-hidden] [ref=f4e5916] [cursor=pointer]:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                  - generic:
+                    - generic:
+                      - link [ref=f4e5917] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_asin&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                        - img "Sponsored ad from PRIMIO. \"Pure Groundnut Oil.\" Shop PRIMIO." [ref=f4e5918]
+                      - generic:
+                        - link [aria-hidden]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                        - generic:
+                          - generic:
+                            - link "PRIMIO" [ref=f4e5919] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - img "PRIMIO" [ref=f4e5920]
+                            - link "Pure Groundnut Oil" [ref=f4e5921] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - generic [ref=f4e5922]:
+                                - generic [ref=f4e5923]: Pure Groundnut Oil
+                                - generic [aria-hidden] [ref=f4e5924]: Pure Groundnut Oil
+                            - link "Shop PRIMIO" [ref=f4e5925] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMFu00AUVFsBJYCIcihSTlUkcihssvY6sVNkIa_tpEkTN42dlOZibexNYkhsd3fTFA6ROCLxGXxAJSTO_Qok_oMPQG4BCUbvMNKb0Zs3uWD3y8237_cLTwxZ8jqD4dBRjluj0pZ0sDelcXTlX2gv2nRQTQg952dnTXK4N0JzFc8jVdGkce9td9V1zkFoDB7JSr2SjVqB420XT3YN2zuyB2238Cz3IKT8nUjSwuOhM7DNk5bTHttW8dNWbjfb-BMxLTwkS_IhiStRXHw-5wQwGiTLJY1DIqIkBpyyyyiggFPCgjmYiGnpHo39tnMgL1cLEYEJI3EIAkaJiC4p-H0RBISFHKQkigVlIEhiQWMh53vY9FHf7fqW7R57J_2SltuC-esfPz9-vrGK-T_uLAhK-aL0VIYQakhpNOpQVhVJ3mk7g8Mds28enBReWdgw02YbqMYGX9xhZmzwKTftZmL8iw2ebfDpBhu3ZFbMmzP7qtW5DIzI6nKs6PLX7dz19lyIlB9Wq-v1uvK3mSoXCaO8mpIZrVqogW1cw8BEahMopm2ARq1mA1SXmqaCVFkz1de3Bp_Rqe5i34B1VIeKLEOE1Dder-bBjgcMKGmKCiWvh0au1kVHZ51uOQ19FvrpYh4yXZTnnPgB86NQh-VF6hMexVzHEPZapoW84cs7ao7djFoqcs6b_XGmvFhR9l6fJkysYrrPV_F0kawp20-ixb5UyxR8kQj9_7rLPEx9EvozlqxSHUEoNTSo1qGqSUgpRzpJeZlkT6k9O5ajEXS8X3014Ds&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FD39BEB5B-C37F-4CEA-955E-361FC43728C7%3Fstore_ref%3DSB_A063604220337XTM5T0JT-A0184701TM3VS8L3HWJL%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB00MGCD3TU%2CB00MGCCZSU%2CB0D73NYFPZ%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300198076078134%26i%3Daps%26aref%3D7MEn2iV0NT&ref_=sbx_be_s_3psl_mbd_mb0_cta&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - generic [ref=f4e5928]:
+                                - text: Shop
+                                - generic [ref=f4e5929]: PRIMIO
+              - listitem [ref=f4e5932]:
+                - generic [ref=f4e5933]:
+                  - link [aria-hidden] [ref=f4e5934] [cursor=pointer]:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                  - generic:
+                    - generic:
+                      - link [ref=f4e5935] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_asin&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                        - img "Sponsored ad from Jivo Mart. \"Jivo Cold Pressed Chemical Free Sunflower Oil.\" Shop Jivo Mart." [ref=f4e5936]
+                      - generic:
+                        - link [aria-hidden]:
+                          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                        - generic:
+                          - generic:
+                            - link "Jivo Mart" [ref=f4e5937] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - img "Jivo Mart" [ref=f4e5938]
+                            - link "Jivo Cold Pressed Chemical Free Sunflower Oil" [ref=f4e5939] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - generic [ref=f4e5940]:
+                                - generic [ref=f4e5941]: Jivo Cold Pressed Chemical Free Sunflower Oil
+                                - generic [aria-hidden] [ref=f4e5942]: Jivo Cold Pressed Chemical Free Sunflower Oil
+                            - link "Shop Jivo Mart" [ref=f4e5943] [cursor=pointer]:
+                              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkMtu00AUhtVWQAkgoixaKasqElmUTjK-Ji6ykGfsBKetkzqXttlYE3uSWCS2MzNpCotILHkIdixYIlVizVPwDLwAe5RykeDXWRzp_L_OOV8u3P349cu3-4Unliz1Wn6_76knzUFpSzrcG9MkvgkW9ecu9aspoVf84qJBjvfUaRuL1UL4vt1HXk-edl3Kzv1HsqpXNlWrwOF2F412Laf3yvHdbmE_9yCi_LVIs8Ljvuc7uN303KFjF99v5XY3k2AkxoWHZE7epkklTorPppwARsN0PqdJREScJoBTdh2HFHBKWDgFIzEu3aNJ4HqH8nw5EzEYMZJEIGSUiPiagt8bQUhYxEFG4kRQBsI0ETQRcv4M4UDpdE8D2-me9NqdUj23JeU_ff9x--6DXcz_SW8OUTI-Kz1VIIRQ0eoSVJW6oss7rucf7-AOPmwXXtjIwlnDBTVrjRa_NLHW6Jxjp5Fa_2qNJmt0vkbWXTMp5vHEuWm2rkMrtk85Uk35djv3eXsqRMaPq9XValX5S6bKRcoor2ZkQquWLSMd11Sg6joGKjZkgGyogjqu44aGJSSrxsu7QMDo2OyiwIIQalDRsOf4veFla9A_HQAL1qCk6oZsIOOk5zb1lnrZL2dRwKIgm00jZorylJMgZEEcmbA8ywLC44SbCCK12-p5DfkIQcOQBmc2ko4QRM2OfTbU8Ma5WFL2xhynTCwTesCXyXiWrig7SOPZgaRtHHyWCvN_3GUeZQGJgglLl5m5QS8Zmqxoqi4pajk2ScbLZPPUZJxeJak8lI2f04zhjA&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FAD2B6C74-466C-4C92-BD04-8C8CF5C1B249%3Fstore_ref%3DSB_A0005035CNERTZXJVULV-A070146929B9KTIG6J4XU%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0B4SJTNF2%2CB0991VMDB1%2CB0BGPDMZ5C%26lp_query%3Dfortune%20sunflower%20oil%2015%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300019523546134%26i%3Daps%26aref%3DgfoYno2Z29&ref_=sbx_be_s_3psl_mbd_mb1_cta&pd_rd_w=2vMmX&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=BCG7MPB3VH91KPRFGWQ9&pd_rd_wg=YhoWf&pd_rd_r=27f58f6a-a268-441f-83f8-56882adfca50
+                              - generic [ref=f4e5946]:
+                                - text: Shop Jivo
+                                - generic [ref=f4e5947]: Mart
+          - generic [ref=f4e5955]:
+            - heading "Need help?" [level=2] [ref=f4e5958]
+            - generic [ref=f4e5959]:
+              - link "Visit the help section" [ref=f4e5960] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=201889520
+              - text: or
+              - link "contact us" [ref=f4e5961] [cursor=pointer]:
+                - /url: /gp/help/customer/contact-us
+          - generic [ref=f4e5964]:
+            - iframe [ref=f4e5965]:
+              - generic [ref=f5e4]:
+                - link "Pure & Sure Organic Cold Pressed Groundnut Oil 1 Ltr | 100% Natural Peanut Oil/Sing Tel Edible for Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [ref=f5e7] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/RG0N9XjDmj0FOU77Apjl0PwAAAGhMzmOSwoAAAH_AUFvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDt8Ok7/clv1c_ek8OM3GX57OOBXc7_aNgTaclynEProgLhB8FBbO3CtVJQQQqlDdA5hiuatphwMHxvVxrp48mWOVTK3k6H9wvHakuWlPi2FhhXC9hiLOftybykxRT0b0n-E9kj2T_9d8q0DZZoqd7Il-Aik1bK-tHtplZ_qmn9z1-iiWT3WqllYA4JXS3jeoQ66zS43GH44Kn0T3SozLyJoKej6HHsRIaFC8imGk5QrTsTtjDzr9lFSIOV9RS31FCO-fpqk556YrVFOw_lD2f7XdABiE3roWlDxGWfJ9U6qTEBXOtETxG30_glgjPV0i-2mzIYYIqMn4_rBGCx7-x7JTS7GCjF9-rzN3ol8Jo-iWr7rBDx8p1zEdpRcHUpynMPEy84RtDIXg4BVF6ySs4FxLfV6Q/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo0Mjg4MTk2MzgyODM4OTYxOjE3OTE4NjA3NzI6c3Bfc2VhcmNoX2Zvb3Rlcl9zaGFyZWQ6MzAwMjAzMDA3NjA3NzMyOjo6Og&url=%2Fdp%2FB00M71172A%2Fref%3Dsspa_dk_bot_sx_aax_0%3Fpsc%3D1%26aref%3D79EmWsLHcc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfZm9vdGVyX3NoYXJlZA&aref=79EmWsLHcc&sp_cr=ZAZ
+                - generic [ref=f5e8]:
+                  - img "Pure & Sure Organic Cold Pressed Groundnut Oil 1 Ltr | 100% Natural Peanut Oil/Sing Tel Edible for Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [ref=f5e10]
+                  - generic [ref=f5e11]:
+                    - generic [ref=f5e12]: Pure & Sure Organic Cold Pressed Groundnut Oil 1 Ltr | 100% Natural Peanut Oil/Sing Tel Edible for...
+                    - generic [ref=f5e13]:
+                      - text: ₹399.00
+                      - link "518" [ref=f5e14] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/RG0N9XjDmj0FOU77Apjl0PwAAAGhMzmOSwoAAAH_AUFvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDt8Ok7/clv1c_ek8OM3GX57OOBXc7_aNgTaclynEProgLhB8FBbO3CtVJQQQqlDdA5hiuatphwMHxvVxrp48mWOVTK3k6H9wvHakuWlPi2FhhXC9hiLOftybykxRT0b0n-E9kj2T_9d8q0DZZoqd7Il-Aik1bK-tHtplZ_qmn9z1-iiWT3WqllYA4JXS3jeoQ66zS43GH44Kn0T3SozLyJoKej6HHsRIaFC8imGk5QrTsTtjDzr9lFSIOV9RS31FCO-fpqk556YrVFOw_lD2f7XdABiE3roWlDxGWfJ9U6qTEBXOtETxG30_glgjPV0i-2mzIYYIqMn4_rBGCx7-x7JTS7GCjF9-rzN3ol8Jo-iWr7rBDx8p1zEdpRcHUpynMPEy84RtDIXg4BVF6ySs4FxLfV6Q/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo0Mjg4MTk2MzgyODM4OTYxOjE3OTE4NjA3NzI6c3Bfc2VhcmNoX2Zvb3Rlcl9zaGFyZWQ6MzAwMjAzMDA3NjA3NzMyOjo6Og&url=%2Fdp%2FB00M71172A%2Fref%3Dsspa_dk_bot_sx_aax_0%3Fpsc%3D1%26aref%3D79EmWsLHcc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfZm9vdGVyX3NoYXJlZA&aref=79EmWsLHcc&sp_cr=ZAZ#customerReviews
+                  - link "Shop now" [ref=f5e18] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/RG0N9XjDmj0FOU77Apjl0PwAAAGhMzmOSwoAAAH_AUFvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDt8Ok7/clv1c_ek8OM3GX57OOBXc7_aNgTaclynEProgLhB8FBbO3CtVJQQQqlDdA5hiuatphwMHxvVxrp48mWOVTK3k6H9wvHakuWlPi2FhhXC9hiLOftybykxRT0b0n-E9kj2T_9d8q0DZZoqd7Il-Aik1bK-tHtplZ_qmn9z1-iiWT3WqllYA4JXS3jeoQ66zS43GH44Kn0T3SozLyJoKej6HHsRIaFC8imGk5QrTsTtjDzr9lFSIOV9RS31FCO-fpqk556YrVFOw_lD2f7XdABiE3roWlDxGWfJ9U6qTEBXOtETxG30_glgjPV0i-2mzIYYIqMn4_rBGCx7-x7JTS7GCjF9-rzN3ol8Jo-iWr7rBDx8p1zEdpRcHUpynMPEy84RtDIXg4BVF6ySs4FxLfV6Q/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo0Mjg4MTk2MzgyODM4OTYxOjE3OTE4NjA3NzI6c3Bfc2VhcmNoX2Zvb3Rlcl9zaGFyZWQ6MzAwMjAzMDA3NjA3NzMyOjo6Og&url=%2Fdp%2FB00M71172A%2Fref%3Dsspa_dk_bot_sx_aax_0%3Fpsc%3D1%26aref%3D79EmWsLHcc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfZm9vdGVyX3NoYXJlZA&aref=79EmWsLHcc&sp_cr=ZAZ
+            - button "Leave feedback on Sponsored advertisement" [ref=f4e5967] [cursor=pointer]:
+              - generic [aria-hidden] [ref=f4e5968]: Sponsored
+        - link "Go back to filtering menu" [ref=f4e5970] [cursor=pointer]:
+          - /url: "#s-skipLinkTargetForFilterOptions"
+      - dialog "Filters" [ref=f4e5971]:
+        - generic [ref=f4e5972]:
+          - link "Skip to main search results" [ref=f4e5973] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=f4e5975]:
+            - generic [ref=f4e5979]:
+              - group [ref=f4e5980]:
+                - heading "Brands" [level=2] [ref=f4e5981]
+                - list "Brands" [ref=f4e5982]:
+                  - listitem [ref=f4e5983]:
+                    - link "Apply the filter FORTUNE to narrow results" [ref=f4e5985] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_123%3A587124&dc&qid=1791860772&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AAW5nT15KZg8udLPzRlpN7MZypVHdzdtIb2DTkKQ%2B4iw
+                      - checkbox [aria-hidden] [ref=f4e5988]
+                      - text: FORTUNE
+              - group [ref=f4e5990]:
+                - heading "Grocery" [level=2] [ref=f4e5991]
+                - list "Grocery" [ref=f4e5992]:
+                  - listitem [ref=f4e5993]:
+                    - link "Apply the filter Top Brands to narrow results" [ref=f4e5995] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_format_browse-bin%3A27413411031&dc&qid=1791860772&rnid=27413410031&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3AX8b%2BUul3Q3sZt%2F%2BdGLi1Nisy%2FeQ%2FSPjreVVcE20YVSI
+                      - checkbox [aria-hidden] [ref=f4e5998]
+                      - text: Top Brands
+              - group [ref=f4e6000]:
+                - heading "Customer Reviews" [level=2] [ref=f4e6001]
+                - list "Customer Reviews" [ref=f4e6002]:
+                  - listitem [ref=f4e6003]:
+                    - link "Apply the filter 4 Stars & Up to narrow results" [ref=f4e6006] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_72%3A1318476031&dc&qid=1791860772&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3A00vjbG69SAztyQac7cuk8Is%2F6V1vBbeIULwZJzpVCdM
+                      - generic [ref=f4e6007]: 4 Stars
+                      - text: "& Up"
+              - group [ref=f4e6009]:
+                - heading "Pay On Delivery" [level=2] [ref=f4e6010]
+                - list "Pay On Delivery" [ref=f4e6011]:
+                  - listitem [ref=f4e6012]:
+                    - link "Apply the filter Eligible for Pay On Delivery to narrow results" [ref=f4e6014] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1791860772&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AuARDWdrOtHfCwR9ry3HiP6rONI5SlmDnzcubFqj5pHE
+                      - checkbox [aria-hidden] [ref=f4e6017]
+                      - text: Eligible for Pay On Delivery
+              - group [ref=f4e6019]:
+                - heading "Discount" [level=2] [ref=f4e6020]
+                - list "Discount" [ref=f4e6021]:
+                  - listitem [ref=f4e6022]:
+                    - link "10% Off or more" [ref=f4e6024] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_pct-off-with-tax%3A2665399031&dc&qid=1791860772&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AqhlWpXrUToxSjdAK2mhDhGdX8Zjkx2mpzDgQeGOt%2BJM
+                  - listitem [ref=f4e6025]:
+                    - link "25% Off or more" [ref=f4e6027] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_pct-off-with-tax%3A2665400031&dc&qid=1791860772&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3AdN7e4NQdOQ4RDibKml%2FpVDUDpYyrm325XJr7xZ3W4H0
+                  - listitem [ref=f4e6028]:
+                    - link "35% Off or more" [ref=f4e6030] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_pct-off-with-tax%3A2665402031&dc&qid=1791860772&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3AYPCxdoZF0SaBNhJ36UwLstoPTNGzKp6iAJj4AE9tm2Q
+                  - listitem [ref=f4e6031]:
+                    - generic [ref=f4e6032]: 50% Off or more
+                  - listitem [ref=f4e6033]:
+                    - generic [ref=f4e6034]: 60% Off or more
+                  - listitem [ref=f4e6035]:
+                    - generic [ref=f4e6036]: 70% Off or more
+              - group [ref=f4e6037]:
+                - heading "Prime Now Stores" [level=2] [ref=f4e6038]
+                - list "Prime Now Stores" [ref=f4e6039]:
+                  - listitem [ref=f4e6040]:
+                    - link "Apply the filter Amazon Fresh to narrow results" [ref=f4e6042] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_alm_brand_id%3A17107035031&dc&qid=1791860772&rnid=17107034031&ref=sr_nr_p_n_alm_brand_id_1&ds=v1%3A6fV6BPzR8bWnNVgoYZEzt373P5NofAEr0WYMy2Zt4vo
+                      - checkbox [aria-hidden] [ref=f4e6045]
+                      - text: Amazon Fresh
+              - group [ref=f4e6047]:
+                - heading "Availability" [level=2] [ref=f4e6048]
+                - list "Availability" [ref=f4e6049]:
+                  - listitem [ref=f4e6050]:
+                    - link "Apply the filter Include Out of Stock to narrow results" [ref=f4e6052] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_availability%3A1318485031&dc&qid=1791860772&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3AFkLNb3Tmb5EaBODtkTGcCsMwU6BR9bot5xjBZLbaB1M
+                      - checkbox [aria-hidden] [ref=f4e6055]
+                      - text: Include Out of Stock
+              - group [ref=f4e6057]:
+                - heading "Seller" [level=2] [ref=f4e6058]
+                - list "Seller" [ref=f4e6059]:
+                  - listitem [ref=f4e6060]:
+                    - link "Apply the filter Sasta STORE to narrow results" [ref=f4e6062] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_6%3AA1KF1CBHR5UA1W&dc&qid=1791860772&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3AodQzXDPW7GXpHsdyfbyPt%2BGxzDqOE5wANul3OKrAzKw
+                      - checkbox [aria-hidden] [ref=f4e6065]
+                      - text: Sasta STORE
+                  - listitem [ref=f4e6067]:
+                    - link "Apply the filter Topale's to narrow results" [ref=f4e6069] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_6%3AAK4QZ3IVKUBBR&dc&qid=1791860772&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AXRnVHvmd%2FDD8zCN0sD%2Bo84jHrYNgB31Kf2qKUAhP2TM
+                      - checkbox [aria-hidden] [ref=f4e6072]
+                      - text: Topale's
+                  - listitem [ref=f4e6074]:
+                    - button "See more, Seller" [ref=f4e6077] [cursor=pointer]: See more
+              - group [ref=f4e6079]:
+                - generic [ref=f4e6080]:
+                  - generic [ref=f4e6081]: Price
+                  - generic [ref=f4e6084]:
+                    - generic [ref=f4e6085]:
+                      - generic [ref=f4e6086]: ₹165
+                      - generic [aria-hidden] [ref=f4e6087]: –
+                      - generic [ref=f4e6088]: ₹620+
+                    - generic [ref=f4e6091]:
+                      - generic:
+                        - slider "Minimum price": "0"
+                      - generic [ref=f4e6092]:
+                        - slider "Maximum price": "59"
+                - list [ref=f4e6093]:
+                  - listitem [ref=f4e6094]:
+                    - link "Up to ₹500" [ref=f4e6096] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_36%3A-50000&dc&qid=1791860772&rnid=2485523031&ref=sr_nr_p_36_1&ds=v1%3AxcxQO4v1zbOmR27nh99CysmmWcr7QdiAJ65mMyjblaY
+                  - listitem [ref=f4e6097]:
+                    - link "Over ₹500" [ref=f4e6099] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_36%3A50000-&dc&qid=1791860772&rnid=2485523031&ref=sr_nr_p_36_2&ds=v1%3Aq%2BzuS28zCqz7Doa8rj3X2lmHTRngXOswtOSy%2Bo2ogS4
+              - group [ref=f4e6100]:
+                - heading "Features" [level=2] [ref=f4e6101]
+                - list "Features" [ref=f4e6102]:
+                  - listitem [ref=f4e6103]:
+                    - link "Apply the filter Cold Pressed to narrow results" [ref=f4e6105] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1003434285111%3A30059778031&dc&qid=1791860772&rnid=30059768031&ref=sr_nr_p_n_g-1003434285111_1&ds=v1%3ArxrAl76E4G0KaufmjHMPhEHs%2B9A4eHjcZhfQeCrH2aY
+                      - checkbox [aria-hidden] [ref=f4e6108]
+                      - text: Cold Pressed
+                  - listitem [ref=f4e6110]:
+                    - link "Apply the filter Refined to narrow results" [ref=f4e6112] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1003434285111%3A30059775031&dc&qid=1791860772&rnid=30059768031&ref=sr_nr_p_n_g-1003434285111_2&ds=v1%3ASmaTAi%2BwONutkW4YdnmqktxLVXbOJ4M0xtUn8IW46KM
+                      - checkbox [aria-hidden] [ref=f4e6115]
+                      - text: Refined
+                  - listitem [ref=f4e6117]:
+                    - link "Apply the filter Wood Pressed to narrow results" [ref=f4e6119] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1003434285111%3A30059773031&dc&qid=1791860772&rnid=30059768031&ref=sr_nr_p_n_g-1003434285111_3&ds=v1%3Ad2MkBSgmv9iQaKfW8Cs6t0A%2BnlP06LQW8mrBRQtixXE
+                      - checkbox [aria-hidden] [ref=f4e6122]
+                      - text: Wood Pressed
+              - group [ref=f4e6124]:
+                - heading "Number of Items" [level=2] [ref=f4e6125]
+                - list "Number of Items" [ref=f4e6126]:
+                  - listitem [ref=f4e6127]:
+                    - link "Apply the filter 1 to narrow results" [ref=f4e6129] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1003557720111%3A59366882031&dc&qid=1791860772&rnid=59366844031&ref=sr_nr_p_n_g-1003557720111_1&ds=v1%3AfIvm7Sj7kA1rvkCipZlQ418PTdH0yaOHz2T07vrCO%2BM
+                      - checkbox [aria-hidden] [ref=f4e6132]
+                      - text: "1"
+                  - listitem [ref=f4e6134]:
+                    - link "Apply the filter 2 to narrow results" [ref=f4e6136] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1003557720111%3A59366883031&dc&qid=1791860772&rnid=59366844031&ref=sr_nr_p_n_g-1003557720111_2&ds=v1%3AL6x1nDpM0l7hmOX5iunaXzOuGmlWAwHdpWBoAP1dzjE
+                      - checkbox [aria-hidden] [ref=f4e6139]
+                      - text: "2"
+              - group [ref=f4e6141]:
+                - heading "Food Preference" [level=2] [ref=f4e6142]
+                - list "Food Preference" [ref=f4e6143]:
+                  - listitem [ref=f4e6144]:
+                    - link "Vegetarian" [ref=f4e6146] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_intended_use_browse-bin%3A5224522031&dc&qid=1791860772&rnid=5224521031&ref=sr_nr_p_n_intended_use_browse-bin_1&ds=v1%3AD4G6qs8jkiMaMJDJXGx53Wm3T3qSvdxrLc0PCBfyzF0
+              - group [ref=f4e6147]:
+                - heading "Container Type" [level=2] [ref=f4e6148]
+                - list "Container Type" [ref=f4e6149]:
+                  - listitem [ref=f4e6150]:
+                    - link "Apply the filter Can to narrow results" [ref=f4e6152] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-101017995510111%3A222072468031&dc&qid=1791860772&rnid=222072463031&ref=sr_nr_p_n_g-101017995510111_1&ds=v1%3Ayod15v94l7KZxwoK0L2eWDDJQ11yZRlBf%2F8Gh%2B285j0
+                      - checkbox [aria-hidden] [ref=f4e6155]
+                      - text: Can
+              - group [ref=f4e6157]:
+                - heading "Specialty" [level=2] [ref=f4e6158]
+                - list "Specialty" [ref=f4e6159]:
+                  - listitem [ref=f4e6160]:
+                    - link "Apply the filter Suitable for Vegans to narrow results" [ref=f4e6162] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1004179634091%3A4868061031&dc&qid=1791860772&rnid=4868020031&ref=sr_nr_p_n_g-1004179634091_1&ds=v1%3ASobd3ib5FakiAnyfSOcqlUmN%2BagYhFcRk5bT8vBGxaQ
+                      - checkbox [aria-hidden] [ref=f4e6165]
+                      - text: Suitable for Vegans
+              - group [ref=f4e6167]:
+                - heading "Top Brands" [level=2] [ref=f4e6168]
+                - list "Top Brands" [ref=f4e6169]:
+                  - listitem [ref=f4e6170]:
+                    - link "Apply the filter Top Brands to narrow results" [ref=f4e6172] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-101014971069111%3A206270883031&dc&qid=1791860772&rnid=206270882031&ref=sr_nr_p_n_g-101014971069111_1&ds=v1%3Azm5ZLlZ0F8l0aygIzi2mcZuplkBx54OgC2beKlCJpWY
+                      - checkbox [aria-hidden] [ref=f4e6175]
+                      - text: Top Brands
+              - group [ref=f4e6177]:
+                - heading "Diet Type" [level=2] [ref=f4e6178]
+                - list "Diet Type" [ref=f4e6179]:
+                  - listitem [ref=f4e6180]:
+                    - link "Apply the filter Vegan to narrow results" [ref=f4e6182] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_feature_twelve_browse-bin%3A93661138031&dc&qid=1791860772&rnid=93661131031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3Ao7le4qWQW6Vs1szB3wOgjNa09mK5wqyf6R5Znp1B4EE
+                      - checkbox [aria-hidden] [ref=f4e6185]
+                      - text: Vegan
+              - group [ref=f4e6187]:
+                - heading "Country of Origin" [level=2] [ref=f4e6188]
+                - list "Country of Origin" [ref=f4e6189]:
+                  - listitem [ref=f4e6190]:
+                    - link "Apply the filter India to narrow results" [ref=f4e6192] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_country_of_origin-bin%3AIN&dc&qid=1791860772&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_1&ds=v1%3A7uq9FbNwtAUn6izSQsbnSb4YGcie8gMonl2feuOCFHU
+                      - checkbox [aria-hidden] [ref=f4e6195]
+                      - text: India
+              - group [ref=f4e6197]:
+                - heading "Cuisine" [level=2] [ref=f4e6198]
+                - list "Cuisine" [ref=f4e6199]:
+                  - listitem [ref=f4e6200]:
+                    - link "Apply the filter Indian to narrow results" [ref=f4e6202] [cursor=pointer]:
+                      - /url: /s?k=fortune+sunflower+oil+15&rh=p_n_g-1004179254091%3A4868228031&dc&qid=1791860772&rnid=4868218031&ref=sr_nr_p_n_g-1004179254091_1&ds=v1%3AYtXe3ncpv44Z4aDlf%2F2JrpP5pWU3g2g2bNaH9jbeaCo
+                      - checkbox [aria-hidden] [ref=f4e6205]
+                      - text: Indian
+            - generic [ref=f4e6210]:
+              - iframe [ref=f4e6211]:
+                - generic [ref=f6e4]:
+                  - generic [ref=f6e5]:
+                    - link "Pure & Sure Organic Cold Pressed Groundnut Oil 5 Ltr | 100% Natural Peanut Oil/Sing Tel Edible for Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [ref=f6e6] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MzAwMjAzMDA3NjA4NzMyOjo6Og&url=%2Fdp%2FB09F3D4HH1%2Fref%3Dsspa_dk_left_sx_aax_0%3Fpsc%3D1%26aref%3DmezZRhtQEA%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=mezZRhtQEA&sp_cr=ZAZ
+                    - img "Pure & Sure Organic Cold Pressed Groundnut Oil 5 Ltr | 100% Natural Peanut Oil/Sing Tel Edible for Cooking | Extracted on Wooden Churner | Nutrient Rich & Chemical Free" [ref=f6e10]
+                    - generic [ref=f6e12]:
+                      - generic [ref=f6e13]: Pure & Sure Organic Cold Pressed Groundnut Oil ...
+                      - link "518" [ref=f6e15] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MzAwMjAzMDA3NjA4NzMyOjo6Og&url=%2Fdp%2FB09F3D4HH1%2Fref%3Dsspa_dk_left_sx_aax_0%3Fpsc%3D1%26aref%3DmezZRhtQEA%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=mezZRhtQEA&sp_cr=ZAZ#customerReviews
+                      - generic [ref=f6e17]: ₹1,499.00
+                    - link "Shop now" [ref=f6e22] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MzAwMjAzMDA3NjA4NzMyOjo6Og&url=%2Fdp%2FB09F3D4HH1%2Fref%3Dsspa_dk_left_sx_aax_0%3Fpsc%3D1%26aref%3DmezZRhtQEA%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=mezZRhtQEA&sp_cr=ZAZ
+                  - separator [aria-hidden] [ref=f6e24]
+                  - generic [ref=f6e25]:
+                    - link "Amazon Brand - Vedaka Cold Pressed Groundnut (Peanut) Oil | 5 L | Cooking Oil | Pure & Unrefined | Contains MUFA & Omega -6 | Contains Antioxidants | Rich Aroma & Flavour Of Groundnuts" [ref=f6e26] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MjAwNzU2MDg2NjMwMDM6Ojo6&url=%2Fdp%2FB08CSB83NP%2Fref%3Dsspa_dk_left_sx_aax_1%3Fpsc%3D1%26aref%3DnlCdxAS830%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=nlCdxAS830&sp_cr=ZAZ
+                    - img "Amazon Brand - Vedaka Cold Pressed Groundnut (Peanut) Oil | 5 L | Cooking Oil | Pure & Unrefined | Contains MUFA & Omega -6 | Contains Antioxidants | Rich Aroma & Flavour Of Groundnuts" [ref=f6e30]
+                    - generic [ref=f6e32]:
+                      - generic [ref=f6e33]: Amazon Brand - Vedaka Cold Pressed Groundnut (P...
+                      - link "8,192" [ref=f6e35] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MjAwNzU2MDg2NjMwMDM6Ojo6&url=%2Fdp%2FB08CSB83NP%2Fref%3Dsspa_dk_left_sx_aax_1%3Fpsc%3D1%26aref%3DnlCdxAS830%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=nlCdxAS830&sp_cr=ZAZ#customerReviews
+                      - generic [ref=f6e37]: ₹1,501.00
+                    - link "Shop now" [ref=f6e42] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/RChyIR1JFNNDfBiGQ3iGS9QAAAGhMzmOUwoAAAH_AUFvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBPx1OA/clv1c_ek8OM3GX57OOBXc7_aNg_aztsgL7nTXDvhc9eUoOhZuP-0NUYjdA6BiuatphwMHxvVxrp48mWOVTK3k6H9wvHalyJDGfBib9_DN99nChWHVw0JRSLE8k-E9kj2T_9d8qUNiXlbXrIl-AiuVnw54mYULfHTXqVIXCowY36420fopRoVVJOZXXhQbcLfqMLUmNHlY5bbmZLAxlYW6Ju_x0P-HpFjIziLoDICNMZTUK7uyFzJ6kocrYBagTZOGCJ0TfnufwzsfVpn2KyC_4pf9rFqZIwg3H2Odl-n0ugx4E0LwC1GnKSMxJB1qd9KSu9doiqI-VM-VituJ02dWUhA0yO0zx6B_yrri4lCoVWFDpEJmPCoqZ5TDMYo-7FN1r-bQryH4aDiRoGfSZ9_A/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5MTA0MTAyNTk2ODQxNjA6MTc5MTg2MDc3MjpzcF9zZWFyY2hfbGVmdF9zaGFyZWQ6MjAwNzU2MDg2NjMwMDM6Ojo6&url=%2Fdp%2FB08CSB83NP%2Fref%3Dsspa_dk_left_sx_aax_1%3Fpsc%3D1%26aref%3DnlCdxAS830%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfbGVmdF9zaGFyZWQ&aref=nlCdxAS830&sp_cr=ZAZ
+              - button "Leave feedback on Sponsored advertisement" [ref=f4e6213] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f4e6214]: Sponsored
+            - generic [ref=f4e6219]:
+              - iframe [ref=f4e6220]:
+                - region "Sponsored ad from Continental Coffee" [ref=f7e3]:
+                  - link "Continental Coffee Fuel your Mumbai hustle with XTRA aroma. Text reads 'PUNE' and 'Xtra'. Xtra Instant Aahar coffee product shown with packaging and prepared cup against stylized orange Pune cityscape backdrop featuring historic architecture, buildings, and flying elements. Xtra Instant Coffee Powder | 50gm Pouch | ‎70% Coffee 30% Chicory | South Blend Instant Coffee | Medium Roast | Premium Blend of Arabica & Robusta | Rich Aromatic Coffee 4 out of 5 stars., 1,649 customer reviews. ₹122.55 List price was ₹155.00 Save 21% with Subscribe and Save" [ref=f7e4] [cursor=pointer]:
+                    - generic [ref=f7e5]:
+                      - generic [ref=f7e6]:
+                        - img "Continental Coffee" [ref=f7e12]
+                        - generic [ref=f7e13]: Fuel your Mumbai hustle with XTRA aroma.
+                      - img "Text reads 'PUNE' and 'Xtra'. Xtra Instant Aahar coffee product shown with packaging and prepared cup against stylized orange Pune cityscape backdrop featuring historic architecture, buildings, and flying elements." [ref=f7e18]
+                      - generic [ref=f7e19]:
+                        - generic [ref=f7e20]: Xtra Instant Coffee Powder | 50gm Pouch | ‎70% Coffee 30% Chicory | South Blend Instant Coffee | Medium Roast | Premium Blend of Arabica & Robusta | Rich Aromatic Coffee
+                        - generic [ref=f7e22]:
+                          - img "4 out of 5 stars., 1,649 customer reviews." [ref=f7e25]:
+                            - generic [ref=f7e26]: "4.0"
+                            - generic [ref=f7e52]: 1,649
+                          - generic [ref=f7e56]:
+                            - generic [ref=f7e57]: ₹122.55
+                            - generic [aria-hidden] [ref=f7e58]:
+                              - generic [ref=f7e59]: ₹
+                              - generic [ref=f7e60]: "122"
+                              - generic [ref=f7e61]: "55"
+                            - generic [ref=f7e62]:
+                              - generic [ref=f7e63]: List price was ₹155.00
+                              - generic [aria-hidden] [ref=f7e64]: ₹155.00
+                          - generic [ref=f7e65]: Save 21% with Subscribe and Save
+              - button "Leave feedback on Sponsored advertisement" [ref=f4e6222] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f4e6223]: Sponsored
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=f4e6225]:
+    - button "Back to top" [ref=f4e6226] [cursor=pointer]
+    - generic [ref=f4e6228]:
+      - generic [ref=f4e6229]:
+        - heading "Get to Know Us" [level=6] [ref=f4e6230]
+        - list [ref=f4e6231]:
+          - listitem [ref=f4e6232]:
+            - link "About Amazon" [ref=f4e6233] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=f4e6234]:
+            - link "Careers" [ref=f4e6235] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=f4e6236]:
+            - link "Press Releases" [ref=f4e6237] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=f4e6238]:
+            - link "Amazon Science" [ref=f4e6239] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=f4e6241]:
+        - heading "Connect with Us" [level=6] [ref=f4e6242]
+        - list [ref=f4e6243]:
+          - listitem [ref=f4e6244]:
+            - link "Facebook" [ref=f4e6245] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=f4e6246]:
+            - link "Twitter" [ref=f4e6247] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=f4e6248]:
+            - link "Instagram" [ref=f4e6249] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=f4e6251]:
+        - heading "Make Money with Us" [level=6] [ref=f4e6252]
+        - list [ref=f4e6253]:
+          - listitem [ref=f4e6254]:
+            - link "Sell on Amazon" [ref=f4e6255] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=f4e6256]:
+            - link "Sell under Amazon Accelerator" [ref=f4e6257] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=f4e6258]:
+            - link "Protect and Build Your Brand" [ref=f4e6259] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=f4e6260]:
+            - link "Amazon Global Selling" [ref=f4e6261] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=f4e6262]:
+            - link "Supply to Amazon" [ref=f4e6263] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=f4e6264]:
+            - link "Become an Affiliate" [ref=f4e6265] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=f4e6266]:
+            - link "Fulfilment by Amazon" [ref=f4e6267] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=f4e6268]:
+            - link "Advertise Your Products" [ref=f4e6269] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=f4e6270]:
+            - link "Amazon Pay on Merchants" [ref=f4e6271] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=f4e6273]:
+        - heading "Let Us Help You" [level=6] [ref=f4e6274]
+        - list [ref=f4e6275]:
+          - listitem [ref=f4e6276]:
+            - link "Your Account" [ref=f4e6277] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=f4e6278]:
+            - link "Returns Centre" [ref=f4e6279] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=f4e6280]:
+            - link "Recalls and Product Safety Alerts" [ref=f4e6281] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=f4e6282]:
+            - link "100% Purchase Protection" [ref=f4e6283] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=f4e6284]:
+            - link "Amazon App Download" [ref=f4e6285] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=f4e6286]:
+            - link "Help" [ref=f4e6287] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=f4e6289]:
+      - link "Amazon India Home" [ref=f4e6292] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=f4e6295]:
+        - generic [ref=f4e6296]:
+          - link "Choose a language for shopping. Current selection is English." [ref=f4e6297] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=f4e6299]: English
+          - button "Expand to Change Language or Country" [ref=f4e6300] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=f4e6301] [cursor=pointer]:
+          - generic [ref=f4e6303]: India
+    - generic "More on Amazon" [ref=f4e6304]:
+      - generic "More on Amazon" [ref=f4e6305]:
+        - list [ref=f4e6306]:
+          - listitem [ref=f4e6307]:
+            - link [ref=f4e6308] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=f4e6309]
+              - generic [ref=f4e6310]: Books, art& collectibles
+          - listitem [aria-hidden] [ref=f4e6311]
+          - listitem [ref=f4e6312]:
+            - link [ref=f4e6313] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=f4e6314]
+              - generic [ref=f4e6315]: Scalable CloudComputing Services
+          - listitem [aria-hidden] [ref=f4e6316]
+          - listitem [ref=f4e6317]:
+            - link [ref=f4e6318] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=f4e6319]
+              - generic [ref=f4e6320]: DownloadAudio Books
+          - listitem [aria-hidden] [ref=f4e6321]
+          - listitem [ref=f4e6322]:
+            - link [ref=f4e6323] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=f4e6324]
+              - generic [ref=f4e6325]: Movies, TV& Celebrities
+        - list [ref=f4e6326]:
+          - listitem [ref=f4e6327]:
+            - link [ref=f4e6328] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=f4e6329]
+              - generic [ref=f4e6330]: DesignerFashion Brands
+          - listitem [aria-hidden] [ref=f4e6331]
+          - listitem [ref=f4e6332]:
+            - link [ref=f4e6333] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=f4e6334]
+              - generic [ref=f4e6335]: Everything ForYour Business
+          - listitem [aria-hidden] [ref=f4e6336]
+          - listitem [ref=f4e6337]:
+            - link "Amazon Music Stream millions of songs" [ref=f4e6338] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=f4e6339]
+              - generic [ref=f4e6340]: Stream millions of songs
+          - listitem [aria-hidden] [ref=f4e6341]
+          - listitem [aria-hidden] [ref=f4e6342]
+    - generic [ref=f4e6343]:
+      - list [ref=f4e6344]:
+        - listitem [ref=f4e6345]:
+          - link "Conditions of Use & Sale" [ref=f4e6346] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=f4e6347]:
+          - link "Privacy Notice" [ref=f4e6348] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=f4e6349]:
+          - link "Interest-Based Ads" [ref=f4e6350] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=f4e6351]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=f4e6353]:
+    - iframe [ref=f9e2]
+```
