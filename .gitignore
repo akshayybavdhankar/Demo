@@ -6,10 +6,46 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/node_modules/
+/playwright-report/
+/allure-report/
+/allure-results/
+/test-results/
+/.env
+//git init
+//irctc.spec.ts
+//irctcnew.spec.ts
+//irctcpom.spec.ts
+//pages
+//test-data
+//utlis
 
-node_modules/
-playwright-report/
-allure-report/
-allure-results/
-test-results/
-.env
+//Configure Git for the first time
+//git config --global user.name "akshayybavdhankar"
+//git config --global user.email "akshayybavdhankar@gmail.com"
+//git config --global --list ->verify the configuration
+
+//Create a .gitignore
+//node_modules/
+//playwright-report/
+//allure-report/
+//allure-results/
+//test-results/
+//.env
+
+//git checkout -b feature/amazon-sunflower-test ->Create a new branch
+
+//6. Add your Playwright test
+//git add tests/amazonsunfloweroil.spec.ts
+//git add playwright.config.ts
+//git add package.json
+//git add .gitignore
+
+//git add . ->add everything 
+//git commit -m "Add Amazon sunflower oil automation"
+
+//8. Connect to GitHub repository -Create a new empty repository on GitHub.Then connect it:
+//git remote add origin https://github.com/akshayybavdhankar/Demo.git
+//verify the connection
+//git remote -v
+//git push -u origin feature/amazon-sunflower-test
